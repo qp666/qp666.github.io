@@ -1,0 +1,40 @@
+.topBar {
+  position: relative;
+}
+.main {
+  overflow: hidden;
+}
+.main .tit {
+  margin-top: -4px;
+  color: #fff;
+  height: 84px;
+  background-color: #272a2c;
+}
+.main .tit span {
+  margin-top: 4px;
+  margin-left: 3px;
+  border-bottom: 4px solid #c21d35;
+  display: inline-block;
+  height: 80px;
+  font: 40px/80px "Microsoft YaHei";
+}
+.main .content {
+  overflow: hidden;
+  margin: 0 50px 0 18px;
+  float: left;
+  width: 832px;
+  padding: 72px 0 217px;
+}
+.main .content .p1 {
+  font: 14px/28px "Microsoft YaHei";
+  color: #626262;
+  margin: 0 0 30px;
+}
+.footer {
+  height: 113px;
+  padding: 20px 0;
+}
+.footer .copyright a {
+  color: #e23a3f;
+  margin-right: 4px;
+}

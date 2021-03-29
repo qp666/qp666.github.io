@@ -1,0 +1,107 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11420340",
+      "name": "un-store-o",
+      "font_class": "un-store-o",
+      "unicode": "e6ad",
+      "unicode_decimal": 59053
+    },
+    {
+      "icon_id": "11420341",
+      "name": "un-local -o",
+      "font_class": "un-local-o",
+      "unicode": "e6ac",
+      "unicode_decimal": 59052
+    },
+    {
+      "icon_id": "11420342",
+      "name": "un-mine-o",
+      "font_class": "un-mine-o",
+      "unicode": "e6ae",
+      "unicode_decimal": 59054
+    },
+    {
+      "icon_id": "11420348",
+      "name": "un-favorite-o",
+      "font_class": "un-favorite-o",
+      "unicode": "e6af",
+      "unicode_decimal": 59055
+    },
+    {
+      "icon_id": "11420349",
+      "name": "un-servicer-o",
+      "font_class": "un-servicer-o",
+      "unicode": "e6b0",
+      "unicode_decimal": 59056
+    },
+    {
+      "icon_id": "11420356",
+      "name": "un-collect-o",
+      "font_class": "un-collect-o",
+      "unicode": "e6b1",
+      "unicode_decimal": 59057
+    },
+    {
+      "icon_id": "11420357",
+      "name": "un-eye-o",
+      "font_class": "un-eye-o",
+      "unicode": "e6b2",
+      "unicode_decimal": 59058
+    },
+    {
+      "icon_id": "11420368",
+      "name": "un-hotline-o",
+      "font_class": "un-hotline-o",
+      "unicode": "e6b6",
+      "unicode_decimal": 59062
+    },
+    {
+      "icon_id": "11420387",
+      "name": "un-voice-o",
+      "font_class": "un-voice-o",
+      "unicode": "e6bd",
+      "unicode_decimal": 59069
+    },
+    {
+      "icon_id": "11421345",
+      "name": "un-collapse-o",
+      "font_class": "un-collapse-o",
+      "unicode": "e6c0",
+      "unicode_decimal": 59072
+    },
+    {
+      "icon_id": "11421346",
+      "name": "un-forward-o",
+      "font_class": "un-forward-o",
+      "unicode": "e6c1",
+      "unicode_decimal": 59073
+    },
+    {
+      "icon_id": "11421347",
+      "name": "un-return-o",
+      "font_class": "un-return-o",
+      "unicode": "e6c2",
+      "unicode_decimal": 59074
+    },
+    {
+      "icon_id": "11421348",
+      "name": "un-dropdown-o",
+      "font_class": "un-dropdown-o",
+      "unicode": "e6c3",
+      "unicode_decimal": 59075
+    },
+    {
+      "icon_id": "11463937",
+      "name": "消息",
+      "font_class": "xiaoxi",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    }
+  ]
+}

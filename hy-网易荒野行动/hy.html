@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网易《荒野行动》官方网站-全新赛季S9启动！</title>
+    <link rel="shortcut icon" href="./images/hy.ico">
+    <link rel="stylesheet" href="css/hy_base.css">
+    <link rel="stylesheet" href="css/hy.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/hy.js"></script>
+
+    <style>
+        #vas {
+            position: absolute;
+            vertical-align: top;
+            z-index: 1000;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="vas"></canvas>
+
+    <!-- 头部模块 -->
+    <header class="wyxi">
+        <div class="qml">
+            <img src="./images/hy_sang.png" alt="">
+            游戏全目录
+            <div class="menuPull">
+                <ul class="menuBox">
+                    <li class="khdyx">
+                        <h4>客户端游戏</h4>
+                        <div class="left">
+                            <p>角色扮演</p>
+                            <a>梦幻西游电脑版 <span class="top1"></span></a>
+                            <a>大话2经典版 <span class="hot"></span></a>
+                            <a>天下3 <span class="hot"></span></a>
+                            <a>新倩女幽魂 <span class="hot"></span></a>
+                            <a>逆水寒 <span class="hot"></span></a>
+                            <a>天谕</a>
+                            <a>超激斗梦境</a>
+                            <a>龙魂时刻</a>
+                            <a>泰亚史诗 <span class="hot"></span></a>
+                            <a>大话2免费版 <span class="hot"></span></a>
+                            <a>新大话3经典版</a>
+                            <a>新大话3免费版</a>
+                            <a>镇魔曲</a>
+                            <a>镇魔曲页游</a>
+                            <a>大唐无双</a>
+                            <a>武魂2</a>
+                            <a>魔兽世界</a>
+                        </div>
+                        <div class="right">
+                            <p>竞技/休闲</p>
+                            <a href="#">我的世界 <span class="new"></span></a>
+                            <a href="#">守望先锋 <span class="new"></span></a>
+                            <a href="#">荒野行动Plus <span class="new"></span></a>
+                            <a href="#">EVE Online <span class="new"></span></a>
+                            <a href="#">突击英雄 <span class="new"></span></a>
+                            <a href="#">无尽战区 <span class="new"></span></a>
+                            <a href="#">战意 <span class="new"></span></a>
+                            <a href="#">秘境对决 <span class="new"></span></a>
+                            <a href="#">故土Nostos <span class="new"></span></a>
+                            <a href="#">风暴英雄</a>
+                            <a href="#">星际争霸Ⅱ</a>
+                            <a href="#">英雄三国</a>
+                            <a href="#">炉石传说</a>
+                        </div>
+                        <div class="tag">更多热门端游</div>
+                    </li>
+                    <li class="sjyx">
+                        <h4>手机游戏</h4>
+                        <div class="left">
+                            <p>热门推荐</p>
+                            <a>梦幻西游手游 <span class="hot"></span></a>
+                            <a>大话西游手游 <span class="hot"></span></a>
+                            <a>倩女幽魂手游 <span class="hot"></span></a>
+                            <a>阴阳师 <span class="hot"></span></a>
+                            <a>率士之滨 <span class="hot"></span></a>
+                            <a>天下手游 <span class="hot"></span></a>
+                            <a>镇魔曲手游 <span class="hot"></span></a>
+                            <a>一梦江湖 <span class="hot"></span></a>
+                            <a>决战平安京 <span class="hot"></span></a>
+                            <a>明日之后 <span class="hot"></span></a>
+                            <a>荒野行动 <span class="hot"></span></a>
+                            <a>第五人格 <span class="hot"></span></a>
+                            <a>神都夜行录 <span class="hot"></span></a>
+                            <a>终结战场</a>
+                            <a>我的世界Minecraft</a>
+                            <a>大唐无双唯美篇</a>
+                            <a>光明大陆</a>
+                        </div>
+                        <div class="right">
+                            <a href="#">梦幻西游三维版 <span class="new"></span></a>
+                            <a href="#">花与剑 <span class="new"></span></a>
+                            <a href="#">轩辕剑龙舞云山 <span class="new"></span></a>
+                            <a href="#">量子特攻 <span class="new"></span></a>
+                            <a href="#">阴阳师：百闻牌 <span class="new"></span></a>
+                            <a href="#">遇见逆水寒 <span class="new"></span></a>
+                            <a href="#">陈情令 <span class="new"></span></a>
+                            <a href="#">实况足球 <span class="new"></span></a>
+                            <a href="#">绿茵之巅 <span class="new"></span></a>
+                            <a href="#">最后的秘密 <span class="new"></span></a>
+                            <a href="#">堡垒前线 <span class="new"></span></a>
+                            <a href="#">第九所 <span class="new"></span></a>
+                            <a href="#">河狸计划 <span class="new"></span></a>
+                            <a href="#">时空中的绘旅人 <span class="new"></span></a>
+                            <a href="#">重装上阵 <span class="new"></span></a>
+                            <a href="#">暗黑破坏神：不朽 <span class="new"></span></a>
+                            <a href="#">阴阳师：妖怪屋 <span class="new"></span></a>
+                        </div>
+                        <div class="right">
+                            <a href="#">宝可梦大探险 <span class="new"></span></a>
+                            <a href="#">黑潮之上 <span class="new"></span></a>
+                            <a href="#">绘真·妙笔千山 <span class="new"></span></a>
+                            <a href="#">光·遇 <span class="new"></span></a>
+                            <a href="#">流星群侠传 <span class="new"></span></a>
+                            <a href="#">有杀气童话 <span class="new"></span></a>
+                            <a href="#">完售物语 <span class="new"></span></a>
+                            <a href="#">天谕手游 <span class="new"></span></a>
+                            <a href="#">Disorder <span class="new"></span></a>
+                            <a href="#">机动都市阿尔法 <span class="new"></span></a>
+                            <a href="#">幻书启世录 <span class="new"></span></a>
+                            <a href="#">青璃 <span class="new"></span></a>
+                            <a href="#">孤岛先锋 <span class="new"></span></a>
+                            <a href="#">逗斗火柴人 <span class="new"></span></a>
+                            <a href="#">游戏王：决斗链接 <span class="new"></span></a>
+                            <a href="#">节奏空间 <span class="new"></span></a>
+                            <a href="#">隐世录 <span class="new"></span></a>
+                        </div>
+                        <div class="right mark">
+                            <a href="#">荒野潜伏者</a>
+                            <a href="#">迷室The Room</a>
+                            <a href="#">一起优诺</a>
+                            <a href="#">海岛纪元</a>
+                            <a href="#">永远的7日之都</a>
+                            <a href="#">舰无虚发：暗星</a>
+                            <a href="#">实况：王者集结</a>
+                            <a href="#">战舰世界闪击战</a>
+                            <a href="#">风云岛行动</a>
+                            <a href="#">坦克世界闪击战</a>
+                            <a href="#">战争怒吼</a>
+                            <a href="#">极客战记</a>
+                            <a href="#">权利与纷争</a>
+                            <a href="#">猎手之王</a>
+                            <a href="#">非人学园</a>
+                            <a href="#">战国志</a>
+                            <a href="#">边境之旅</a>
+                        </div>
+                        <div class="right mark">
+                            <a href="#">星战前夜：无烬星河</a>
+                            <a href="#">三国如龙传</a>
+                            <a href="#">网易棋牌</a>
+                            <a href="#">神谕文明</a>
+                            <a href="#">风暴对决</a>
+                            <a href="#">猎魂觉醒</a>
+                            <a href="#">狼人杀</a>
+                            <a href="#">魔法禁书目录</a>
+                            <a href="#">秘境对决</a>
+                            <a href="#">影之诗</a>
+                            <a href="#">潮人篮球</a>
+                            <a href="#">三国诛将录</a>
+                            <a href="#">重装突击</a>
+                            <a href="#">劲舞团</a>
+                            <a href="#">坦克连</a>
+                            <a href="#">大话西游热血版</a>
+                            <a href="#">大航海之路</a>
+                        </div>
+                        <div class="right mark">
+                            <a href="#">萌王EX</a>
+                            <a href="#">秘宝猎人</a>
+                            <a href="#">天下x天下</a>
+                            <a href="#">异次元战姬</a>
+                            <a href="#">永恒边境</a>
+                            <a href="#">花语月</a>
+                            <a href="#">乱世西游2</a>
+                            <a href="#">惊梦</a>
+                            <a href="#">迷你西游</a>
+                            <a href="#">实况俱乐部</a>
+                            <a href="#">大唐游仙记</a>
+                            <a href="#">天下HD</a>
+                            <a href="#">西游神魔决</a>
+                            <a href="#">有杀气童话</a>
+                            <a href="#">妖刀少女异闻录</a>
+                            <a href="#">猫和老鼠官方手游</a>
+                        </div>
+                        <div class="tag">更多热门端游</div>
+                    </li>
+                    <li class="yxfz">
+                        <h4>游戏辅助</h4>
+                        <div class="right">
+                            <a href="#">游品味 <span class="hot"></span></a>
+                            <a href="#">网易MuMu <span class="hot"></span></a>
+                            <a href="#">会员俱乐部 <span class="hot"></span></a>
+                            <a href="#">网易大神 <span class="new"></span></a>
+                            <a href="#">网易BUFF <span class="new"></span></a>
+                            <a href="#">网易游戏印象 </a>
+                            <a href="#">网易游戏平台 </a>
+                            <a href="#">网易游戏助手 <span class="new"></span></a>
+                            <a href="#">异次元 <span class="hot"></span></a>
+                            <a href="#">手机将军令 </a>
+                            <a href="#">将军令 </a>
+                            <a href="#">藏宝阁 </a>
+                            <a href="#">网易CC </a>
+                            <a href="#">自助百宝箱 </a>
+                            <a href="#">网易UU加速器 </a>
+                            <a href="#">网易白金卡 </a>
+                            <a href="#">客服中心 </a>
+                            <div class="footLogo">
+                                <i></i>网易游戏
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <span class="center">
+            <a href="../index.html" target="_blank"><img src="./images/hy_logo.png" alt=""></a>
+
+        </span>
+        <div class="yb">
+            <div class="showList">
+                <p>领取网易严选宝箱</p>
+                <p>限时领取免费课程</p>
+                <p>领取网易严选宝箱</p>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- subject -->
+    <div class="subject">
+        <a href="#" class="hy_gw">
+            <img src="images/hy_gw.png" alt="">
+        </a>
+        <!-- banner模块 -->
+        <div class="banner w">
+            <a href="#" class="hy_logo">
+                <img src="images/hy_100000001.jpg" alt="">
+            </a>
+            <div class="hy_slogan">
+                <img src="images/hy_slogan.png" alt="">
+            </div>
+            <div class="down_bg">
+                <a href="#" class="hy_download">
+                    <img src="images/hy_down_icon.png" alt="" class="down_icon">
+                    <img src="images/hy_100000002.jpg" alt="" class="down_hytp">
+                </a>
+                <div class="smxz">
+                    <div class="line"></div>
+                    <img src="images/hy-erweima.jpg" alt="" class="erweima">
+                </div>
+                <ul class="xz">
+                    <li>
+                        <a href="#"><img src="images/hy_ios.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/hy_pc.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/hy_az.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/hy_mac.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- nav模块 -->
+        <div class="nav">
+            <div class="nav_hd">
+                <div class="nav_bar">
+                    <a href="javascript:;" class="nav_1"></a>
+                    <a href="javascript:;" class="nav_2"></a>
+                    <a href="javascript:;" class="nav_3"></a>
+                    <a href="javascript:;" class="nav_4"></a>
+                    <a href="javascript:;" class="nav_5"></a>
+                </div>
+            </div>
+            <div class="nav_bd w">
+                <!-- 新赛季专属更新 -->
+                <div class="xsj">
+                    <h2><img src="images/hy_tit1.png" alt=""></h2>
+                    <ul class="xsj_content">
+                        <li>
+                            <img src="images/xsj-01.gif" alt="" class="xsj_tp">
+                            <img src="images/part1_img_wrap.png" alt="" class="part1_bg">
+                            <img src="images/xsj_tit1.png" alt="" class="xsj_tit">
+                            代号：雪鸮，达到坚毅中校段位后获取五次前三名即可获得
+                        </li>
+                        <li>
+                            <img src="images/xsj-02.gif" alt="" class="xsj_tp">
+                            <img src="images/part1_img_wrap.png" alt="" class="part1_bg">
+                            <img src="images/xsj_tit1.png" alt="" class="xsj_tit">
+                            赛季S9冰雪视觉设计，皑皑白雪暗藏战意！
+                        </li>
+                        <li>
+                            <img src="images/xsj-03.gif" alt="" class="xsj_tp">
+                            <img src="images/part1_img_wrap.png" alt="" class="part1_bg">
+                            <img src="images/xsj_tit1.png" alt="" class="xsj_tit">
+                            全新的赛季S9通行证大厅设计更新，冬日主题旋风来袭
+                        </li>
+                    </ul>
+                </div>
+                <!-- 冰雪主题冬日开战 -->
+                <div class="bxzt">
+                    <h2><img src="images/hy_tit2.png" alt=""></h2>
+                    <ul class="bxzt_content">
+                        <li>
+                            <img src="images/bxzt-01.gif" alt="" class="bxzt_tp">
+                            <img src="images/part2_img_bg.png" alt="" class="part2_bg">
+                            飓风半岛地图场景中会出现圣诞雪人，击碎它可以获得圣诞礼物
+                        </li>
+                        <li>
+                            <img src="images/bxzt-02.gif" alt="" class="bxzt_tp">
+                            <img src="images/part2_img_bg.png" alt="" class="part2_bg">
+                            新增投放物“冬日雪球”，掷向敌人可以阻碍敌人的视野
+                        </li>
+                        <li>
+                            <img src="images/bxzt-03.gif" alt="" class="bxzt_tp">
+                            <img src="images/part2_img_bg.png" alt="" class="part2_bg">
+                            对空投外观进行了圣诞包装
+                        </li>
+                    </ul>
+                </div>
+                <!-- 赛季主题活动 -->
+                <div class="sjhd">
+                    <h2><img src="images/hy_tit3.png" alt=""></h2>
+                    <ul class="sjhd_content">
+                        <li class="content_1">
+                            <img src="images/sjzt.gif" alt="">
+                            <img src="images/part3_img_wrap.png" alt="" class="part3_bg">
+                        </li>
+                        <li class="content_2">
+                            <img src="images/part3_txt_wrap.png" alt="">
+                            <p class="first">
+                                <i><img src="images/num_1.png" alt=""></i>
+                                圣诞欢歌，祝语彩蛋；圣诞节时，试着在<span>广场/大厅</span>频道为大家送上美好祝福吧！
+                            </p>
+                            <p class="second">
+                                <i><img src="images/num_2.png" alt=""></i>
+                                圣诞节期间，通过日常任务收集“<span>圣诞雪花</span>”，兑换丰厚奖励~
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 游戏体验优化 -->
+                <div class="yxyh">
+                    <h2><img src="images/hy_tit4.png" alt=""></h2>
+                    <ul class="yxyh_content_1">
+                        <li>
+                            <img src="images/yxyh-01.gif" alt="" class="yxyh_tp">
+                            <img src="images/part4_img_wrap.png" alt="" class="part_4">
+                        </li>
+                        <li>
+                            <img src="images/yxyh-02.gif" alt="" class="yxyh_tp">
+                            <img src="images/part4_img_wrap.png" alt="" class="part_4">
+                        </li>
+                        <li>
+                            <img src="images/yxyh-03.jpg" alt="" class="yxyh_tp">
+                            <img src="images/part4_img_wrap.png" alt="" class="part_4">
+                        </li>
+                    </ul>
+                    <div class="yxyh_content_2">
+                        <p>加油站加油功能开放！司机乘客均可操作</p>
+                        <p>打药状态加入快速取消功能</p>
+                        <p>毒气弹伤害调整</p>
+                        <p>提高了M24的物资投放权重</p>
+                        <p>敌方载具提示优化</p>
+                        <p>部分载具行驶效果优化</p>
+                        <p>榴弹发射器体验优化</p>
+                        <p>标记迭代优化，瞄准的时候缩小遮挡</p>
+                    </div>
+                </div>
+                <!-- 战斗优化 -->
+                <div class="zdyh">
+                    <h2><img src="images/hy_tit5.png" alt=""></h2>
+                    <img src="images/part5_role.png" alt="" class="zdyh_role">
+                    <div class="zdyh_content">
+                        <p>观战好友时会增加一定的延迟时间</p>
+                        <p>慢速移动状态下增加打药功能</p>
+                        <p>对烟雾弹特效进行了迭代，在维持原有遮蔽效果的前提下降低了性能消耗</p>
+                        <p>载具的引擎声表现优化</p>
+                        <p>新增一种开火模式，该模式下开火时可以自动开镜</p>
+                        <p>自动拾取功能优化</p>
+                        <p>枪械展示的迭代，可使用球形旋转模型</p>
+                        <p>增加固定模式灵敏度，提供更直观的跟手操作</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer模块 -->
+    <footer>
+        <img src="images/hy_footer.png" alt="">
+    </footer>
+</body>
+
+<script src="js/hy-snow.js"></script>
+
+</html>

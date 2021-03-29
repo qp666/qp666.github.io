@@ -1,0 +1,306 @@
+.c {
+  width: 1100px;
+  margin: 0px auto;
+}
+body {
+  position: relative;
+  background-color: #fbfbfb;
+}
+.loginmask {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0.3;
+  display: none;
+}
+.login {
+  display: none;
+  z-index: 20;
+  top: 200px;
+  left: 720px;
+  position: fixed;
+  width: 420px;
+  overflow: hidden;
+}
+.login span {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 18px;
+}
+nav {
+  height: 82px;
+  line-height: 82px;
+}
+nav a img {
+  transition: all 0.2s;
+}
+nav a:hover img {
+  transform: scale(1.2, 1.2);
+}
+nav span {
+  margin-left: 30px;
+}
+nav i .btn1 {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  width: 102px;
+  height: 36px;
+  line-height: 36px;
+  margin-top: 22px;
+  text-align: center;
+  border-radius: 17px;
+  float: right;
+  color: #fff;
+  background-color: #37b0e8;
+  transition: all 0.2s;
+}
+nav i:hover .btn {
+  transform: scale(1.1, 1.1);
+}
+.kefu {
+  display: inline-block;
+  width: 100%;
+  height: 325px;
+  background-image: url(../images/qp网易游戏客服中心/qp_030.jpg);
+}
+.db {
+  cursor: pointer;
+  height: 181px;
+  width: 100%;
+  background-image: url(../images/qp网易游戏客服中心/qp_032.png);
+}
+.box {
+  position: relative;
+}
+.box .sb {
+  position: relative;
+}
+.box .sb .shang {
+  height: 46px;
+  width: 100%;
+  background-color: #fbfbfb;
+  border: 1px solid #ebebeb;
+}
+.box .sb .shang .on {
+  background-color: #fff;
+  border-top: 4px solid skyblue;
+}
+.box .sb .shang li {
+  position: relative;
+  float: left;
+  cursor: pointer;
+  width: 120px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 16px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.box .sb .shang li:hover {
+  background-color: #fff;
+}
+.box .sb .boxGame {
+  position: relative;
+  height: 500px;
+  padding: 20px 0 70px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.box .sb .boxGame .duanGame {
+  padding-left: 30px;
+}
+.box .sb .boxGame .duanGame h4 {
+  border-left: 3px solid skyblue;
+  padding-left: 10px;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+.box .sb .boxGame .duanGame ul {
+  flex-wrap: wrap;
+  display: flex;
+  position: relative;
+  margin-top: 15px;
+}
+.box .sb .boxGame .duanGame ul li {
+  margin-right: 30px;
+}
+.box .sb .boxGame .duanGame ul li p {
+  width: 100%;
+  height: 14px;
+  line-height: 14px;
+  font-size: 14px;
+  text-align: center;
+  margin: 14px 0 30px;
+  color: #666;
+}
+.box .sb .boxGame .duanGame ul li a {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  padding: 14px;
+  border: 1px solid #ebebeb;
+  border-radius: 16px;
+  box-sizing: border-box;
+  position: relative;
+}
+.box .sb .boxGame .duanGame ul li a img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  transition: all 0.2s;
+}
+.box .sb .boxGame .duanGame ul li a:hover img {
+  transform: scale(1.2, 1.2);
+}
+.box .sb .boxGame .shouGame {
+  padding-left: 30px;
+}
+.box .sb .boxGame .shouGame h4 {
+  border-left: 3px solid skyblue;
+  padding-left: 10px;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+.box .sb .boxGame .shouGame ul {
+  flex-wrap: wrap;
+  display: flex;
+  position: relative;
+  margin-top: 15px;
+}
+.box .sb .boxGame .shouGame ul li {
+  margin-right: 30px;
+}
+.box .sb .boxGame .shouGame ul li p {
+  width: 100%;
+  height: 14px;
+  line-height: 14px;
+  font-size: 14px;
+  text-align: center;
+  margin: 14px 0 30px;
+  color: #666;
+}
+.box .sb .boxGame .shouGame ul li a {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  padding: 14px;
+  border: 1px solid #ebebeb;
+  border-radius: 16px;
+  box-sizing: border-box;
+  position: relative;
+}
+.box .sb .boxGame .shouGame ul li a img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  transition: all 0.2s;
+}
+.box .sb .boxGame .shouGame ul li a:hover img {
+  transform: scale(1.2, 1.2);
+}
+.box .sb .ksrk {
+  position: absolute;
+  right: 10px;
+  top: 9px;
+  height: 28px;
+  line-height: 28px;
+  z-index: 9;
+  box-sizing: border-box;
+}
+.box .sb .ksrk label {
+  font-size: 16px;
+  color: #707070;
+}
+.box .sb .ksrk .shuRu {
+  display: inline-block;
+  height: 28px;
+  width: 190px;
+  padding-left: 10px;
+  padding-right: 26px;
+  border: 1px solid #ebebeb;
+  border-radius: 14px;
+  position: relative;
+}
+.box .sb .ksrk .shuRu input {
+  height: 26px;
+  line-height: 26px;
+  width: 100%;
+  border: none;
+  vertical-align: top;
+  font-size: 12px;
+  color: #707070;
+}
+.box .sb .ksrk .shuRu #input-enter-icon {
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 50%;
+  background: url(../images/qp网易游戏客服中心/qp_031.png) 50% no-repeat;
+  cursor: pointer;
+}
+.outGame {
+  height: 110px;
+  width: 100%;
+  background-color: #fff;
+}
+.outGame .btn {
+  width: 140px;
+  position: absolute;
+  bottom: 3px;
+  left: 45%;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  user-select: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #37b0e8;
+  border-radius: 5px;
+}
+.search {
+  position: relative;
+  z-index: 1;
+  height: 106px;
+  line-height: 106px;
+  text-align: center;
+  display: flex;
+}
+.search ul {
+  margin-left: 75px;
+}
+.search ul li {
+  display: inline-block;
+  line-height: 1.2em;
+  border-left: 3px solid #37b0e8;
+  padding-left: 17px;
+  text-align: left;
+  margin: 0 40px;
+  font-size: 16px;
+  word-spacing: normal;
+  letter-spacing: normal;
+}
+.search ul li a {
+  display: inline-block;
+}

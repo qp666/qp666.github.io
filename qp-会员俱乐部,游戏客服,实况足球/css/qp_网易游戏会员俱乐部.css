@@ -1,0 +1,594 @@
+nav {
+  height: 54px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0;
+  display: flex;
+  margin: 0;
+}
+nav .qml {
+  width: 176px;
+  height: 54px;
+  background-color: #cf1132;
+  color: #ffffff;
+  text-align: center;
+  line-height: 52px;
+  position: relative;
+}
+nav .qml img {
+  width: 34px;
+  height: 22px;
+  margin-top: -4px;
+}
+nav .center {
+  margin: 4px auto;
+}
+nav .yb {
+  width: 140px;
+  height: 54px;
+  float: right;
+  border-left: 1px solid #dadada;
+  text-align: center;
+  line-height: 52px;
+  color: #333333;
+}
+.menuPull {
+  position: fixed;
+  z-index: 30;
+  opacity: 0.95;
+  width: 100%;
+  height: 500px;
+  background: #fff;
+  display: none;
+}
+.menuPull .menuBox {
+  width: 1260px;
+  height: 100%;
+  margin: 0 auto;
+}
+.menuPull .menuBox li {
+  float: left;
+  height: 100%;
+  border-right: 1px solid #e3e3e4;
+}
+.menuPull .menuBox li h4 {
+  font-size: 18px;
+  color: #b52e2f;
+  height: 40px;
+  line-height: 40px;
+  text-indent: 20px;
+  background: rgba(204, 204, 204, 0.5);
+}
+.menuPull .menuBox .khdyx,
+.menuPull .menuBox .sjyx,
+.menuPull .menuBox .yxfz {
+  width: 299px;
+  position: relative;
+}
+.menuPull .menuBox .khdyx .left,
+.menuPull .menuBox .sjyx .left,
+.menuPull .menuBox .yxfz .left,
+.menuPull .menuBox .khdyx .right,
+.menuPull .menuBox .sjyx .right,
+.menuPull .menuBox .yxfz .right {
+  width: 140px;
+  float: left;
+  padding-left: 10px;
+  padding-right: 8px;
+}
+.menuPull .menuBox .khdyx .left p,
+.menuPull .menuBox .sjyx .left p,
+.menuPull .menuBox .yxfz .left p,
+.menuPull .menuBox .khdyx .right p,
+.menuPull .menuBox .sjyx .right p,
+.menuPull .menuBox .yxfz .right p {
+  font-size: 18px;
+  color: #5e5e5f;
+  line-height: 30px;
+}
+.menuPull .menuBox .khdyx .left a,
+.menuPull .menuBox .sjyx .left a,
+.menuPull .menuBox .yxfz .left a,
+.menuPull .menuBox .khdyx .right a,
+.menuPull .menuBox .sjyx .right a,
+.menuPull .menuBox .yxfz .right a {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  color: #5f5f60;
+}
+.menuPull .menuBox .khdyx .left a span,
+.menuPull .menuBox .sjyx .left a span,
+.menuPull .menuBox .yxfz .left a span,
+.menuPull .menuBox .khdyx .right a span,
+.menuPull .menuBox .sjyx .right a span,
+.menuPull .menuBox .yxfz .right a span {
+  float: right;
+  margin-top: 7px;
+}
+.menuPull .menuBox .khdyx .left a .top1,
+.menuPull .menuBox .sjyx .left a .top1,
+.menuPull .menuBox .yxfz .left a .top1,
+.menuPull .menuBox .khdyx .right a .top1,
+.menuPull .menuBox .sjyx .right a .top1,
+.menuPull .menuBox .yxfz .right a .top1 {
+  display: inline-block;
+  width: 18px;
+  height: 9px;
+  background: url('../images/qp网易游戏会员俱乐部官网_游戏热爱者必备/gsz_pullMenu.png') no-repeat -97px -276px;
+}
+.menuPull .menuBox .khdyx .left a .hot,
+.menuPull .menuBox .sjyx .left a .hot,
+.menuPull .menuBox .yxfz .left a .hot,
+.menuPull .menuBox .khdyx .right a .hot,
+.menuPull .menuBox .sjyx .right a .hot,
+.menuPull .menuBox .yxfz .right a .hot {
+  display: inline-block;
+  width: 18px;
+  height: 9px;
+  background: url('../images/qp网易游戏会员俱乐部官网_游戏热爱者必备/gsz_pullMenu.png') no-repeat -97px -152px;
+}
+.menuPull .menuBox .khdyx .left a .new,
+.menuPull .menuBox .sjyx .left a .new,
+.menuPull .menuBox .yxfz .left a .new,
+.menuPull .menuBox .khdyx .right a .new,
+.menuPull .menuBox .sjyx .right a .new,
+.menuPull .menuBox .yxfz .right a .new {
+  display: inline-block;
+  width: 18px;
+  height: 9px;
+  background: url('../images/qp网易游戏会员俱乐部官网_游戏热爱者必备/gsz_pullMenu.png') no-repeat -97px -214px;
+}
+.menuPull .menuBox .khdyx .right,
+.menuPull .menuBox .sjyx .right,
+.menuPull .menuBox .yxfz .right {
+  float: left;
+  width: 130px;
+}
+.menuPull .menuBox .khdyx .tag,
+.menuPull .menuBox .sjyx .tag,
+.menuPull .menuBox .yxfz .tag {
+  position: absolute;
+  top: 42%;
+  right: 0;
+  width: 30px;
+  height: 102px;
+  background-color: #b63033;
+  writing-mode: vertical-lr;
+  /*从左向右 从右向左是 writing-mode: vertical-rl;*/
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+.menuPull .menuBox .sjyx {
+  width: 828px;
+}
+.menuPull .menuBox .sjyx .right {
+  width: 150px;
+  border-right: none;
+  margin-top: 30px;
+}
+.menuPull .menuBox .sjyx .mark {
+  width: 120px;
+}
+.menuPull .menuBox .yxfz {
+  width: 130px;
+}
+.menuPull .menuBox .yxfz .right .footLogo {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #bb3738;
+}
+.menuPull .menuBox .yxfz .right .footLogo i {
+  display: inline-block;
+  width: 23px;
+  height: 18px;
+  background: url('../images/qp网易游戏会员俱乐部官网_游戏热爱者必备/gsz_pullMenu.png') 0 -338px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.navv {
+  position: fixed;
+  z-index: 20;
+  top: 54px;
+  width: 1920px;
+  height: 80px;
+  background-color: #eaebf1;
+  background: rgba(247, 246, 248, 0.925);
+}
+.navv i {
+  float: left;
+  line-height: 80px;
+  margin-left: 34px;
+}
+.navv button {
+  font-size: 17px;
+  color: #fff;
+  margin-top: 25px;
+  margin-right: 60px;
+  float: right;
+  width: 110px;
+  height: 32px;
+  border-radius: 15px;
+  background-color: #f07375;
+}
+.navv a {
+  float: right;
+  line-height: 80px;
+  font-size: 16px;
+  margin-right: 80px;
+}
+.navo {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  width: 1920px;
+  height: 80px;
+  background-color: #eaebf1;
+  background: rgba(253, 255, 255, 0.924);
+}
+.navo i {
+  float: left;
+  line-height: 80px;
+  margin-left: 34px;
+}
+.navo button {
+  font-size: 17px;
+  color: #fff;
+  margin-top: 25px;
+  margin-right: 60px;
+  float: right;
+  width: 110px;
+  height: 32px;
+  border-radius: 15px;
+  background-color: #f07375;
+}
+.navo a {
+  float: right;
+  line-height: 80px;
+  font-size: 16px;
+  margin-right: 80px;
+}
+.box1 {
+  position: relative;
+  left: 0px;
+  top: 80px;
+  z-index: 2;
+  width: 1900px;
+  height: 930px;
+  background-image: url(../images/qp网易游戏会员俱乐部官网_游戏热爱者必备/qp_023.jpg);
+}
+.box1 .box3 {
+  position: absolute;
+  right: 350px;
+  top: 0px;
+  z-index: 3;
+  width: 360px;
+  height: 900px;
+  background-color: #c1c3d9;
+  background: rgba(236, 234, 234, 0.781);
+}
+.box1 .box3 i {
+  display: flex;
+}
+.box1 .box3 i a {
+  display: flex;
+  width: 114px;
+  height: 114px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.box1 .box3 i a img {
+  transition: all 0.2s;
+}
+.box1 .box3 i a:hover img {
+  transform: scale(1.1, 1.1);
+}
+.box1 .box3 .gameLove {
+  display: block;
+  width: 266px;
+  height: 217px;
+  margin: 40px auto 0;
+}
+.box1 .box3 .xiaZai {
+  padding-top: 2px;
+  padding-left: 3px;
+  width: 266px;
+  height: 115px;
+  margin: 26px auto;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.box1 .box3 .xiaZai .zz {
+  top: 7px;
+  right: 7px;
+  position: absolute;
+  z-index: 4;
+}
+.box1 .box3 .xiaZai .zz img {
+  transition: all 0.2s;
+}
+.box1 .box3 .xiaZai .zz:hover img {
+  transform: scale(1.1, 1.1);
+}
+.box1 .box3 .xiaZai .yy {
+  top: 60px;
+  right: 7px;
+  position: absolute;
+  z-index: 4;
+}
+.box1 .box3 .xiaZai .yy img {
+  transition: all 0.2s;
+}
+.box1 .box3 .xiaZai .yy:hover img {
+  transform: scale(1.1, 1.1);
+}
+.box2 {
+  position: absolute;
+  left: 0px;
+  top: 780px;
+  z-index: 4;
+  width: 1900px;
+  height: 965px;
+  background-image: url(../images/qp网易游戏会员俱乐部官网_游戏热爱者必备/qp_029.png);
+}
+.box2 .tab {
+  width: 530px;
+  position: absolute;
+  top: 354px;
+  left: 50%;
+  margin-left: 24px;
+  z-index: 5;
+}
+.box2 .tab span {
+  display: inline-block;
+  height: 60px;
+  line-height: 52px;
+  margin: 0 35px;
+  font-size: 28px;
+  color: rgba(102, 102, 102, 0.5);
+  cursor: pointer;
+}
+.box2 .tab .border {
+  border-bottom: 3px solid #f77b7a;
+}
+.box2 .tab span:hover {
+  color: #f77b7a;
+  border-bottom: 3px solid #f77b7a;
+}
+.box2 .show1 .txt1 {
+  position: absolute;
+  top: 540px;
+  left: 50%;
+  margin-left: 54px;
+}
+.box2 .show1 .txt2 {
+  position: absolute;
+  top: 540px;
+  left: 50%;
+  margin-left: 54px;
+  display: none;
+}
+.box2 .show1 .txt3 {
+  position: absolute;
+  top: 540px;
+  left: 50%;
+  margin-left: 54px;
+  display: none;
+}
+.box2 .show1 .txt4 {
+  position: absolute;
+  top: 540px;
+  left: 50%;
+  margin-left: 54px;
+  display: none;
+}
+.box2 .show .tuPian1 {
+  width: 484px;
+  height: 778px;
+  position: absolute;
+  top: 336px;
+  left: 50%;
+  margin-left: -536px;
+}
+.box2 .show .tuPian2 {
+  width: 484px;
+  height: 778px;
+  position: absolute;
+  top: 336px;
+  left: 50%;
+  margin-left: -536px;
+  display: none;
+}
+.box2 .show .tuPian3 {
+  width: 484px;
+  height: 778px;
+  position: absolute;
+  top: 336px;
+  left: 50%;
+  margin-left: -536px;
+  display: none;
+}
+.box2 .show .tuPian4 {
+  width: 484px;
+  height: 778px;
+  position: absolute;
+  top: 336px;
+  left: 50%;
+  margin-left: -536px;
+  display: none;
+}
+.box2 .show img {
+  transition: all 0.2s;
+}
+.box2 .show:hover img {
+  transform: scale(1.1, 1.1);
+}
+.box2 .show2 .dian {
+  position: absolute;
+  width: auto;
+  bottom: 126px;
+  left: 50%;
+  margin-left: 50px;
+}
+.box2 .show2 .dian span {
+  display: inline-block;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  margin: 0 10px;
+  background: #d2d2d2;
+  cursor: pointer;
+}
+.box2 .show2 .dian .on {
+  border: 2px solid #f87c7a;
+  background: 0 0;
+}
+.superVip {
+  display: flex;
+  position: relative;
+  top: 761px;
+  left: 0px;
+  z-index: 6;
+  height: 520px;
+  background-image: url(../images/qp网易游戏会员俱乐部官网_游戏热爱者必备/qp_030.jpg);
+}
+.superVip i {
+  margin-left: 236px;
+}
+.superVip i img {
+  margin-top: 103px;
+  margin-bottom: 56px;
+  transition: all 0.2s;
+}
+.superVip i:hover img {
+  transform: scale(1.1, 1.1);
+}
+.superVip a {
+  text-align: center;
+  display: flex;
+  width: 432px;
+  height: 73px;
+  margin: 0px auto 66px;
+}
+.superVip a img {
+  width: 100%;
+  transition: all 0.2s;
+}
+.superVip a:hover img {
+  transform: scale(1.1, 1.1);
+}
+.superVip p {
+  text-align: center;
+  font-size: 27px;
+  color: #fff;
+}
+.zNew {
+  top: 765px;
+  height: 1274px;
+  background-color: #000;
+  background-image: url(../images/qp网易游戏会员俱乐部官网_游戏热爱者必备/qp_035.jpg);
+  position: relative;
+}
+.zNew .zNewCenter {
+  height: 940px;
+}
+.zNew .zNewCenter i {
+  display: block;
+  height: 200px;
+  margin: 0px auto;
+  padding-left: 495px;
+  width: 1200px;
+}
+.zNew .zNewCenter i img {
+  margin: 86px auto 0px;
+}
+.zNew .zNewCenter .zBot {
+  position: absolute;
+  top: 250px;
+  left: 400px;
+  display: flex;
+}
+.zNew .zNewCenter .zBot ul {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.zNew .zNewCenter .zBot ul li a {
+  margin: 0 36px;
+  display: block;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.zNew .zNewCenter .zBot ul li a img {
+  transition: all 0.2s;
+}
+.zNew .zNewCenter .zBot ul li:hover img {
+  transform: scale(1.1, 1.1);
+}
+.dibu {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  margin-top: 710px;
+  left: 100px;
+  height: 50px;
+  color: #919191;
+  overflow: hidden;
+}
+.dibu .yb {
+  margin-left: 48px;
+}
+.dibu .yb a {
+  color: #919191;
+}
+.dibu .yb a:hover {
+  color: red;
+}
+.dibu .yb p {
+  cursor: pointer;
+  margin-top: 5px;
+}
+.dibu .yb p:hover {
+  color: red;
+}
+.fd {
+  width: 26px;
+  height: 46px;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -13px;
+  background: url(../images/qp网易游戏会员俱乐部官网_游戏热爱者必备/qp_028.png) no-repeat;
+  z-index: 5;
+  animation: fly 1s linear infinite;
+}
+@keyframes fly {
+  /* 类似于js 的声明函数 function */
+  0% {
+    top: 95%;
+  }
+  50% {
+    top: 91%;
+  }
+  100% {
+    top: 95%;
+  }
+}
+.fanhuiD {
+  border-radius: 50%;
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  background-color: #0094ff;
+  line-height: 70px;
+  right: 170px;
+  bottom: 165px;
+  display: block;
+  color: #fff;
+  cursor: pointer;
+}

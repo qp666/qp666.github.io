@@ -1,0 +1,626 @@
+
+/* .section .words {
+    position: absolute;
+    z-index: 11;
+} */
+.section1 {
+    /* z-index: 1; */
+}
+.section1 .bg {
+    /* background: url(../images/zx-mp4.jpg) */
+}
+.section1 .words {
+    left: 50%;
+    top: 50%;
+    margin: -130px 0 0 -328px;
+    width: 657px;
+    height: 306px;
+    /* background-color: pink; */
+    opacity: 0;
+}
+.section1 .words.show {
+    opacity: 1;
+    transition: all 2s 1s;
+}
+
+
+.section1 .words .btn-play {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -24px;
+    width: 56px;
+    height: 56px;
+    opacity: 0;
+    transition: all 1s;
+    z-index: 22222;
+}
+
+.section1 .words.show .btn-play { 
+    opacity: 1;
+    -webkit-transition: all 2s 3.5s;
+    transition: all 2s 3.5s;
+} 
+.section1 .words .btn-play:hover img {
+    transform: scale(1.2,1.2);
+}
+.section1 .words .btn-play img {
+    transition: all .5s;
+    transform-origin: 50% 50%;
+}
+.section2 .words,.section3 .words,.section4 .words,.section5 .words,.section6 .words {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1.5s 1s;
+
+}
+
+.section2.animated .words,.section3.animated .words,.section4.animated .words,.section5.animated .words,.section6.animated .words {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.section2.animated .solgen,.section3.animated .solgen,.section4.animated .solgen,.section5.animated .solgen,.section6.animated .solgen {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.section2 .solgen,.section3 .solgen,.section4 .solgen,.section5 .solgen,.section6 .solgen {
+    -ms-transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1.5s 1.5s;
+}
+
+.section1 .words .txt-1, .section1 .words .txt-2, .section1 .words .txt-3, .section1 .words .txt-4, .section1 .words .txt-5 {
+    filter: blur(10px);
+    filter: none\9;
+    position: absolute;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.section1 .words .txt-1 {
+    left: 0;
+    top: 0;
+}
+.section1 .words.show .txt-1 {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    filter: none\9;
+    opacity: 1;
+    -webkit-transition: all 2s 1s;
+    transition: all 2s 1s;
+}
+
+.section1 .words .txt-2{
+    left: 232px;
+    top: 34px;
+}
+.section1 .words.show .txt-2 {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    filter: none\9;
+    -webkit-transition: all 2s 1s;
+    transition: all 2s 1.5s;
+    opacity: 1;
+}
+
+.section1 .words .txt-3{
+    left: 219px;
+    top: 34px;
+}
+.section1 .words.show .txt-3 {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    filter: none\9;
+    -webkit-transition: all 2s 1s;
+    transition: all 2s 2s;
+    opacity: 1;
+}
+
+.section1 .words .txt-4{
+    left: 218px;
+    top: 180px;
+}
+.section1 .words.show .txt-4 {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    filter: none\9;
+    -webkit-transition: all 2s 1s;
+    transition: all 2s 2.5s;
+    opacity: 1;
+}
+
+.section1 .words .txt-5{
+    left: 234px;
+    top: 180px;
+}
+.section1 .words.show .txt-5 {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    filter: none\9;
+    -webkit-transition: all 2s 1s;
+    transition: all 2s 3s;
+    opacity: 1;
+}
+
+
+.section .solgen {
+    display: block;
+    width: 216px;
+    height: 57px;
+    z-index: 12;
+}
+.section2 img,.section3 img,.section4 img,.section5 img,.section6 img{
+    width: 55%;
+}
+
+
+.section2 .bg {
+    background: url(../images/zx_vision_6.jpg)
+}
+.section2 .words {
+    left: 17.1%;
+    top: 38.6%;
+    width: 640px;
+}
+.section2 .solgen {
+    position: relative;
+    left: 14px;
+    top: 40px;
+}
+
+
+.section3 .bg {
+    background: url(../images/zx_vision_3.jpg)
+}
+.section3 .words {
+    right: 9%;
+    top: 38.6%;
+    width: 507px;
+}
+.section3 .solgen {
+    position: relative;
+    left: 14px;
+    top: 40px;
+}
+
+.section4 .bg {
+    background: url(../images/zx_vision_5.jpg)
+}
+.section4 .words {
+    right: 9%;
+    top: 38.6%;
+    width: 427px;
+}
+.section4 .solgen {
+    position: relative;
+    left: 8px;
+    top: 40px;
+}
+
+.section5 .bg {
+    background: url(../images/zx_vision_4.jpg)
+}
+.section5 .words {
+    left: 17.1%;
+    top: 38.6%;
+    width: 403px;
+}
+.section5 .solgen {
+    position: relative;
+    left: 10px;
+    top: 40px;
+}
+
+.section6 .bg {
+    background: url(../images/zx_vision_2.jpg)
+}
+.section6 .words {
+    left: 17.1%;
+    top: 38.6%;
+    width: 446px;
+}
+.section6 .solgen {
+    position: relative;
+    left: 20px;
+    top: 40px;
+}
+.frame.last-page .scrolltips {
+    bottom: 60px;
+    background: url(../images/zx-ico-arrow2.png) 0 0 no-repeat;
+}
+
+
+.section1 .bg {
+    opacity: 0.9;
+}
+
+.section1 video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.section1 .mask {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-image: url(../images/zx_mask.png);
+}
+
+.section .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* bottom: 0; */
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.section .words {
+    position: absolute;
+    z-index: 11;
+}
+
+.section2 .bg,
+.section3 .bg,
+.section4 .bg,
+.section5 .bg,
+.section6 .bg {
+    transition: all 2s;
+    /* transform: scale(1.2, 1.2); */
+    background-size: 110% 110%;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.section.animated .bg {
+    /* transform: scale(1, 1); */
+    background-size: 100% 100%;
+    transition: all 4s linear;
+}
+
+
+
+/* 固定在一个屏幕的css */
+.frame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    /* z-index: auto; */
+    box-sizing: border-box;
+    padding: 70px;
+    /* opacity: 0.9; */
+}
+
+.frame .border {
+    width: 100%;
+    height: 100%;
+    border-left: 3px solid #fff;
+    border-top: 3px solid #fff;
+    background: url(../images/zx_frame_bottom.png) 50% 100% no-repeat;
+    opacity: .2;
+}
+
+.frame .border .inner {
+    width: 100%;
+    height: 100%;
+    background: url(../images/zx_frame_right.png) 100% 50% no-repeat;
+}
+
+.frame .logo {
+    position: absolute;
+    /* z-index: 2; */
+    left: 100px;
+    top: 100px;
+    width: 232px;
+    height: 58px;
+    background: url(../images/zx_logo.png) 0 0 no-repeat;
+    overflow: hidden;
+    text-indent: -30000px;
+}
+
+.frame .circle {
+    position: absolute;
+    right: 64px;
+    top: 50%;
+    margin-top: -42px;
+}
+
+.frame .circle a.active {
+    border: 2px solid #cf0f32;
+    background-color: #cf0f32;
+}
+
+.frame .circle a {
+    display: block;
+    margin-bottom: 12px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #fff;
+    border: 2px solid rgba(255, 255, 255, .2);
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.frame .scrolltips {
+    position: absolute;
+    left: 50%;
+    margin-left: -28px;
+    bottom: 50px;
+    width: 63px;
+    height: 30px;
+    background: url(../images/zx_ico_arrow.png) 0 0 no-repeat;
+    cursor: pointer;
+}
+.sharebox {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    width: 170px;
+    margin-left: -81px;
+    color: #999;
+    /* display: none; */
+    opacity: 0;
+}
+.sharebox span {
+    display: block;
+    text-align: center;
+}
+#share {
+    width: 208px;
+    height: 23px;
+    margin-top: 4px;
+}
+#share ul {
+    display: flex;
+}
+#share>ul>li {
+    width: 24px;
+    height: 24px;
+    margin: 0 3px;
+}
+#share>ul>li>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+#share>ul>li>a {
+    background: url(../images/zx_share_bg.png) no-repeat 0 0;
+}
+#share>ul>li>a:hover {
+    background: url(../images/zx_share_bg.png) no-repeat 0 -23px;
+}
+
+#share>ul>li:nth-child(2)>a {
+    background-position: -28px 0;
+}
+#share>ul>li:nth-child(2)>a:hover {
+    background-position: -28px -23px;
+}
+
+#share>ul>li:nth-child(3)>a {
+    background-position: -56px 0;
+}
+#share>ul>li:nth-child(3)>a:hover {
+    background-position: -56px -23px;
+}
+
+#share>ul>li:nth-child(4)>a {
+    background-position: -86px 0;
+}
+#share>ul>li:nth-child(4)>a:hover {
+    background-position: -86px -23px;
+}
+
+#share>ul>li:nth-child(5)>a {
+    background-position: -116px 0;
+}
+#share>ul>li:nth-child(5)>a:hover {
+    background-position: -116px -23px;
+}
+
+#share>ul>li:nth-child(6)>a {
+    background-position: -144px 0;
+}
+#share>ul>li:nth-child(6)>a:hover {
+    background-position: -144px -23px;
+}
+
+#share .more {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 188px;
+    left: -14px;
+    bottom: 22px;
+}
+#share .more ul {
+    flex-wrap: wrap;
+}
+#share .more li {
+    height: 24px;
+    width: 50%;
+    line-height: 24px;
+}
+#share .more li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    font-size: 12px;
+    border: 1px solid #fff;
+}
+#share .more li a:hover {
+    color: #000;
+    background-color: #f0f0f0;
+    border: 1px solid #e0e0e0;
+    text-decoration: none;
+}
+#share .more li a i {
+    display: block;
+    float: left;
+    width: 26px;
+    height: 24px;
+    margin: 1px 3px;
+    background: url(../images/zx_icon.v5.png);
+    background-position: 5px -348px;
+}
+
+#share .more ul li:nth-child(2) a i {
+    background-position: 5px -323px;
+}
+#share .more ul li:nth-child(3) a i {
+    background-position: 5px -23px;
+}
+#share .more ul li:nth-child(4) a i {
+    background-position: 5px 2px;
+}
+#share .more ul li:nth-child(5) a i {
+    background-position: 5px -173px;
+}
+#share .more ul li:nth-child(6) a i {
+    background-position: 5px -48px;
+}
+#share .more ul li:nth-child(7) a i {
+    background-position: 5px -473px;
+}
+#share .more ul li:nth-child(8) a i {
+    background-position: 5px -73px;
+}
+#share .more ul li:nth-child(9) a i {
+    background-position: 5px -123px;
+}
+#share .more ul li:nth-child(10) a i {
+    background-position: 5px -148px;
+}
+#share .more ul li:nth-child(11) a i {
+    background-position: 5px -248px;
+}
+#share .more ul li:nth-child(12) a i {
+    background-position: 5px -298px;
+}
+#share .more ul li:nth-child(13) a i {
+    background-position: 5px -448px;
+}
+#share .more ul li:nth-child(14) a i {
+    background-position: 5px -423px;
+}
+
+
+
+
+/* menu 模块 */
+#menu {
+    position: absolute;
+    right: 85px;
+    top: 85px;
+    z-index: 20;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    /* -webkit-transition: width .5s; */
+    transition: width .5s;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+#menu.active {
+    width: 60%;
+}
+#menu.active .icon-menu {
+    display: none;
+}
+#menu.active .menu_toggle .icon-close {
+    opacity: 1;
+    background-position: -200px 0;
+}
+#menu .menu_toggle {
+    position: relative;
+    float: right;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#menu .menu_toggle .icon-close {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    filter: alpha(Opacity=0);
+    opacity: 0;
+    background-position: -200px 0;
+}
+
+#menu .menu_toggle:hover .icon-close {
+    background-position: -300px 0;
+}
+#menu .menu_toggle .icon-close:hover {
+    background-position: -300px 0;
+    background-color: #fff;
+}
+
+#menu .menu_toggle .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/zx_btn_menu.png) 0 0 no-repeat;
+}
+
+#menu .menu_holder {
+    padding-left: 25px;
+    font-size: 16px;
+    color: #fff;
+    white-space: nowrap;
+}
+
+#menu .menu_holder a:hover {
+    color: #ccc;
+    text-decoration: none;
+}
+
+#menu .menu_holder a {
+    padding: 0 25px;
+    color: #fff;
+}
+
+#menu .menu_holder a,
+#menu .menu_holder span {
+    float: left;
+    line-height: 100px;
+}
+/* #menu .icon-menu:hover {
+    background-color: #fff;
+    background-position: -100px 0;
+} */
+#menu .menu_toggle:hover .icon-menu {
+    background-position: -100px 0;
+}

@@ -1,0 +1,1369 @@
+.w {
+  width: 1260px;
+  margin: 0 auto;
+}
+.topBar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  height: 100px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.topBar .container {
+  height: 100%;
+  position: relative;
+}
+.topBar .container h1 {
+  margin: 21px 0;
+  width: 177px;
+  height: 58px;
+  float: left;
+}
+.topBar .container h1 a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.topBar .container h1 a img {
+  width: 100%;
+}
+.topBar .container #list {
+  float: left;
+  margin-left: 94px;
+  display: flex;
+  height: 100%;
+  line-height: 100px;
+}
+.topBar .container #list li {
+  margin: 0 20px;
+  height: 100%;
+  font-size: 16px;
+}
+.topBar .container #list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #818181;
+}
+.topBar .container #list li a:hover {
+  color: #cf1132;
+}
+.topBar .container #list .point {
+  width: 4px;
+  height: 100%;
+  margin: 0;
+}
+.topBar .container .topOpen {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 120px;
+  height: 120px;
+  background-color: #cf1132;
+  padding-top: 38px;
+  text-align: center;
+}
+.topBar .container .topOpen .ico {
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: url('../images/zsj_topBar_z.png') 0 0;
+  margin: 0 auto;
+}
+.topBar .container .topOpen span {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 30px;
+}
+.topBar .container .open {
+  background: #282b2d;
+}
+.topBar .container .open .ico {
+  background-position: -34px 0;
+}
+.topBar .container .open span {
+  display: none;
+}
+.topBar .container .topNav {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  width: 100%;
+  background-color: #282b2d;
+  height: 847px;
+  display: none;
+}
+.topBar .container .topNav p {
+  position: relative;
+  font-size: 20px;
+  line-height: 20px;
+  text-indent: 25px;
+  margin: 40px 40px 25px;
+  color: #ffffff;
+  height: 20px;
+}
+.topBar .container .topNav p span {
+  float: right;
+  color: #f2ebeb;
+  font-size: 12px;
+  text-indent: 5px;
+}
+.topBar .container .topNav p span i {
+  margin-top: 4px;
+  float: left;
+  display: block;
+  width: 11px;
+  height: 11px;
+  background: url('../images/zsj_topBar_z.png') no-repeat -56px -34px;
+  margin-left: 30px;
+}
+.topBar .container .topNav p span .icon-H {
+  background-position-y: -48px;
+}
+.topBar .container .topNav .nav-box-left,
+.topBar .container .topNav .nav-box-right {
+  position: relative;
+  width: 446px;
+  height: 762px;
+  float: left;
+}
+.topBar .container .topNav .nav-box-left .tit,
+.topBar .container .topNav .nav-box-right .tit {
+  line-height: 50px;
+  font-size: 16px;
+  height: 50px;
+  width: 446px;
+  background: #35373a;
+  border-right: 1px solid #454545;
+  color: #dd1136;
+  float: left;
+}
+.topBar .container .topNav .nav-box-left .tit .line,
+.topBar .container .topNav .nav-box-right .tit .line {
+  display: block;
+  width: 4px;
+  height: 16px;
+  background-color: #dd1136;
+  float: left;
+  margin-top: 17px;
+  margin-right: 36px;
+}
+.topBar .container .topNav .nav-box-left .nav-li-left,
+.topBar .container .topNav .nav-box-right .nav-li-left,
+.topBar .container .topNav .nav-box-left .nav-li-right,
+.topBar .container .topNav .nav-box-right .nav-li-right {
+  width: 299px;
+  padding-top: 24px;
+  overflow: hidden;
+  border-right: 1px solid #454545;
+  height: 712px;
+  float: left;
+}
+.topBar .container .topNav .nav-box-left .nav-li-left .li-tit,
+.topBar .container .topNav .nav-box-right .nav-li-left .li-tit,
+.topBar .container .topNav .nav-box-left .nav-li-right .li-tit,
+.topBar .container .topNav .nav-box-right .nav-li-right .li-tit {
+  font-size: 14px;
+  color: #6b6b6c;
+  font-weight: 700;
+  margin-bottom: 19px;
+  text-indent: 40px;
+}
+.topBar .container .topNav .nav-box-left .nav-li-left .nav-li,
+.topBar .container .topNav .nav-box-right .nav-li-left .nav-li,
+.topBar .container .topNav .nav-box-left .nav-li-right .nav-li,
+.topBar .container .topNav .nav-box-right .nav-li-right .nav-li {
+  width: 100%;
+  padding-left: 36px;
+}
+.topBar .container .topNav .nav-box-left .nav-li-left .nav-li li,
+.topBar .container .topNav .nav-box-right .nav-li-left .nav-li li,
+.topBar .container .topNav .nav-box-left .nav-li-right .nav-li li,
+.topBar .container .topNav .nav-box-right .nav-li-right .nav-li li {
+  width: 125px;
+  float: left;
+}
+.topBar .container .topNav .nav-box-left .nav-li-left .nav-li li:nth-child(even),
+.topBar .container .topNav .nav-box-right .nav-li-left .nav-li li:nth-child(even),
+.topBar .container .topNav .nav-box-left .nav-li-right .nav-li li:nth-child(even),
+.topBar .container .topNav .nav-box-right .nav-li-right .nav-li li:nth-child(even) {
+  margin-left: 11px;
+}
+.topBar .container .topNav .nav-box-left .nav-li-left .nav-li li a,
+.topBar .container .topNav .nav-box-right .nav-li-left .nav-li li a,
+.topBar .container .topNav .nav-box-left .nav-li-right .nav-li li a,
+.topBar .container .topNav .nav-box-right .nav-li-right .nav-li li a {
+  line-height: 28px;
+}
+.topBar .container .topNav .nav-box-left .nav-li-left .nav-li li a span,
+.topBar .container .topNav .nav-box-right .nav-li-left .nav-li li a span,
+.topBar .container .topNav .nav-box-left .nav-li-right .nav-li li a span,
+.topBar .container .topNav .nav-box-right .nav-li-right .nav-li li a span {
+  color: #c3c3c3;
+  font-size: 14px;
+  float: left;
+}
+.topBar .container .topNav .nav-box-left .nav-li-left .nav-li li a .ico-F,
+.topBar .container .topNav .nav-box-right .nav-li-left .nav-li li a .ico-F,
+.topBar .container .topNav .nav-box-left .nav-li-right .nav-li li a .ico-F,
+.topBar .container .topNav .nav-box-right .nav-li-right .nav-li li a .ico-F,
+.topBar .container .topNav .nav-box-left .nav-li-left .nav-li li a .ico-H,
+.topBar .container .topNav .nav-box-right .nav-li-left .nav-li li a .ico-H,
+.topBar .container .topNav .nav-box-left .nav-li-right .nav-li li a .ico-H,
+.topBar .container .topNav .nav-box-right .nav-li-right .nav-li li a .ico-H,
+.topBar .container .topNav .nav-box-left .nav-li-left .nav-li li a .ico-N,
+.topBar .container .topNav .nav-box-right .nav-li-left .nav-li li a .ico-N,
+.topBar .container .topNav .nav-box-left .nav-li-right .nav-li li a .ico-N,
+.topBar .container .topNav .nav-box-right .nav-li-right .nav-li li a .ico-N {
+  float: left;
+  display: block;
+  width: 18px;
+  height: 9px;
+  margin-left: 5px;
+  margin-top: 10px;
+  background: url('../images/zsj_topBar_z.png') no-repeat -68px 0px;
+}
+.topBar .container .topNav .nav-box-left .nav-li-left .nav-li li a .ico-H,
+.topBar .container .topNav .nav-box-right .nav-li-left .nav-li li a .ico-H,
+.topBar .container .topNav .nav-box-left .nav-li-right .nav-li li a .ico-H,
+.topBar .container .topNav .nav-box-right .nav-li-right .nav-li li a .ico-H,
+.topBar .container .topNav .nav-box-left .nav-li-left .nav-li li a .ico-N,
+.topBar .container .topNav .nav-box-right .nav-li-left .nav-li li a .ico-N,
+.topBar .container .topNav .nav-box-left .nav-li-right .nav-li li a .ico-N,
+.topBar .container .topNav .nav-box-right .nav-li-right .nav-li li a .ico-N {
+  width: 11px;
+  height: 11px;
+  margin-top: 8px;
+  background-position: -56px -48px;
+}
+.topBar .container .topNav .nav-box-left .nav-li-left .nav-li li a .ico-N,
+.topBar .container .topNav .nav-box-right .nav-li-left .nav-li li a .ico-N,
+.topBar .container .topNav .nav-box-left .nav-li-right .nav-li li a .ico-N,
+.topBar .container .topNav .nav-box-right .nav-li-right .nav-li li a .ico-N {
+  background-position-y: -34px;
+}
+.topBar .container .topNav .nav-box-left .nav-li-right,
+.topBar .container .topNav .nav-box-right .nav-li-right {
+  width: 147px;
+}
+.topBar .container .topNav .nav-box-left .nav-li-right .nav-li li:nth-child(even),
+.topBar .container .topNav .nav-box-right .nav-li-right .nav-li li:nth-child(even) {
+  margin-left: 0px;
+}
+.topBar .container .topNav .nav-box-left .line {
+  margin-left: 40px;
+}
+.topBar .container .topNav .nav-box-right {
+  width: 814px;
+}
+.topBar .container .topNav .nav-box-right .tit {
+  width: 814px;
+  border-right: 0;
+}
+.topBar .container .topNav .nav-box-right .nav-li-left {
+  width: 177px;
+}
+.topBar .container .topNav .nav-box-right .nav-li-left .nav-li li:nth-child(even) {
+  margin-left: 0px;
+}
+.topBar .container .topNav .nav-box-right .nav-li-right {
+  width: 637px;
+  border-right: 0;
+}
+.topBar .container .topNav .nav-box-right .nav-li-right .nav-li li {
+  width: 146px;
+}
+.headbox {
+  height: 950px;
+  width: 100%;
+  position: relative;
+}
+.headbox #imgGroup {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.headbox #imgGroup li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.headbox #imgGroup li:first-child {
+  display: block;
+}
+.headbox #imgGroup li img {
+  width: 100%;
+  height: 100%;
+}
+.headbox #imgGroup li a {
+  display: block;
+  position: absolute;
+  width: 1260px;
+  height: 500px;
+  top: 100px;
+  left: 322px;
+  color: #ffffff;
+}
+.headbox #imgGroup li a .h-tit {
+  width: 452px;
+  position: absolute;
+  top: 165px;
+}
+.headbox #imgGroup li a .h-tit h2 {
+  font-size: 36px;
+  line-height: 52px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.headbox #imgGroup li a .h-tit h3 {
+  font-size: 36px;
+  line-height: 52px;
+  padding-bottom: 10px;
+  border-bottom: 1px #cf1132 solid;
+  overflow: hidden;
+}
+.headbox #imgGroup li a .h-tit p {
+  margin: 15px 0 30px;
+  font-size: 14px;
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.headbox #imgGroup li a .h-tit i {
+  width: 140px;
+  height: 50px;
+  display: block;
+  background: url('../images/zsj_btn.png') no-repeat;
+}
+.headbox #imgGroup li a .left {
+  left: 40px;
+}
+.headbox #imgGroup li a .right {
+  right: 40px;
+}
+.headbox .head-ctrl-box {
+  position: absolute;
+  width: 1260px;
+  height: 0;
+  left: 50%;
+  margin-left: -630px;
+  bottom: 390px;
+}
+.headbox .head-ctrl-box .head-ctrl {
+  position: relative;
+  width: 200px;
+  float: right;
+  height: 40px;
+  text-align: right;
+}
+.headbox .head-ctrl-box .head-ctrl a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 4px;
+  background-repeat: no-repeat;
+  background-image: url('../images/zsj_index_z.png');
+  background-position: -37px 0;
+}
+.headbox .head-ctrl-box .head-ctrl a:hover {
+  background-position: 0 -37px;
+}
+.headbox .head-ctrl-box .head-ctrl .title-hide-a {
+  overflow: hidden;
+  text-indent: -9999px;
+  color: transparent;
+}
+.headbox .head-ctrl-box .head-ctrl .cur {
+  background-position: 0 -37px;
+}
+.headbox .head-sel {
+  position: absolute;
+  top: 50%;
+  background: #cf0f32;
+  width: 45px;
+  height: 80px;
+  z-index: 5;
+}
+.headbox .head-sel i {
+  position: absolute;
+  width: 8px;
+  height: 13px;
+  right: 50%;
+  top: 50%;
+  margin-left: -4px;
+  margin-top: -7px;
+}
+.headbox .sel-box {
+  position: absolute;
+  top: 0;
+  left: 251px;
+  width: 230px;
+  height: 80px;
+  padding: 10px;
+  background: #3c3d3f;
+  overflow: hidden;
+  border-left: #767878 1px solid;
+}
+.headbox .sel-box .s-img {
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  width: 80px;
+  height: 60px;
+  overflow: hidden;
+}
+.headbox .sel-box .s-img img {
+  width: 100%;
+  height: 100%;
+}
+.headbox .sel-box h2 {
+  color: #fff;
+  font-size: 20px;
+  line-height: 32px;
+  height: 32px;
+  overflow: hidden;
+}
+.headbox .sel-box p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 28px;
+  height: 28px;
+  overflow: hidden;
+}
+.headbox .head-prev {
+  left: 0;
+}
+.headbox .head-prev i {
+  background: url('../images/zsj_prev_i.png') no-repeat;
+}
+.headbox .head-prev .prev-box {
+  left: 45px;
+  display: none;
+}
+.headbox .head-prev:hover {
+  background-color: #3c3d3f;
+}
+.headbox .head-prev:hover .prev-box {
+  display: block;
+}
+.headbox .head-next {
+  right: 0;
+}
+.headbox .head-next i {
+  background: url('../images/zsj_next_i.png') no-repeat;
+}
+.headbox .head-next .next-box {
+  left: -230px;
+  border-right: 1px solid #767878;
+  display: none;
+}
+.headbox .head-next:hover {
+  background-color: #3c3d3f;
+}
+.headbox .head-next:hover .next-box {
+  display: block;
+}
+.headbox .head-content {
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  left: 50%;
+  margin-left: -50%;
+  top: 600px;
+}
+.headbox .head-content .con-box {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  background: #272a2c;
+}
+.headbox .head-content .con-box .con-banBox {
+  width: 720px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+}
+.headbox .head-content .con-box .con-banBox .pic-news-ctrl {
+  width: 210px;
+  height: 100%;
+  float: left;
+}
+.headbox .head-content .con-box .con-banBox .pic-news-ctrl a {
+  display: block;
+  border-left: 4px solid transparent;
+  padding: 15px 10px 0 12px;
+  height: 70px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.headbox .head-content .con-box .con-banBox .pic-news-ctrl a img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  float: left;
+}
+.headbox .head-content .con-box .con-banBox .pic-news-ctrl a em {
+  display: block;
+  overflow: hidden;
+  font-style: normal;
+}
+.headbox .head-content .con-box .con-banBox .pic-news-ctrl a em span {
+  display: block;
+  font-size: 14px;
+  color: #c3c3c3;
+  line-height: 20px;
+  margin-bottom: 3px;
+  height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  font-weight: 700;
+}
+.headbox .head-content .con-box .con-banBox .pic-news-ctrl a em i {
+  display: block;
+  color: #5c6266;
+  font-size: 12px;
+  line-height: 16px;
+  font-style: normal;
+  height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.headbox .head-content .con-box .con-banBox .pic-news-ctrl a .i-triangle {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: -16px;
+  border-style: solid;
+  border-width: 8px;
+  border-color: transparent transparent transparent #080909;
+  margin-top: -8px;
+  z-index: 2;
+  width: 0;
+  height: 0;
+}
+.headbox .head-content .con-box .con-banBox .pic-news-ctrl a:hover {
+  border-color: #cf0f32;
+  background: #080909;
+}
+.headbox .head-content .con-box .con-banBox .pic-news-ctrl a:hover em span {
+  color: #fff;
+}
+.headbox .head-content .con-box .con-banBox .pic-news-ctrl a:hover .i-triangle {
+  display: block;
+}
+.headbox .head-content .con-box .con-banBox .pic-news-ctrl .cur {
+  border-color: #cf0f32;
+  background: #080909;
+}
+.headbox .head-content .con-box .con-banBox .pic-news-ctrl .cur em span {
+  color: #fff;
+}
+.headbox .head-content .con-box .con-banBox .pic-news-ctrl .cur .i-triangle {
+  display: block;
+}
+.headbox .head-content .con-box .con-banBox .pic-news-wrap {
+  width: 510px;
+  height: 510px;
+  float: left;
+  overflow: hidden;
+}
+.headbox .head-content .con-box .con-banBox .pic-news-wrap a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 1s;
+}
+.headbox .head-content .con-box .con-banBox .pic-news-wrap a:hover {
+  transform: scale(1.1);
+}
+.headbox .head-content .con-box .con-banBox .pic-news-wrap a img {
+  width: 100%;
+}
+.headbox .head-content .con-box .con-listBox {
+  width: 540px;
+  height: 100%;
+  position: absolute;
+  padding: 20px 40px 0;
+  background: #282b2d;
+  overflow: hidden;
+  right: 0;
+}
+.headbox .head-content .con-box .con-listBox .morenews {
+  background: url('../images/zsj_index_z.png') no-repeat 0 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 37px;
+  height: 37px;
+}
+.headbox .head-content .con-box .con-listBox .con-newsBox {
+  width: 100%;
+  height: 310px;
+  overflow: hidden;
+}
+.headbox .head-content .con-box .con-listBox .con-newsBox .hotnews {
+  font-size: 24px;
+  color: #cf0f32;
+  padding-bottom: 14px;
+  border-bottom: 1px #3d4041 solid;
+  display: block;
+  font-weight: 700;
+  height: 77px;
+  line-height: 31px;
+}
+.headbox .head-content .con-box .con-listBox .con-newsBox .hotnews:hover {
+  color: #e41f43;
+}
+.headbox .head-content .con-box .con-listBox .con-newsBox .newsBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 14px;
+}
+.headbox .head-content .con-box .con-listBox .con-newsBox .newsBox .tips {
+  height: 25px;
+  line-height: 25px;
+  background: #333638;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+.headbox .head-content .con-box .con-listBox .con-newsBox .newsBox .tips i {
+  width: 45px;
+  height: 25px;
+  background: url('../images/zsj_xxss_ico.png') no-repeat;
+  float: left;
+  margin-right: 10px;
+}
+.headbox .head-content .con-box .con-listBox .con-newsBox .newsBox .tips a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+.headbox .head-content .con-box .con-listBox .con-newsBox .newsBox .newsBoxList {
+  position: relative;
+  width: 100%;
+}
+.headbox .head-content .con-box .con-listBox .con-newsBox .newsBox .newsBoxList li {
+  height: 31px;
+  line-height: 31px;
+}
+.headbox .head-content .con-box .con-listBox .con-newsBox .newsBox .newsBoxList li a {
+  width: 400px;
+  height: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #c3c3c3;
+  float: left;
+  font-size: 14px;
+  text-indent: 22px;
+  background: url('../images/zsj_n_icon.png') 0 center no-repeat;
+}
+.headbox .head-content .con-box .con-listBox .con-newsBox .newsBox .newsBoxList li a:hover {
+  color: #fff;
+  font-weight: 700;
+}
+.headbox .head-content .con-box .con-listBox .con-newsBox .newsBox .newsBoxList li span {
+  float: right;
+  font-size: 14px;
+  color: #727272;
+}
+.con-activity {
+  background: #f6f7fb;
+  width: 100%;
+}
+.con-activity .con-box {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.con-activity .con-box .activity-list {
+  margin-left: -20px;
+  position: relative;
+  padding: 40px 0;
+}
+.con-activity .con-box .activity-list li {
+  float: left;
+  position: relative;
+  margin-left: 20px;
+  height: 130px;
+  overflow: hidden;
+}
+.con-activity .con-box .activity-list li .act-line {
+  position: absolute;
+  top: 19px;
+  left: 16px;
+  height: 2px;
+  width: 20px;
+  background: #ea4040;
+  transition: ease-in-out 0.3s all;
+}
+.con-activity .con-box .activity-list li:hover .act-line {
+  width: 41px;
+}
+.con-hotgame {
+  background-color: #f6f7fb;
+  width: 100%;
+}
+.con-hotgame .con-box {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.con-hotgame .con-box .hotBox {
+  padding: 50px 0;
+  width: 960px;
+  float: left;
+}
+.con-hotgame .con-box .hotBox .con-tit {
+  position: relative;
+  line-height: 22px;
+  font-size: 22px;
+  color: #272a2c;
+  display: block;
+  text-indent: 15px;
+  border-left: 4px #cf1132 solid;
+  margin-bottom: 30px;
+}
+.con-hotgame .con-box .hotBox .con-tit .reload {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 16px;
+  color: #272a2c;
+  height: 20px;
+  line-height: 20px;
+  display: block;
+}
+.con-hotgame .con-box .hotBox .con-tit .reload i {
+  display: inline-block;
+  width: 20px;
+  height: 17px;
+  margin-left: 10px;
+  transform: rotate(360deg);
+  background: url('../images/zsj_index_z.png') no-repeat -20px -37px;
+}
+.con-hotgame .con-box .hotBox .hot-all {
+  position: relative;
+  width: 100%;
+  height: 708px;
+}
+.con-hotgame .con-box .hotBox .hot-all .hot-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.con-hotgame .con-box .hotBox .hot-all .hot-wrap .hot-box {
+  opacity: 1;
+  float: left;
+  width: 300px;
+  height: 318px;
+  margin: 0 20px 20px 0;
+  background: #fff;
+  position: relative;
+  transform-origin: center center;
+  animation: scaleDraw 1s ease-in-out;
+}
+@keyframes scaleDraw {
+  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+  0% {
+    transform: scale(0);
+    opacity: 0;
+    /*开始为原始大小*/
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scaleDraw2 {
+  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    /*开始为原始大小*/
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+.con-hotgame .con-box .hotBox .hot-all .hot-wrap .hot-box .hotlink {
+  display: block;
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+}
+.con-hotgame .con-box .hotBox .hot-all .hot-wrap .hot-box .hotlink .hot-bg-img {
+  width: 300px;
+  height: 170px;
+}
+.con-hotgame .con-box .hotBox .hot-all .hot-wrap .hot-box .hotlink .hot-font {
+  position: absolute;
+  width: 400px;
+  height: 176px;
+  top: -100%;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+.con-hotgame .con-box .hotBox .hot-all .hot-wrap .hot-box .hotlink:hover .hot-font {
+  top: 0;
+  opacity: 1;
+}
+.con-hotgame .con-box .hotBox .hot-all .hot-wrap .hot-box .hot-tit {
+  color: #383838;
+  font: 700 20px/32px "Microsoft YaHei";
+  margin: 13px 20px 2px;
+  height: 32px;
+  overflow: hidden;
+}
+.con-hotgame .con-box .hotBox .hot-all .hot-wrap .hot-box .hot-txt {
+  margin: 0 16px 13px;
+  font: 14px "Microsoft YaHei";
+  color: #b1b1b1;
+  line-height: 22px;
+  padding: 0 2px;
+  height: 45px;
+  overflow: hidden;
+  position: relative;
+}
+.con-hotgame .con-box .hotBox .hot-all .hot-wrap .hot-box .gw-link {
+  position: absolute;
+  bottom: 8px;
+  right: 20px;
+  width: 88px;
+  height: 30px;
+  display: block;
+  background: url('../images/zsj_arrow.png') no-repeat right center;
+  font: 12px/30px "Micosoft YaHei";
+  text-align: center;
+  color: #9f9f9f;
+}
+.con-hotgame .con-box .hotBox .hot-all .hot-wrap .hot-box .gw-link:hover {
+  color: #e41f43;
+}
+.con-hotgame .con-box .hotBox .hot-all .hot-wrap .hot-box::after {
+  content: "";
+  position: absolute;
+  margin: 0 16px;
+  background: #ededed;
+  height: 1px;
+  left: 0;
+  bottom: 43px;
+  width: 268px;
+}
+.con-hotgame .con-box .hotBox .hot-all .hot-wrap:first-child {
+  display: block;
+}
+.con-hotgame .con-box .newGameBox {
+  padding: 50px 0;
+  overflow: hidden;
+}
+.con-hotgame .con-box .newGameBox .con-tit {
+  position: relative;
+  line-height: 22px;
+  font-size: 22px;
+  color: #272a2c;
+  display: block;
+  text-indent: 15px;
+  border-left: 4px #cf1132 solid;
+  margin-bottom: 30px;
+}
+.con-hotgame .con-box .newGameBox .gameList {
+  border: solid 1px #ededed;
+  background: #fff;
+}
+.con-hotgame .con-box .newGameBox .gameList li {
+  height: 109px;
+  border-top: solid 1px #ededed;
+  position: relative;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+}
+.con-hotgame .con-box .newGameBox .gameList li:hover {
+  background: #f0f2f7;
+}
+.con-hotgame .con-box .newGameBox .gameList li:hover a .game-arrow {
+  background: url('../images/zsj_gt_hover.png') no-repeat;
+}
+.con-hotgame .con-box .newGameBox .gameList li a {
+  display: block;
+  width: 100%;
+  padding: 20px 42px 0 26px;
+  height: 100%;
+}
+.con-hotgame .con-box .newGameBox .gameList li a img {
+  width: 68px;
+  height: 68px;
+  float: left;
+  margin-right: 22px;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px rgba(66, 63, 105, 0.4);
+}
+.con-hotgame .con-box .newGameBox .gameList li a p em {
+  display: block;
+  font-size: 16px;
+  color: #555;
+  line-height: 22px;
+  height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: 700;
+}
+.con-hotgame .con-box .newGameBox .gameList li a p span {
+  display: block;
+  font-size: 14px;
+  color: #999;
+  line-height: 24px;
+  height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.con-hotgame .con-box .newGameBox .gameList li a p .game-time {
+  font-size: 12px;
+}
+.con-hotgame .con-box .newGameBox .gameList li a p .game-time i {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 13px;
+  height: 13px;
+  margin-right: 7px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background: url('../images/zsj_index_z.png') no-repeat -37px -20px;
+}
+.con-hotgame .con-box .newGameBox .gameList li a p .game-arrow {
+  position: absolute;
+  width: 15px;
+  height: 28px;
+  background: url('../images/zsj_gt.png') no-repeat;
+  top: 50%;
+  right: 20px;
+  margin-top: -14px;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+}
+.con-show {
+  position: relative;
+  z-index: 2000;
+  padding: 0 0 40px;
+  min-height: 425px;
+  width: 100%;
+}
+.con-show .showNav {
+  position: relative;
+  height: 460px;
+  overflow: hidden;
+  transition: height ease-out 0.3s 0.1s;
+  -webkit-transition: height ease-out 0.3s 0.1s;
+}
+.con-show .showNav .nav-box-left,
+.con-show .showNav .nav-box-right {
+  width: 445px;
+  position: relative;
+  float: left;
+  height: 100%;
+}
+.con-show .showNav .nav-box-left .tit,
+.con-show .showNav .nav-box-right .tit {
+  border-left: 1px solid transparent;
+  padding: 25px 0;
+  background: #333638;
+  height: 66px;
+}
+.con-show .showNav .nav-box-left .tit .line,
+.con-show .showNav .nav-box-right .tit .line {
+  border-left: 4px #dd1136 solid;
+  height: 16px;
+  line-height: 16px;
+  text-indent: 36px;
+  display: block;
+  color: #c3c3c3;
+  float: left;
+}
+.con-show .showNav .nav-box-left .tit span,
+.con-show .showNav .nav-box-right .tit span {
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: 700;
+  float: left;
+  text-indent: 36px;
+  color: #f1f1f1;
+}
+.con-show .showNav .nav-box-left .nav-li-left,
+.con-show .showNav .nav-box-right .nav-li-left,
+.con-show .showNav .nav-box-left .nav-li-right,
+.con-show .showNav .nav-box-right .nav-li-right {
+  width: 298px;
+  height: 100%;
+  padding-top: 20px;
+  float: left;
+}
+.con-show .showNav .nav-box-left .nav-li-left .li-tit,
+.con-show .showNav .nav-box-right .nav-li-left .li-tit,
+.con-show .showNav .nav-box-left .nav-li-right .li-tit,
+.con-show .showNav .nav-box-right .nav-li-right .li-tit {
+  position: relative;
+  font-size: 14px;
+  color: #c21d35;
+  text-indent: 38px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.con-show .showNav .nav-box-left .nav-li-left .nav-li,
+.con-show .showNav .nav-box-right .nav-li-left .nav-li,
+.con-show .showNav .nav-box-left .nav-li-right .nav-li,
+.con-show .showNav .nav-box-right .nav-li-right .nav-li {
+  padding-left: 36px;
+  width: 100%;
+}
+.con-show .showNav .nav-box-left .nav-li-left .nav-li li,
+.con-show .showNav .nav-box-right .nav-li-left .nav-li li,
+.con-show .showNav .nav-box-left .nav-li-right .nav-li li,
+.con-show .showNav .nav-box-right .nav-li-right .nav-li li {
+  width: 125px;
+  float: left;
+}
+.con-show .showNav .nav-box-left .nav-li-left .nav-li li:nth-child(even),
+.con-show .showNav .nav-box-right .nav-li-left .nav-li li:nth-child(even),
+.con-show .showNav .nav-box-left .nav-li-right .nav-li li:nth-child(even),
+.con-show .showNav .nav-box-right .nav-li-right .nav-li li:nth-child(even) {
+  margin-left: 11px;
+}
+.con-show .showNav .nav-box-left .nav-li-left .nav-li li a,
+.con-show .showNav .nav-box-right .nav-li-left .nav-li li a,
+.con-show .showNav .nav-box-left .nav-li-right .nav-li li a,
+.con-show .showNav .nav-box-right .nav-li-right .nav-li li a {
+  color: #f1f1f1;
+  font-size: 14px;
+  line-height: 28px;
+}
+.con-show .showNav .nav-box-left .nav-li-left .nav-li li a:hover,
+.con-show .showNav .nav-box-right .nav-li-left .nav-li li a:hover,
+.con-show .showNav .nav-box-left .nav-li-right .nav-li li a:hover,
+.con-show .showNav .nav-box-right .nav-li-right .nav-li li a:hover {
+  font-weight: 700;
+  color: #f1f1f1;
+}
+.con-show .showNav .nav-box-left .nav-li-left .nav-li li a span,
+.con-show .showNav .nav-box-right .nav-li-left .nav-li li a span,
+.con-show .showNav .nav-box-left .nav-li-right .nav-li li a span,
+.con-show .showNav .nav-box-right .nav-li-right .nav-li li a span {
+  float: left;
+}
+.con-show .showNav .nav-box-left .nav-li-left .nav-li li a .ico-F,
+.con-show .showNav .nav-box-right .nav-li-left .nav-li li a .ico-F,
+.con-show .showNav .nav-box-left .nav-li-right .nav-li li a .ico-F,
+.con-show .showNav .nav-box-right .nav-li-right .nav-li li a .ico-F,
+.con-show .showNav .nav-box-left .nav-li-left .nav-li li a .ico-H,
+.con-show .showNav .nav-box-right .nav-li-left .nav-li li a .ico-H,
+.con-show .showNav .nav-box-left .nav-li-right .nav-li li a .ico-H,
+.con-show .showNav .nav-box-right .nav-li-right .nav-li li a .ico-H,
+.con-show .showNav .nav-box-left .nav-li-left .nav-li li a .ico-N,
+.con-show .showNav .nav-box-right .nav-li-left .nav-li li a .ico-N,
+.con-show .showNav .nav-box-left .nav-li-right .nav-li li a .ico-N,
+.con-show .showNav .nav-box-right .nav-li-right .nav-li li a .ico-N {
+  float: left;
+  display: block;
+  width: 18px;
+  height: 9px;
+  margin-left: 5px;
+  margin-top: 10px;
+  background: url('../images/zsj_topBar_z.png') no-repeat -68px 0px;
+}
+.con-show .showNav .nav-box-left .nav-li-left .nav-li li a .ico-H,
+.con-show .showNav .nav-box-right .nav-li-left .nav-li li a .ico-H,
+.con-show .showNav .nav-box-left .nav-li-right .nav-li li a .ico-H,
+.con-show .showNav .nav-box-right .nav-li-right .nav-li li a .ico-H,
+.con-show .showNav .nav-box-left .nav-li-left .nav-li li a .ico-N,
+.con-show .showNav .nav-box-right .nav-li-left .nav-li li a .ico-N,
+.con-show .showNav .nav-box-left .nav-li-right .nav-li li a .ico-N,
+.con-show .showNav .nav-box-right .nav-li-right .nav-li li a .ico-N {
+  width: 11px;
+  height: 11px;
+  margin-top: 8px;
+  background-position: -56px -48px;
+}
+.con-show .showNav .nav-box-left .nav-li-left .nav-li li a .ico-N,
+.con-show .showNav .nav-box-right .nav-li-left .nav-li li a .ico-N,
+.con-show .showNav .nav-box-left .nav-li-right .nav-li li a .ico-N,
+.con-show .showNav .nav-box-right .nav-li-right .nav-li li a .ico-N {
+  background-position-y: -34px;
+}
+.con-show .showNav .nav-box-left .nav-li-left,
+.con-show .showNav .nav-box-right .nav-li-left {
+  border-left: 0;
+}
+.con-show .showNav .nav-box-left .nav-li-right,
+.con-show .showNav .nav-box-right .nav-li-right {
+  width: 147px;
+}
+.con-show .showNav .nav-box-left .nav-li-right .nav-li li:nth-child(even),
+.con-show .showNav .nav-box-right .nav-li-right .nav-li li:nth-child(even) {
+  margin-left: 0;
+}
+.con-show .showNav .nav-box-left .tit {
+  border-left: 0;
+}
+.con-show .showNav .nav-box-right {
+  width: 813px;
+}
+.con-show .showNav .nav-box-right .nav-li-left {
+  width: 176px;
+}
+.con-show .showNav .nav-box-right .nav-li-left .nav-li li:nth-child(even) {
+  margin-left: 0;
+}
+.con-show .showNav .nav-box-right .nav-li-right {
+  width: 637px;
+}
+.con-show .showNav .nav-box-right .nav-li-right .nav-li li {
+  width: 146px;
+}
+.con-show .nav-change-box {
+  position: relative;
+  margin: 20px auto;
+  width: 120px;
+  height: 50px;
+}
+.con-show .nav-change-box .btn-more {
+  display: block;
+  width: 100%;
+  height: 38px;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  color: #6d6d6d;
+  line-height: 38px;
+  text-align: center;
+  margin: 40px auto 0;
+  transition: all ease 0.3s;
+}
+.con-show .nav-change-box .btn-more:hover {
+  background-color: #dbdcdf;
+}
+.con-show .cha-list {
+  position: relative;
+  text-align: center;
+  color: #f1f1f1;
+  font-size: 12px;
+  margin-top: 20px;
+  height: 16px;
+  top: 0;
+  left: 50%;
+  margin-left: -72px;
+}
+.con-show .cha-list span {
+  height: 100%;
+  float: left;
+}
+.con-show .cha-list span .ico-H,
+.con-show .cha-list span .ico-N {
+  float: left;
+  display: block;
+  width: 11px;
+  height: 11px;
+  margin: 5px 5px 0 5px;
+  background: url('../images/zsj_topBar_z.png') no-repeat -56px -48px;
+}
+.con-show .cha-list span .ico-N {
+  background-position-y: -34px;
+}
+.con-servive {
+  width: 100%;
+  height: 334px;
+  overflow: hidden;
+}
+.con-servive .con-box {
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
+}
+.con-servive .con-box .link-li-box {
+  position: relative;
+  float: left;
+  margin-right: 14px;
+}
+.con-servive .con-box .link-li-box p {
+  text-indent: 30px;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 20px;
+  color: #888888;
+  background: url('../images/zsj_l_icon.png') no-repeat 0 bottom;
+}
+.con-servive .con-box .link-li-box a {
+  position: relative;
+  float: left;
+  width: 150px;
+  padding: 15px 0;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  background-color: #e3e3e3;
+  text-align: center;
+  transition: all 0.3s ease-in;
+}
+.con-servive .con-box .link-li-box a:hover {
+  background-color: #cf1132;
+}
+.con-servive .con-box .link-li-box a:hover .txt1 {
+  color: #ffffde;
+}
+.con-servive .con-box .link-li-box a:hover .txt2 {
+  color: #ffffde;
+}
+.con-servive .con-box .link-li-box a span {
+  line-height: 30px;
+  text-align: center;
+  transition: all 0.2s ease-out;
+}
+.con-servive .con-box .link-li-box a .txt1 {
+  color: #222;
+  font-size: 16px;
+}
+.con-servive .con-box .link-li-box a .txt2 {
+  color: gray;
+  font-size: 12px;
+}
+.con-servive .con-box .box1,
+.con-servive .con-box .box3 {
+  width: 152px;
+}
+.con-servive .con-box .box2 {
+  width: 304px;
+}
+.con-servive .con-box .box4 {
+  width: 608px;
+  margin-right: 0;
+}
+.con-servive .con-box .con-other {
+  width: 100%;
+  float: left;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #d9dde1;
+}
+.con-servive .con-box .con-other span {
+  font-size: 14px;
+  color: #454240;
+}
+.con-servive .con-box .con-other a {
+  color: #888;
+  font-size: 12px;
+}
+.con-servive .con-box .con-other a:hover {
+  color: #e41f43;
+}
+.con-servive .con-box .con-other .phone-tips {
+  margin-left: 430px;
+}
+.con-servive .con-box .con-other .phone-num {
+  font-size: 18px;
+  color: #909090;
+}
+.footer {
+  height: 195px;
+  width: 100%;
+  background-color: #272a2c;
+  padding: 20px 0;
+}
+.footer .copyright {
+  width: 1024px;
+  text-align: left;
+  padding: 15px 0 10px;
+  line-height: 20px;
+  color: #fff;
+}
+.footer .copyright a {
+  color: #fff;
+}
+.footer .copyright .part1 .logo {
+  display: inline-block;
+  vertical-align: middle;
+  height: 48px;
+  min-width: 300px;
+}
+.footer .copyright .part1 .logo a {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 2px;
+  color: #fff;
+}
+.footer .copyright .part1 .logo a img {
+  padding-right: 15px;
+  padding-top: 5px;
+  border: 0;
+  vertical-align: middle;
+}
+.footer .copyright .part1 .logo .a0 img {
+  padding-right: 0;
+}
+.footer .copyright .part1 .nav {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.footer .copyright .part1 .nav a:hover {
+  text-decoration: underline;
+}
+.footer .copyright .part1 .nav .i2 {
+  height: 28px;
+  line-height: 28px;
+  text-align: left;
+}
+.footer .copyright .part2 {
+  padding-top: 10px;
+  line-height: 24px;
+}
+.footer .copyright .part2 span {
+  display: inline-block;
+  vertical-align: top;
+}
+.footer .copyright .part2 a {
+  display: inline-block;
+  vertical-align: top;
+}
+.footer .copyright .part2 a:hover {
+  text-decoration: underline;
+}
+.canvas-wrap {
+  position: relative;
+  min-height: 626px;
+}
+#canvas {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1a1724;
+}

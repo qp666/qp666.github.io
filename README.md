@@ -1,2 +1,2 @@
 # qp666.github.io
-JQuery项目
+个人主页

@@ -1,0 +1,1008 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+body {
+  height: 6000px;
+}
+.w {
+  width: 1270px;
+  margin: 0 auto;
+}
+input,
+button {
+  border: none;
+}
+.showStyle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  color: #fff;
+}
+header {
+  height: 60px;
+  line-height: 60px;
+}
+header .logo {
+  float: left;
+  margin-top: 6px;
+  width: 50px;
+  height: 50px;
+  background: url(../images/wl-logo.png) no-repeat;
+  background-size: cover;
+  font-size: 0;
+  margin-right: 60px;
+}
+header .nav {
+  float: left;
+}
+header .nav li {
+  float: left;
+}
+header .nav li a {
+  display: inline-block;
+  height: 60px;
+  font-size: 18px;
+  padding: 0 25px;
+  margin: 0 30px;
+}
+header .nav li a:hover {
+  border-bottom: 5px solid #1ca0f3;
+  color: #1ca0f3;
+}
+.banner .dasheng {
+  position: relative;
+  height: 2057px;
+  background-image: url(../images/wl-banner.jpg);
+  background-size: cover;
+}
+.banner .dasheng .big {
+  width: 491px;
+  height: 270px;
+  position: absolute;
+  top: 275px;
+  left: 706px;
+  background: url(../images/wl-sprites.png) no-repeat -29px -9px;
+}
+.banner .dasheng h2 {
+  position: absolute;
+  top: 576px;
+  left: 705px;
+  font-weight: 400;
+  font-size: 28px;
+  color: #fff;
+}
+.banner .dasheng .small1 {
+  position: absolute;
+  left: 705px;
+  top: 635px;
+  width: 185px;
+  height: 60px;
+  background: url(../images/wl-sprites.png) no-repeat 0px -385px;
+}
+.banner .dasheng .small1 a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.banner .dasheng .small2 {
+  position: absolute;
+  left: 919px;
+  top: 635px;
+  width: 185px;
+  height: 60px;
+  background: url(../images/wl-sprites.png) no-repeat -184px -445px;
+}
+.banner .dasheng .box .small3 {
+  position: absolute;
+  left: 1131px;
+  top: 635px;
+  width: 60px;
+  height: 60px;
+  background: url(../images/wl-sprites.png) no-repeat -430px -325px;
+}
+.banner .dasheng .box .con {
+  position: absolute;
+  left: 1131px;
+  top: 696px;
+  width: 130px;
+  height: 130px;
+  border-radius: 3px;
+  display: none;
+  background-image: url(../images/wl-erweima.png);
+}
+.banner .dasheng .title {
+  position: absolute;
+  bottom: 838px;
+  left: 473px;
+  width: 544px;
+  height: 61px;
+  background: url(../images/wl-sprites2.png) no-repeat 0 -227px;
+}
+.banner .dasheng h3 {
+  position: absolute;
+  left: 473px;
+  bottom: 786px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #1cb4f7;
+}
+.banner .dasheng .zhubo {
+  position: absolute;
+  left: 320px;
+  bottom: 77px;
+  width: 1280px;
+  height: 689px;
+  padding: 160px 120px 0;
+}
+.banner .dasheng .zhubo canvas {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 220px;
+}
+.banner .dasheng .zhubo #txt {
+  position: absolute;
+  left: 159px;
+  bottom: 26px;
+  width: 703px;
+  height: 60px;
+  background-color: #dff4ff;
+  font-size: 16px;
+  color: #b2b5c3;
+  line-height: 60px;
+  padding-left: 30px;
+  border-radius: 10px;
+}
+.banner .dasheng .zhubo button {
+  position: absolute;
+  right: 153px;
+  bottom: 26px;
+  width: 240px;
+  height: 60px;
+  background-color: #1ca0f3;
+  font-size: 16px;
+  color: #fff;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 10px;
+}
+.banner .dasheng .zhubo .leftArr {
+  position: absolute;
+  left: 78px;
+  top: 227px;
+  width: 43px;
+  height: 75px;
+  background: url(../images/wl-sprites.png) no-repeat -543px -73px;
+}
+.banner .dasheng .zhubo .rightArr {
+  position: absolute;
+  right: 78px;
+  top: 227px;
+  width: 43px;
+  height: 75px;
+  background: url(../images/wl-sprites.png) no-repeat -543px -291px;
+}
+.banner .dasheng .zhubo #showPage {
+  width: 1040px;
+  height: 300px;
+  overflow: hidden;
+}
+.banner .dasheng .zhubo #showPage ul,
+.banner .dasheng .zhubo #showPage li {
+  height: 100%;
+  text-align: center;
+}
+.banner .dasheng .zhubo #showPage li {
+  float: left;
+  width: 260px;
+}
+.banner .dasheng .zhubo #showPage li img {
+  display: block;
+  width: 155px;
+  height: 151px;
+  border: 5px solid #ccd7dd;
+  border-radius: 50%;
+  margin: 0 auto 30px;
+}
+.banner .dasheng .zhubo #showPage li p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1ca0f3;
+  margin-bottom: 20px;
+}
+.banner .dasheng .zhubo #showPage li h4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #647686;
+}
+.banner .dasheng .zhubo #showPage #setPage {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 167px;
+}
+.banner .dasheng .zhubo #showPage #setPage a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 15px;
+  background-image: url('../images/wl-btn1.png');
+  vertical-align: middle;
+}
+.banner .dasheng .zhubo #showPage #setPage a.setPageIn {
+  transform: scale(1.2);
+}
+.banner .xingqu {
+  height: 1331px;
+  background-image: url(../images/wl-banner3.jpg);
+  background-size: cover;
+  position: relative;
+}
+.banner .xingqu .tit {
+  position: absolute;
+  top: 118px;
+  left: 473px;
+  width: 544px;
+  height: 60px;
+  background: url(../images/wl-sprites2.png) no-repeat 0 -48px;
+}
+.banner .xingqu p {
+  position: absolute;
+  top: 208px;
+  left: 473px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #1cb4f7;
+}
+.banner .xingqu .circle {
+  position: absolute;
+  top: 270px;
+  left: 475px;
+  width: 960px;
+  height: 978px;
+  padding: 38px 17px 0;
+}
+.banner .xingqu .circle .left {
+  float: left;
+  width: 450px;
+  height: 100%;
+}
+.banner .xingqu .circle .left .first {
+  padding: 10px;
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  height: 298px;
+}
+.banner .xingqu .circle .left .first .top {
+  width: 200px;
+  height: 55px;
+}
+.banner .xingqu .circle .left .first .top img {
+  float: left;
+  display: block;
+  width: 43px;
+  height: 43px;
+  padding-right: 5px;
+}
+.banner .xingqu .circle .left .first .top div {
+  float: left;
+}
+.banner .xingqu .circle .left .first .top div h2 {
+  font-size: 18px;
+}
+.banner .xingqu .circle .left .first .top div h4 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #647686;
+}
+.banner .xingqu .circle .left .first .top div h4 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner .xingqu .circle .left .first .body {
+  float: left;
+  width: 100%;
+}
+.banner .xingqu .circle .left .first .body h4 {
+  float: left;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 13px;
+}
+.banner .xingqu .circle .left .first .body h4 a {
+  color: #1ca0f5;
+}
+.banner .xingqu .circle .left .first .body img {
+  display: inline-block;
+  width: 139px;
+  height: 136px;
+  margin-right: 8px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.banner .xingqu .circle .left .first .body .img1 {
+  float: left;
+  width: 78px;
+}
+.banner .xingqu .circle .left .first .body .img1 img {
+  float: left;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.banner .xingqu .circle .left .first .body .img1 b {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.banner .xingqu .circle .left .first .body .img2 {
+  float: left;
+  width: 78px;
+}
+.banner .xingqu .circle .left .first .body .img2 img {
+  float: left;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.banner .xingqu .circle .left .first .body .img2 b {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.banner .xingqu .circle .left .second {
+  padding: 10px;
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  height: 350px;
+}
+.banner .xingqu .circle .left .second .top {
+  width: 200px;
+  height: 55px;
+}
+.banner .xingqu .circle .left .second .top img {
+  float: left;
+  display: block;
+  width: 43px;
+  height: 43px;
+  padding-right: 5px;
+}
+.banner .xingqu .circle .left .second .top div {
+  float: left;
+}
+.banner .xingqu .circle .left .second .top div h2 {
+  font-size: 18px;
+}
+.banner .xingqu .circle .left .second .top div h4 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #647686;
+}
+.banner .xingqu .circle .left .second .top div h4 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner .xingqu .circle .left .second .body {
+  float: left;
+  width: 100%;
+}
+.banner .xingqu .circle .left .second .body h4 {
+  float: left;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 13px;
+}
+.banner .xingqu .circle .left .second .body h4 a {
+  color: #1ca0f5;
+}
+.banner .xingqu .circle .left .second .body img {
+  display: inline-block;
+  width: 139px;
+  height: 136px;
+  margin-right: 8px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.banner .xingqu .circle .left .second .body .img1 {
+  float: left;
+  width: 78px;
+}
+.banner .xingqu .circle .left .second .body .img1 img {
+  float: left;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.banner .xingqu .circle .left .second .body .img1 b {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.banner .xingqu .circle .left .second .body .img2 {
+  float: left;
+  width: 78px;
+}
+.banner .xingqu .circle .left .second .body .img2 img {
+  float: left;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.banner .xingqu .circle .left .second .body .img2 b {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.banner .xingqu .circle .left .third {
+  padding: 10px;
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  height: 298px;
+}
+.banner .xingqu .circle .left .third .top {
+  width: 200px;
+  height: 55px;
+}
+.banner .xingqu .circle .left .third .top img {
+  float: left;
+  display: block;
+  width: 43px;
+  height: 43px;
+  padding-right: 5px;
+}
+.banner .xingqu .circle .left .third .top div {
+  float: left;
+}
+.banner .xingqu .circle .left .third .top div h2 {
+  font-size: 18px;
+}
+.banner .xingqu .circle .left .third .top div h4 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #647686;
+}
+.banner .xingqu .circle .left .third .top div h4 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner .xingqu .circle .left .third .body {
+  float: left;
+  width: 100%;
+}
+.banner .xingqu .circle .left .third .body h4 {
+  float: left;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 13px;
+}
+.banner .xingqu .circle .left .third .body h4 a {
+  color: #1ca0f5;
+}
+.banner .xingqu .circle .left .third .body img {
+  display: inline-block;
+  width: 139px;
+  height: 136px;
+  margin-right: 8px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.banner .xingqu .circle .left .third .body .img1 {
+  float: left;
+  width: 78px;
+}
+.banner .xingqu .circle .left .third .body .img1 img {
+  float: left;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.banner .xingqu .circle .left .third .body .img1 b {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.banner .xingqu .circle .left .third .body .img2 {
+  float: left;
+  width: 78px;
+}
+.banner .xingqu .circle .left .third .body .img2 img {
+  float: left;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.banner .xingqu .circle .left .third .body .img2 b {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.banner .xingqu .circle .right {
+  float: right;
+  width: 450px;
+  height: 100%;
+}
+.banner .xingqu .circle .right .fourth {
+  padding: 10px;
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  height: 352px;
+}
+.banner .xingqu .circle .right .fourth .top {
+  width: 200px;
+  height: 55px;
+}
+.banner .xingqu .circle .right .fourth .top img {
+  float: left;
+  display: block;
+  width: 43px;
+  height: 43px;
+  padding-right: 5px;
+}
+.banner .xingqu .circle .right .fourth .top div {
+  float: left;
+}
+.banner .xingqu .circle .right .fourth .top div h2 {
+  font-size: 18px;
+}
+.banner .xingqu .circle .right .fourth .top div h4 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #647686;
+}
+.banner .xingqu .circle .right .fourth .top div h4 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner .xingqu .circle .right .fourth .body {
+  float: left;
+  width: 100%;
+}
+.banner .xingqu .circle .right .fourth .body h4 {
+  float: left;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 13px;
+}
+.banner .xingqu .circle .right .fourth .body h4 a {
+  color: #1ca0f5;
+}
+.banner .xingqu .circle .right .fourth .body img {
+  display: inline-block;
+  width: 139px;
+  height: 136px;
+  margin-right: 8px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.banner .xingqu .circle .right .fourth .body .img1 {
+  float: left;
+  width: 78px;
+}
+.banner .xingqu .circle .right .fourth .body .img1 img {
+  float: left;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.banner .xingqu .circle .right .fourth .body .img1 b {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.banner .xingqu .circle .right .fourth .body .img2 {
+  float: left;
+  width: 78px;
+}
+.banner .xingqu .circle .right .fourth .body .img2 img {
+  float: left;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.banner .xingqu .circle .right .fourth .body .img2 b {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.banner .xingqu .circle .right .fifth {
+  padding: 10px;
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  height: 350px;
+}
+.banner .xingqu .circle .right .fifth .top {
+  width: 200px;
+  height: 55px;
+}
+.banner .xingqu .circle .right .fifth .top img {
+  float: left;
+  display: block;
+  width: 43px;
+  height: 43px;
+  padding-right: 5px;
+}
+.banner .xingqu .circle .right .fifth .top div {
+  float: left;
+}
+.banner .xingqu .circle .right .fifth .top div h2 {
+  font-size: 18px;
+}
+.banner .xingqu .circle .right .fifth .top div h4 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #647686;
+}
+.banner .xingqu .circle .right .fifth .top div h4 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner .xingqu .circle .right .fifth .body {
+  float: left;
+  width: 100%;
+}
+.banner .xingqu .circle .right .fifth .body h4 {
+  float: left;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 13px;
+}
+.banner .xingqu .circle .right .fifth .body h4 a {
+  color: #1ca0f5;
+}
+.banner .xingqu .circle .right .fifth .body img {
+  display: inline-block;
+  width: 139px;
+  height: 136px;
+  margin-right: 8px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.banner .xingqu .circle .right .fifth .body .img1 {
+  float: left;
+  width: 78px;
+}
+.banner .xingqu .circle .right .fifth .body .img1 img {
+  float: left;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.banner .xingqu .circle .right .fifth .body .img1 b {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.banner .xingqu .circle .right .fifth .body .img2 {
+  float: left;
+  width: 78px;
+}
+.banner .xingqu .circle .right .fifth .body .img2 img {
+  float: left;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.banner .xingqu .circle .right .fifth .body .img2 b {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.banner .xingqu .circle .right .sixth {
+  padding: 10px;
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  height: 298px;
+}
+.banner .xingqu .circle .right .sixth .top {
+  width: 200px;
+  height: 55px;
+}
+.banner .xingqu .circle .right .sixth .top img {
+  float: left;
+  display: block;
+  width: 43px;
+  height: 43px;
+  padding-right: 5px;
+}
+.banner .xingqu .circle .right .sixth .top div {
+  float: left;
+}
+.banner .xingqu .circle .right .sixth .top div h2 {
+  font-size: 18px;
+}
+.banner .xingqu .circle .right .sixth .top div h4 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #647686;
+}
+.banner .xingqu .circle .right .sixth .top div h4 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner .xingqu .circle .right .sixth .body {
+  float: left;
+  width: 100%;
+}
+.banner .xingqu .circle .right .sixth .body h4 {
+  float: left;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 13px;
+}
+.banner .xingqu .circle .right .sixth .body h4 a {
+  color: #1ca0f5;
+}
+.banner .xingqu .circle .right .sixth .body img {
+  display: inline-block;
+  width: 139px;
+  height: 136px;
+  margin-right: 8px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.banner .xingqu .circle .right .sixth .body .img1 {
+  float: left;
+  width: 78px;
+}
+.banner .xingqu .circle .right .sixth .body .img1 img {
+  float: left;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.banner .xingqu .circle .right .sixth .body .img1 b {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.banner .xingqu .circle .right .sixth .body .img2 {
+  float: left;
+  width: 78px;
+}
+.banner .xingqu .circle .right .sixth .body .img2 img {
+  float: left;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.banner .xingqu .circle .right .sixth .body .img2 b {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.banner .xingqu .bottom {
+  position: absolute;
+  left: 437px;
+  bottom: 0px;
+  width: 1033px;
+  height: 110px;
+  background-image: url(../images/wl-banner5.png);
+}
+.banner .zhuanxiang {
+  height: 1080px;
+  background-image: url(../images/wl-banner2.jpg);
+  background-size: cover;
+  position: relative;
+}
+.banner .zhuanxiang .title {
+  position: absolute;
+  top: 118px;
+  left: 473px;
+  width: 544px;
+  height: 60px;
+  background: url(../images/wl-sprites2.png) no-repeat 0 -167px;
+}
+.banner .zhuanxiang p {
+  position: absolute;
+  top: 208px;
+  left: 473px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #1cb4f7;
+}
+.banner .game {
+  height: 1077px;
+  background-image: url(../images/wl-banner4.jpg);
+  background-size: cover;
+  position: relative;
+}
+.banner .game .title {
+  position: absolute;
+  top: 118px;
+  left: 473px;
+  width: 544px;
+  height: 60px;
+  background: url(../images/wl-sprites2.png) no-repeat 0 -108px;
+}
+.banner .game p {
+  position: absolute;
+  top: 208px;
+  left: 473px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #1cb4f7;
+}
+footer {
+  height: 335x;
+  background-color: #272a2c;
+  position: relative;
+}
+footer .w {
+  padding: 0 100px;
+}
+footer .w a {
+  font-size: 12px;
+  color: #fff;
+}
+footer .w .mod_service {
+  height: 155px;
+  border-bottom: 1px solid #3d4042;
+}
+footer .w .mod_service ul {
+  margin-top: 56px;
+  height: 62px;
+  float: left;
+}
+footer .w .mod_service ul li {
+  float: left;
+}
+footer .w .mod_service ul li img {
+  display: block;
+  width: 62px;
+  margin-right: 20px;
+}
+footer .w .mod_service ul li h2 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  margin: 6px 0;
+}
+footer .w .mod_service ul li p {
+  font-size: 12px;
+  color: #fff;
+  margin: 4px 0;
+}
+footer .w .mod_service ul .one {
+  width: 185px;
+  height: 60px;
+  margin-left: 20px;
+  background: url(../images/wl-sprites.png) no-repeat 0px -385px;
+}
+footer .w .mod_service ul .two {
+  width: 185px;
+  height: 60px;
+  margin-left: 10px;
+  background: url(../images/wl-sprites.png) no-repeat -184px -445px;
+}
+footer .w .mod_service ul .three {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+  background: url(../images/wl-sprites.png) no-repeat -426px -325px;
+}
+footer .w .mod_service .link {
+  float: right;
+}
+footer .w .mod_service .link .head {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #a0a0a0;
+}
+footer .w .mod_service .link .body {
+  height: 72px;
+}
+footer .w .mod_service .link .body li {
+  margin-top: 10px;
+}
+footer .w .mod_service .link .body .fl {
+  float: left;
+  padding-right: 50px;
+}
+footer .w .mod_service .link .body .center {
+  float: left;
+  width: 1px;
+  height: 72px;
+  background-color: #3d4042;
+}
+footer .w .mod_service .link .body .fr {
+  float: right;
+  margin-left: 50px;
+  margin-right: 100px;
+}
+footer .w .mod_introduce {
+  padding: 25px 65px;
+  height: 180px;
+}
+footer .w .mod_introduce .one {
+  float: left;
+}
+footer .w .mod_introduce .two {
+  float: left;
+}
+footer .w .mod_introduce .three {
+  float: left;
+  margin: 0 15px;
+}
+footer .w .mod_introduce .banquan p {
+  position: absolute;
+  right: 937px;
+  top: 214px;
+  color: #fff;
+  font-size: 12px;
+}
+footer .w .mod_introduce .banquan span {
+  position: absolute;
+  right: 490px;
+  top: 214px;
+  width: 140px;
+  height: 26px;
+  background-color: #610000;
+  padding-left: 5px;
+}
+footer .w .mod_introduce .jingying {
+  font-size: 12px;
+  color: #fff;
+}

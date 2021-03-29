@@ -1,0 +1,331 @@
+nav {
+    height: 54px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0;
+    display: flex;
+    margin: 0;
+
+    .qml {
+        width: 176px;
+        height: 54px;
+        background-color: #cf1132;
+        color: #ffffff;
+        text-align: center;
+        line-height: 52px;
+        position: relative;
+
+        img {
+            width: 34px;
+            height: 22px;
+            margin-top: -4px;
+        }
+    }
+
+    .center {
+        margin: 4px auto;
+
+    }
+
+    .yb {
+        width: 140px;
+        height: 54px;
+        float: right;
+        border-left: 1px solid #dadada;
+        text-align: center;
+        line-height: 52px;
+        color: #333333;
+    }
+}
+
+.menuPull {
+    position: fixed;
+    z-index: 30;
+    opacity: 0.95;
+    width: 100%;
+    height: 500px;
+    background: #fff;
+    display: none;
+
+    .menuBox {
+        width: 1260px;
+        height: 100%;
+        margin: 0 auto;
+
+        li {
+            float: left;
+            height: 100%;
+            border-right: 1px solid #e3e3e4;
+
+            h4 {
+                font-size: 18px;
+                color: #b52e2f;
+                height: 40px;
+                line-height: 40px;
+                text-indent: 20px;
+                background: rgba(204, 204, 204, .5);
+            }
+        }
+
+        .khdyx,
+        .sjyx,
+        .yxfz {
+            width: 299px;
+            position: relative;
+
+            .left,
+            .right {
+                width: 140px;
+                float: left;
+                padding-left: 10px;
+                padding-right: 8px;
+
+                p {
+                    font-size: 18px;
+                    color: #5e5e5f;
+                    line-height: 30px;
+                }
+
+                a {
+                    display: block;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #5f5f60;
+
+                    span {
+                        float: right;
+                        margin-top: 7px;
+                    }
+
+                    .top1 {
+                        display: inline-block;
+                        width: 18px;
+                        height: 9px;
+                        background: url('../images/qp网易游戏会员俱乐部官网_游戏热爱者必备/gsz_pullMenu.png') no-repeat -97px -276px;
+                    }
+
+                    .hot {
+                        display: inline-block;
+                        width: 18px;
+                        height: 9px;
+                        background: url('../images/qp网易游戏会员俱乐部官网_游戏热爱者必备/gsz_pullMenu.png') no-repeat -97px -152px;
+                    }
+
+                    .new {
+                        display: inline-block;
+                        width: 18px;
+                        height: 9px;
+                        background: url('../images/qp网易游戏会员俱乐部官网_游戏热爱者必备/gsz_pullMenu.png') no-repeat -97px -214px;
+                    }
+                }
+            }
+
+            .right {
+                float: left;
+                width: 130px;
+            }
+
+            .tag {
+                position: absolute;
+                top: 42%;
+                right: 0;
+                width: 30px;
+                height: 102px;
+                background-color: #b63033;
+                writing-mode: vertical-lr;
+                /*从左向右 从右向左是 writing-mode: vertical-rl;*/
+                font-size: 14px;
+                color: white;
+                text-align: center;
+                line-height: 30px;
+                cursor: pointer; // 更改鼠标样式
+            }
+
+        }
+
+        .sjyx {
+            width: 828px;
+
+            .right {
+                width: 150px;
+                border-right: none;
+                margin-top: 30px;
+            }
+
+            .mark {
+                width: 120px;
+            }
+        }
+
+        .yxfz {
+            width: 130px;
+
+            .right {
+                .footLogo {
+                    margin-top: 10px;
+
+                    i {
+                        display: inline-block;
+                        width: 23px;
+                        height: 18px;
+                        background: url('../images/qp网易游戏会员俱乐部官网_游戏热爱者必备/gsz_pullMenu.png') 0 -338px;
+                        margin-right: 6px;
+                        vertical-align: middle
+                    }
+
+                    font-size: 18px;
+                    color: #bb3738;
+                }
+            }
+        }
+    }
+}
+
+.box {
+    width: 100%;
+    height: 1230px;
+    background-image: url(../images/《实况足球》2020官方网站_现已重磅公测/gsz_015.jpg);
+    position: relative;
+}
+.leftTop{
+   padding-top: 30px;
+   margin-left: 8px;
+}
+.guanW {
+    position: absolute;
+    bottom: 186px;
+
+    left: 664px;
+    img {
+        transition: all .2s;
+
+    }
+
+    &:hover img {
+        transform: scale(1.1, 1.1);
+    }
+}
+
+.fuLi {
+    position: absolute;
+    bottom: 180px;
+
+    left: 980px;
+    img {
+        transition: all .2s;
+
+    }
+
+    &:hover img {
+        transform: scale(1.1, 1.1);
+    }
+}
+
+.saoma {
+    position: absolute;
+    bottom: 55px;
+
+    left: 778px;
+    padding-top: 5px;
+    width: 344px;
+    height: 133px;
+    background-image: url(../images/《实况足球》2020官方网站_现已重磅公测/gsz_020.png);
+    display: flex;
+
+    .zb {
+        overflow: hidden;
+        border-radius: 10px;
+        margin-left: 40px;
+        width: 230px;
+        height: 121px;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+    // .yb a{
+    //     display: block;
+    //     width: 168px;
+    //     height: 56px;
+    // }
+    // .yb{
+    //     width: 185px;
+    // }
+    .yb a img {
+        width: 100%;
+        
+    }
+
+    .yb a:first-child {
+        margin-right: 9px;
+        display: block;
+        width: 170px;
+        height: 56px;
+        margin-left: 5px;
+        margin-top: 5px;
+        img {
+            transition: all .2s;
+
+        }
+
+        &:hover img {
+            transform: scale(1.1, 1.1);
+        }
+    }
+
+    .yb a:last-child {
+        margin-right: 9px;
+        display: block;
+        width: 170px;
+        height: 56px;
+        margin-left: 5px;
+        margin-top: 5px;
+        img {
+            transition: all .2s;
+
+        }
+
+        &:hover img {
+            transform: scale(1.1, 1.1);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box1 {
+    width: 100%;
+    height: 615px;
+    background-image: url(../images/《实况足球》2020官方网站_现已重磅公测/gsz_底部大图.png);
+}
+
+// .box2 {
+//     width: 100%;
+//     height: 300px;
+//     background-image: url(../images/《实况足球》2020官方网站_现已重磅公测/gsz_024.jpg);
+// }
+
+footer {
+    cursor: pointer;
+    width: 100%;
+    height: 198px;
+    background-image: url(../images/《实况足球》2020官方网站_现已重磅公测/gsz_最底部大图.png);
+}

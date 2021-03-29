@@ -1,0 +1,801 @@
+nav {
+    height: 54px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0;
+    display: flex;
+    margin: 0;
+
+    .qml {
+        width: 176px;
+        height: 54px;
+        background-color: #cf1132;
+        color: #ffffff;
+        text-align: center;
+        line-height: 52px;
+        position: relative;
+
+        img {
+            width: 34px;
+            height: 22px;
+            margin-top: -4px;
+        }
+    }
+
+    .center {
+        margin: 4px auto;
+
+    }
+
+    .yb {
+        width: 140px;
+        height: 54px;
+        float: right;
+        border-left: 1px solid #dadada;
+        text-align: center;
+        line-height: 52px;
+        color: #333333;
+    }
+}
+
+.menuPull {
+    position: fixed;
+    z-index: 30;
+    opacity: 0.95;
+    width: 100%;
+    height: 500px;
+    background: #fff;
+    display: none;
+
+    .menuBox {
+        width: 1260px;
+        height: 100%;
+        margin: 0 auto;
+
+        li {
+            float: left;
+            height: 100%;
+            border-right: 1px solid #e3e3e4;
+
+            h4 {
+                font-size: 18px;
+                color: #b52e2f;
+                height: 40px;
+                line-height: 40px;
+                text-indent: 20px;
+                background: rgba(204, 204, 204, .5);
+            }
+        }
+
+        .khdyx,
+        .sjyx,
+        .yxfz {
+            width: 299px;
+            position: relative;
+
+            .left,
+            .right {
+                width: 140px;
+                float: left;
+                padding-left: 10px;
+                padding-right: 8px;
+
+                p {
+                    font-size: 18px;
+                    color: #5e5e5f;
+                    line-height: 30px;
+                }
+
+                a {
+                    display: block;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #5f5f60;
+
+                    span {
+                        float: right;
+                        margin-top: 7px;
+                    }
+
+                    .top1 {
+                        display: inline-block;
+                        width: 18px;
+                        height: 9px;
+                        background: url('../images/我的世界图片/gsz_pullMenu.png') no-repeat -97px -276px;
+                    }
+
+                    .hot {
+                        display: inline-block;
+                        width: 18px;
+                        height: 9px;
+                        background: url('../images/我的世界图片/gsz_pullMenu.png') no-repeat -97px -152px;
+                    }
+
+                    .new {
+                        display: inline-block;
+                        width: 18px;
+                        height: 9px;
+                        background: url('../images/我的世界图片/gsz_pullMenu.png') no-repeat -97px -214px;
+                    }
+                }
+            }
+
+            .right {
+                float: left;
+                width: 130px;
+            }
+
+            .tag {
+                position: absolute;
+                top: 42%;
+                right: 0;
+                width: 30px;
+                height: 102px;
+                background-color: #b63033;
+                writing-mode: vertical-lr;
+                /*从左向右 从右向左是 writing-mode: vertical-rl;*/
+                font-size: 14px;
+                color: white;
+                text-align: center;
+                line-height: 30px;
+                cursor: pointer; // 更改鼠标样式
+            }
+
+        }
+
+        .sjyx {
+            width: 828px;
+
+            .right {
+                width: 150px;
+                border-right: none;
+                margin-top: 30px;
+            }
+
+            .mark {
+                width: 120px;
+            }
+        }
+
+        .yxfz {
+            width: 130px;
+
+            .right {
+                .footLogo {
+                    margin-top: 10px;
+
+                    i {
+                        display: inline-block;
+                        width: 23px;
+                        height: 18px;
+                        background: url('../images/qp网易游戏会员俱乐部官网_游戏热爱者必备/gsz_pullMenu.png') 0 -338px;
+                        margin-right: 6px;
+                        vertical-align: middle
+                    }
+
+                    font-size: 18px;
+                    color: #bb3738;
+                }
+            }
+        }
+    }
+}
+
+.bigbox {
+    width: 1920px;
+    height: 920px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-color: #ccc;
+    background-position: center top;
+    background-image: url(../images/我的世界图片/zcj_025.jpg);
+    /* background-attachment: fixed; */
+    background-size: 100%;
+
+    .left {
+        width: 220px;
+        position: absolute;
+        top: 26px;
+        left: 62px;
+
+    }
+
+    .right {
+        position: absolute;
+        top: 26px;
+        right: 30px;
+        
+        a:hover img{ background-color:#64dd4c;}
+        .bottombox div {
+            height: 25px;
+            float: left;
+            margin: 5px 5px 0;
+        }
+    }
+// 图标----------------------------
+    .share-btn {
+        float: left;
+        width: 210px;
+        height: 30px;
+        margin-left: 10px;
+        // background-color: #fff;
+        ;
+
+        li {
+            width: 30px;
+            height: 30px;
+            float: left;
+            margin: 5px 5px 0;
+
+            a {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+
+                // background-color: #fff;
+            }
+
+            .wetchat {
+                background: url(../images/我的世界图片/zcj_002.png) -372px -139px;
+                background-color: #fff;
+                opacity: 0.9;
+            }
+
+            .sina {
+                background: url(../images/我的世界图片/zcj_002.png) -70px -140px;
+                background-color: #fff;
+                opacity: 0.9;
+            }
+
+            .alipay {
+                background: url(../images/我的世界图片/zcj_002.png) -372px -270px;
+                // background-color: hotpink;
+                background-color: #fff;
+                opacity: 0.9;
+            }
+
+            .renren {
+                background: url(../images/我的世界图片/zcj_002.png) -210px -185px;
+                // background-color: khaki;
+                background-color: #fff;
+                opacity: 0.9;
+            }
+
+            .QQ {
+                background: url(../images/我的世界图片/zcj_002.png) -210px -139px;
+                // background-color: skyblue;
+                background-color: #fff;
+                opacity: 0.9;
+            }
+
+            :hover.wetchat {
+                background: url(../images/我的世界图片/zcj_002.png) -294px -142px;
+                background-color: #fff;
+            }
+
+            :hover.sina {
+                background: url(../images/我的世界图片/zcj_002.png) 0px -142px;
+                background-color: #fff;
+            }
+
+            :hover.alipay {
+                background: url(../images/我的世界图片/zcj_002.png) -374px -230px;
+                background-color: #fff;
+            }
+
+            :hover.renren {
+                background: url(../images/我的世界图片/zcj_002.png) -140px -188px;
+                background-color: #fff;
+            }
+
+            :hover.QQ {
+                background: url(../images/我的世界图片/zcj_002.png) -140px -142px;
+                background-color: #fff;
+
+            }
+
+        }
+
+
+
+
+
+    }
+
+    .center {
+        width: 451px;
+        height: 305px;
+        position: absolute;
+        top: 136px;
+        left: 50%;
+        margin-left: -225.5px;
+        // margin-bottom: 30px;
+
+        img {
+            margin-bottom: 20px;
+        }
+
+        p {
+
+            background-color: #323232;
+            font-family: Microsoft YaHei;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 700;
+            color: #fff;
+            margin: 0;
+            padding: 12px 0;
+        }
+
+        a {
+            img {
+                transition: all .2s;
+            }
+
+            &:hover img {
+                transform: scale(1.05, 1.05);
+            }
+        }
+
+    }
+
+    // 二维码--------------------------------------
+    .erweima {
+        width: 275px;
+        height: 165px;
+        overflow: hidden;
+        background: url(../images/我的世界图片/zcj_029.png) center;
+        position: absolute;
+        top: 494px;
+        left: 50%;
+        margin-left: -220px;
+
+        .limg {
+            position: relative;
+            float: left;
+            width: 99px;
+            height: 98px;
+            margin-top: 30px;
+            margin-left: 24px;
+
+            .line {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99px;
+                height: 4px;
+                background: url(../images/我的世界图片/zcj_028.png) center;
+                animation: zcj 3s linear infinite;
+
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .rimg {
+            float: left;
+            width: 137px;
+            margin-top: 32px;
+            margin-left: 6px;
+
+            a {
+
+                img {
+                    width: 130px;
+                    margin: 5px 5px;
+                    transition: all .2s;
+                }
+
+                &:hover img {
+                    transform: scale(1.05, 1.05);
+                }
+            }
+
+        }
+
+        p {
+            position: absolute;
+            top: 135px;
+            left: 50%;
+            margin: 0;
+            margin-left: -50px;
+            width: 100px;
+            text-align: center;
+            font-size: 14px;
+            color: #2f2f2f;
+            border-bottom: 1px solid #2f2f2f;
+            cursor: pointer;
+        }
+
+    }
+
+    //视频--------------------------------------------
+    video {
+        width: 140px;
+        height: 126px;
+        background: url(../images/我的世界图片/zcj_034.jpg) center;
+        border: 2px solid #28bd09;
+        box-sizing: border-box;
+        position: absolute;
+        top: 510px;
+        left: 50%;
+        margin-left: 69px;
+    }
+
+    .allow {
+
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        margin-left: -93px;
+        width: 186px;
+        height: 17px;
+        background: url(../images/我的世界图片/zcj_037.png) center;
+        animation: fly 2s linear infinite;
+
+        img {
+            display: block;
+            margin-left: 71px;
+
+
+        }
+    }
+}
+
+// 动画声明==================================
+@keyframes zcj {
+
+    /* 类似于js 的声明函数 function */
+    0% {
+        top: 100%;
+    }
+
+    50% {
+
+
+        top: 0%;
+    }
+
+    100% {
+        top: 100%;
+    }
+
+}
+
+;
+
+@keyframes fly {
+
+    /* 类似于js 的声明函数 function */
+    0% {
+        top: 95%;
+    }
+
+    50% {
+
+
+        top: 90%;
+    }
+
+    100% {
+        top: 95%;
+    }
+
+}
+
+// 轮播图-------------------------
+.banner {
+    width: 1920px;
+    height: 955px;
+    overflow: hidden;
+    // position: relative;
+    background-image: url(../images/我的世界图片/zcj_040.jpg);
+
+    .title {
+        width: 656px;
+        height: 47px;
+        margin: 90px auto 20px;
+        background: url(../images/我的世界图片/zcj_042.png) no-repeat center;
+    }
+
+    // 旋转木马--------------------------
+    .wrap {
+        width: 1200px; //1200
+        margin: auto;
+        // border: 1px solid red;
+
+        #slide {
+            height: 500px;
+            position: relative;
+            // .ul1{
+
+            .img {
+                position: absolute;
+                left: 200px;
+                top: 0;
+                border: 4px solid greenyellow;
+
+                img {
+                    width: 100%;
+                    /*让图片的大小和父盒子一样的大，要不然会出问题，会撑出父盒子*/
+                }
+            }
+
+            .one {
+                width: 400px;
+                top: 100px;
+                left: 50px;
+                opacity: 0.2;
+                z-index: 2
+            }
+
+            .two {
+                width: 600px;
+                top: 100px;
+                left: 0px;
+                opacity: 0.5;
+                z-index: 3
+            }
+
+            .three {
+                width: 1000px;
+                top: 20px;
+                left: 100px;
+                opacity: 1;
+                z-index: 4
+            }
+
+            .four {
+                width: 600px;
+                top: 100px;
+                left: 600px;
+                opacity: 0.5;
+                z-index: 3
+            }
+
+            .five {
+                width: 400px;
+                top: 100px;
+                left: 750px;
+                opacity: 0.2;
+                z-index: 2
+            }
+
+            // }
+
+
+
+
+        }
+
+        }
+
+        // 小图标-----------------------------
+        .icon {
+            width: 180px;
+            height: 25px;
+            position: absolute;
+            top: 690px;
+            left: 50%;
+            margin-left: -100px;
+            padding: 0;
+            // background-color: pink;
+            // list-style-type: none;
+
+            .dot {
+                float: left;
+                width: 15px;
+                height: 15px;
+                margin: 0 10px;
+                background-color:#cacfd8;
+            }
+            .active {
+                background-color:#71f058;
+               border: 2px solid #c0f769;
+               width: 20px;
+               height: 20px;
+            }
+
+            }
+        #arrow {
+            display: none;
+
+            .prev,
+            .next {
+                width: 76px;
+                height: 112px;
+                position: absolute;
+                top: 50%;
+                margin-top: -56px;
+                /*background-color: red;*/
+                background: url(../images/我的世界图片/prev.png) no-repeat;
+                z-index: 99;
+            }
+
+            .next {
+                right: 0;
+                background-image: url(../images/我的世界图片/next.png);
+            }
+
+        }
+
+
+    }
+
+
+
+//左侧弹窗-------------------------------------
+.tanwin-l {
+    z-index: 9999;
+    position: fixed;
+    top: 50%;
+    display: none;
+    left: 20px;
+    width: 210px;
+    height: 335px;
+    padding-left: 5px;
+    margin-top: -150px;
+    background: url(../images/我的世界图片/zcj_046.png) center;
+    transition: left .8s;
+    cursor: pointer;
+
+    .tanwin-hd {
+        position: relative;
+        float: left;
+        width: 140px;
+        height: 140px;
+        margin: 40px 25px 10px 25px;
+
+        .line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 140px;
+            height: 4px;
+            background: url(../images/我的世界图片/zcj_028.png) center;
+            animation: zcj 3s linear infinite;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .tanwin-bd {
+        margin: 10px 0 0 28px;
+
+        a {
+            img {
+                width: 130px;
+                margin-bottom: 8px;
+                transition: all .2s;
+            }
+
+            &:hover img {
+                transform: scale(1.05, 1.05);
+            }
+        }
+
+
+    }
+
+    p {
+        margin-left: 35px;
+    }
+
+    .btn {
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        top: -40px;
+        left: 90px;
+        transition: all .5s;
+        background: url(../images/我的世界图片/zcj_062.png) center no-repeat;
+        cursor: pointer;
+
+        &:hover {
+            transform: rotate(90deg);
+        }
+    }
+}
+
+// 右侧弹窗--------------------------------------------
+.tanwin-r {
+    z-index: 9999;
+    position: fixed;
+    display: none;
+    top: 50%;
+    right: 20px;
+    width: 174px;
+    height: 261px;
+    margin-top: -150px;
+    text-align: center;
+    background: url(../images/我的世界图片/zcj_048.png) center no-repeat;
+    transition: right .8s;
+    cursor: pointer;
+
+    .line {
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        width: 135px;
+        height: 4px;
+        background: url(../images/我的世界图片/zcj_028.png) center;
+        animation: dasheng 3s linear infinite;
+    }
+
+    p {
+        position: relative;
+        top: 220px;
+    }
+
+    .btn {
+        width: 27px;
+        height: 27px;
+        position: absolute;
+        top: -10px;
+        left: 158px;
+
+        transition: all .5s;
+        background: url(../images/我的世界图片/zcj_049.png) center no-repeat;
+        cursor: pointer;
+
+        &:hover {
+            transform: rotate(90deg);
+        }
+    }
+}
+
+// 动画声明-------------------------
+@keyframes dasheng {
+
+    /* 类似于js 的声明函数 function */
+    0% {
+        top: 66%;
+    }
+
+    50% {
+
+
+        top: 15%;
+    }
+
+    100% {
+        top: 60%;
+    }
+
+}
+
+// 注册页面---------------------------
+#login {
+    // z-index: -1;
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/我的世界图片/zcj_044.jpg) center;
+
+    .table {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 677px;
+        height: 494px;
+        margin-top: -247px;
+        margin-left: -338px;
+        background: url(../images/我的世界图片/zcj_053.png) center;
+
+        .table-hd {
+            width: 183px;
+            height: 49px;
+            margin: 60px auto 20px;
+            background: url(../images/我的世界图片/zcj_054.png) no-repeat center;
+        }
+    }
+}

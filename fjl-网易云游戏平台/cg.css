@@ -1,0 +1,486 @@
+.w {
+  width: 1599px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+body {
+  background-color: #1e2831;
+}
+header {
+  width: 100%;
+  height: 236px;
+  background: url('cg.img/fjl_055.png') no-repeat 0% 75%;
+}
+header div {
+  height: 236px;
+  overflow: hidden;
+}
+header div .logo {
+  position: fixed;
+  height: 84px;
+  background-color: rgba(30, 40, 49, 0.3);
+  overflow: hidden;
+}
+header div .logo .logoicon {
+  height: 36px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 22px;
+}
+header div .logo .logoicon img {
+  width: 37px;
+  height: 29px;
+  vertical-align: text-bottom;
+}
+header div .logo .logoicon .BETA {
+  width: 40px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #03c47e;
+  color: #1e2831;
+  margin-top: 9px;
+  margin-left: 4px;
+  padding: 0 4px;
+  border-radius: 12px;
+}
+header div .logo .logoicon .xiazai {
+  display: inline;
+  margin-left: 57px;
+}
+header div .logo .logoicon .xiazai a {
+  font-size: 12px;
+  color: #ac9498;
+  padding: 0 7px;
+}
+header div .logo .logoicon .xiazai a .QRcode {
+  position: fixed;
+  width: 237px;
+  height: 287px;
+  margin-top: 17px;
+  margin-left: 217px;
+  display: none;
+}
+header div .logo .logoicon .xiazai a .QRcode i {
+  display: block;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-bottom-color: #03c47e;
+  margin-top: -4px;
+  margin-left: 45%;
+}
+header div .logo .logoicon .xiazai a .QRcode .dQRcode {
+  width: 100%;
+  height: 283px;
+  background-color: #03c47e;
+  border-radius: 8px;
+  box-shadow: 2px 4px 6px #000;
+  overflow: hidden;
+}
+header div .logo .logoicon .xiazai a .QRcode .dQRcode div {
+  width: 100%;
+  height: 283px;
+  line-height: 21px;
+  background-color: #28333d;
+  margin-top: 4px;
+  color: #8b969f;
+  text-align: center;
+}
+header div .logo .logoicon .xiazai a .QRcode .dQRcode div img {
+  display: block;
+  width: 173px;
+  height: 173px;
+  margin: 24px auto 17px;
+}
+header div .logo .logoicon .xiazai a:hover {
+  color: #fff;
+}
+header div .logo .register {
+  float: right;
+  width: 94px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background-color: #03c47e;
+  border-radius: 18px;
+  margin-left: 1069px;
+}
+header div .logo .register a {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  width: 100%;
+  height: 100%;
+}
+header div .notice {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  margin-top: 84px;
+  background-color: rgba(30, 40, 49, 0.3);
+}
+header div .notice a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #f3ae1f;
+}
+header div .notice a i {
+  width: 24px;
+  height: 24px;
+  margin: 9px 16px 0;
+}
+header div .notice a i img {
+  width: 24px;
+  height: 24px;
+}
+header div .nav {
+  width: 100%;
+  height: 35px;
+  margin-top: 75px;
+  border-bottom: 1px solid #ccc;
+}
+header div .nav a {
+  font-size: 16px;
+  color: #8e97a2;
+  margin-right: 48px;
+  padding-bottom: 20px;
+}
+header div .nav a:hover {
+  color: #fff;
+}
+.show {
+  background-color: #1e2831;
+  overflow: hidden;
+}
+.show div {
+  margin-top: 7px;
+}
+.show div .erye {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.show div .erye li {
+  width: 186px;
+  height: 284px;
+  background-color: #28333d;
+  margin-top: 16px;
+  border-radius: 4px;
+  text-align: center;
+}
+.show div .erye li div {
+  width: 130px;
+  height: 130px;
+  margin: 28px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.show div .erye li div img {
+  width: 100%;
+  height: 100%;
+}
+.show div .erye li p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+.show div .erye li a {
+  display: block;
+  width: 80px;
+  height: 30px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  background-color: #03c47e;
+  margin: 28px auto;
+  border-radius: 30px;
+}
+.show div .erye li:hover {
+  background-color: #304051;
+}
+.show div .sanye {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.show div .sanye li {
+  width: 186px;
+  height: 284px;
+  background-color: #28333d;
+  margin-top: 16px;
+  border-radius: 4px;
+  text-align: center;
+}
+.show div .sanye li div {
+  width: 130px;
+  height: 130px;
+  margin: 28px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.show div .sanye li div img {
+  width: 100%;
+  height: 100%;
+}
+.show div .sanye li p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+.show div .sanye li a {
+  display: block;
+  width: 80px;
+  height: 30px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  background-color: #03c47e;
+  margin: 28px auto;
+  border-radius: 30px;
+}
+.show div .sanye li:hover {
+  background-color: #304051;
+}
+.show div .yiye {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.show div .yiye li {
+  width: 186px;
+  height: 284px;
+  background-color: #28333d;
+  margin-top: 16px;
+  border-radius: 4px;
+  text-align: center;
+}
+.show div .yiye li div {
+  width: 130px;
+  height: 130px;
+  margin: 28px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.show div .yiye li div img {
+  width: 100%;
+  height: 100%;
+}
+.show div .yiye li p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+.show div .yiye li a {
+  display: block;
+  width: 80px;
+  height: 30px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  background-color: #03c47e;
+  margin: 28px auto;
+  border-radius: 30px;
+}
+.show div .yiye li:hover {
+  background-color: #304051;
+}
+.show div .siye {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.show div .siye li {
+  width: 186px;
+  height: 284px;
+  background-color: #28333d;
+  margin-top: 16px;
+  border-radius: 4px;
+  text-align: center;
+}
+.show div .siye li div {
+  width: 130px;
+  height: 130px;
+  margin: 28px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.show div .siye li div img {
+  width: 100%;
+  height: 100%;
+}
+.show div .siye li p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+.show div .siye li a {
+  display: block;
+  width: 80px;
+  height: 30px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  background-color: #03c47e;
+  margin: 28px auto;
+  border-radius: 30px;
+}
+.show div .siye li:hover {
+  background-color: #304051;
+}
+.footer {
+  background-color: #1e2831;
+}
+.footer div {
+  overflow: hidden;
+}
+.footer div .feedback {
+  width: 213px;
+  height: 190px;
+  font-size: 12px;
+  color: #8b969f;
+  text-align: center;
+  margin: 67px auto;
+}
+.footer div .feedback img {
+  display: block;
+  width: 123px;
+  height: 80px;
+  margin: 0 auto 20px;
+}
+.footer div .feedback a {
+  display: block;
+  width: 120px;
+  height: 38px;
+  line-height: 38px;
+  font-weight: 700;
+  color: #03c47e;
+  margin: 36px auto 0;
+  border: 1px solid #03c47e;
+  border-radius: 38px;
+}
+.footer div .feedback a:hover {
+  background-color: #194740;
+}
+.footer div .feedback .dfeedback {
+  position: fixed;
+  width: 382px;
+  height: 637px;
+  top: 140px;
+  left: 745px;
+  z-index: 20;
+  display: none;
+}
+.footer div .feedback .dfeedback .bbb {
+  width: 100%;
+  height: 601px;
+  margin-top: 36px;
+  background-color: #28333d;
+}
+.footer div .feedback .dfeedback .bbb .btop {
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  background-color: #1e2831;
+  margin-bottom: 26px;
+}
+.footer div .feedback .dfeedback .bbb .btop .btopLeft {
+  position: fixed;
+  width: 130px;
+  top: 140px;
+}
+.footer div .feedback .dfeedback .bbb .btop span {
+  font-size: 15px;
+  color: #fff;
+}
+.footer div .feedback .dfeedback .bbb .body {
+  width: 318px;
+  height: 512px;
+  padding: 0 32px;
+  overflow: hidden;
+}
+.footer div .feedback .dfeedback .bbb .body p {
+  font-size: 12px;
+  color: #8b969f;
+  margin-right: 260px;
+}
+.footer div .feedback .dfeedback .bbb .body a {
+  float: left;
+  display: block;
+  width: 95px;
+  height: 36px;
+  color: #fff;
+  border: 1px solid #8b969f;
+  background-color: #1e2831;
+}
+.footer div .feedback .dfeedback .bbb .body .shuru {
+  width: 318px;
+  height: 200px;
+  border: 1px solid #03c47e;
+  margin-top: 50px;
+  background-color: #1e2831;
+  color: #fff;
+  border-radius: 10px;
+}
+.footer div .mod_copyright {
+  width: 880px;
+  height: 50px;
+  margin: 105px auto 42px;
+}
+.footer div .mod_copyright .wylogo {
+  float: left;
+  width: 253px;
+  height: 31px;
+  margin-top: 8.5px;
+}
+.footer div .mod_copyright .wylogo img {
+  float: left;
+}
+.footer div .mod_copyright .copyright {
+  float: right;
+  width: 592px;
+  height: 50px;
+  color: #8b969f;
+}
+.footer div .mod_copyright .copyright a:hover {
+  color: #03c47e;
+}
+.footer div .mod_copyright .copyright span {
+  line-height: 25px;
+}
+.footer div .mod_copyright .copyright span a {
+  color: #8b969f;
+}
+.zheZ {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  display: none;
+}

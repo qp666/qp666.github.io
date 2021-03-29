@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网易大神</title>
+    <link rel="shortcut icon" href="./images/wl-favicon.ico">
+    <link rel="stylesheet" href="css/wl-index.css">
+    <!-- <link rel="stylesheet" href="css/fly.css"> -->
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/paper.js/0.9.24/paper-full.min.js"></script>
+
+    <style>
+        #vas {
+            position: absolute;
+            vertical-align: top;
+            z-index: 1000;
+            pointer-events: none;
+        }
+
+        #mouse {
+            border: 0px blueviolet solid;
+        }
+
+        #triangle-lost-in-space {
+            width: 100%;
+            height: 100%
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="vas"></canvas>
+    <!-- header部分 -->
+    <header>
+        <div class="w">
+            <div class="logo">
+                <h1>
+                    <a href="index.html" title="大神">大神</a>
+                </h1>
+            </div>
+            <div class="nav">
+                <!-- <span id="cloud"></span> -->
+                <ul>
+                    <li> <a href="../index.html" target="_blank">首页</a></li>
+                    <li><a href="#">内容精选</a></li>
+                    <li><a href="#">大神招募</a></li>
+                    <li><a href="#">最新资讯</a></li>
+                    <li><a href="#">商务合作</a></li>
+                    <li><a href="#">关注我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- banner部分 -->
+    <div class="banner">
+        <div class="dasheng">
+            <div class="big"></div>
+            <h2>游&nbsp;&nbsp;&nbsp;&nbsp;戏&nbsp;&nbsp;&nbsp;&nbsp;热&nbsp;&nbsp;&nbsp;&nbsp;
+                爱&nbsp;&nbsp;&nbsp;&nbsp;者&nbsp;&nbsp;&nbsp;&nbsp;兴&nbsp;&nbsp;&nbsp;&nbsp;
+                趣&nbsp;&nbsp;&nbsp;&nbsp;圈</h2>
+            <div class="small1" id="small1"><a href="https://apps.apple.com/cn/app/id1359055423"></a></div>
+            <div class="small2" id="small2"></div>
+            <div class="box" id="box">
+                <div class="small3" id="small3"></div>
+                <div class="con" id="con">
+                    <img src="./images/wl-erweima.png" alt="">
+                </div>
+            </div>
+            <div class="title"></div>
+            <h3>游戏主创、圈内红人入驻其中，独家资讯首发爆料抢先看！</h3>
+            <!-- zhubo部分开始-------------------------- -->
+            <div class="zhubo" id="zhubo">
+                <!-- <div class="leftArr" id="left"></div>
+                <div class="rightArr" id="right"></div> -->
+                <div id="showPage">
+                    <ul>
+                        <li>
+                            <img src="./images/wl-黑马刘亦菲.png" alt="">
+                            <p>黑马大饼刘亦菲</p>
+                            <h4>变秃了但是没有变强</h4>
+                        </li>
+                        <li>
+                            <img src="./images/wl-qp.png" alt="">
+                            <p>黑马网警</p>
+                            <h4>你可以不学习,但不能影响我</h4>
+                        </li>
+                        <li>
+                            <img src="./images/wl-hws.png" alt="">
+                            <p>黑马张艺兴</p>
+                            <h4>你们可以爱我,但我只爱富婆</h4>
+                        </li>
+                        <li>
+                            <img src="./images/wl-小龟老师.png" alt="">
+                            <p>陌生男子</p>
+                            <h4>劲敌当前，富婆心归何处</h4>
+                        </li>
+                        <li>
+                            <img src="./images/wl-zsj.png" alt="">
+                            <p>我就是人人口中的富婆</p>
+                            <h4>富就一个字,我只说一次</h4>
+                        </li>
+                        <li>
+                            <img src="./images/wl-hy.jpg" alt="">
+                            <p>黑马刘阳</p>
+                            <h4>我爱上了这片森林</h4>
+                        </li>
+                        <li>
+                            <img src="./images/wl-zx.png" alt="">
+                            <p>出家人</p>
+                            <h4>心如止水，直到遇到富婆</h4>
+                        </li>
+                        <li>
+                            <img src="./images/wl-wl.png" alt="">
+                            <p>蜡笔小玲</p>
+                            <h4>勿忘初心，本月白忙</h4>
+                        </li>
+                        <li>
+                            <img src="./images/wl-方家亮.png" alt="">
+                            <p>墨镜哥</p>
+                            <h4>墨镜一带，谁也不爱</h4>
+                        </li>
+                        <li>
+                            <img src="./images/wl-彭林老师.png" alt="">
+                            <p>黑马铁手</p>
+                            <h4>今后的你定会感谢今天努力奋斗的你!</h4>
+                        </li>
+                        <li>
+                            <img src="./images/wl-班主任.png" alt="">
+                            <p>小朋友</p>
+                            <h4>你们都是我的小朋友</h4>
+                        </li>
+                        <li>
+                            <img src="./images/wl-畅姐.png" alt="">
+                            <p>黑马新恒结衣</p>
+                            <h4>我们一起学猫叫 一起喵喵喵喵喵</h4>
+                        </li>
+                    </ul>
+                    <div id="setPage"></div>
+                </div>
+                <input type="text" placeholder="快来撩一下" id="txt">
+                <button id="btn2" type="button">发送</button><br>
+                <canvas id="canvas"></canvas>
+            </div>
+            <!-- zhubo部分结束------------------------- -->
+        </div>
+        <div class="xingqu">
+            <div class="tit"></div>
+            <p>游戏攻略、精品内容看不停，打造玩家专属的兴趣圈！</p>
+            <div class="circle">
+                <ul class="left">
+                    <li class="first">
+                        <div class="top">
+                            <img src="./images/wl-touxiang.jpg" alt="">
+                            <div>
+                                <h2>超凡电竞LOL</h2>
+                                <h4>1小时前 来自网易大神</h4>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <h4>
+                                RNG官宣与Uzi、小虎和Ming成功续约
+                                <a
+                                    href="https://ds.163.com/user/1568ff90500345d9b69b20bc4a7790bd/feed/5df9b2554ebd8e24e32e7b82/">
+                                    <查看更多>
+                                </a>
+                            </h4>
+                            <img src="./images/wl-bk1.jpg" alt="">
+                            <img src="./images/wl-bk2.jpg" alt=""><br>
+                            <span class="img1">
+                                <img src="./images/wl-zhuanfa.png" alt="">
+                                <b>转发</b>
+                            </span>
+                            <span class="img2">
+                                <img src="./images/wl-pinglun.png" alt="">
+                                <b>评论</b>
+                            </span>
+                            <span class="img2" id="changeimg3">
+                                <img src="./images/wl-dianzan.png" alt="" id="changeimg4">
+                                <b id="b2">点赞</b>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="second">
+                        <div class="top">
+                            <img src="./images/wl-touxiang2.png" alt="">
+                            <div>
+                                <h2>网易明日之后</h2>
+                                <h4>1小时前 来自网易大神</h4>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <h4>
+                                <a href="#">#明日之后</a>赛季野蛮人和圣教军已经分别通关了145层和147层
+                                <a href="https://ds.163.com/user/100a906a079e4d0eaf744c574ff7887a/">
+                                    <查看更多>
+                                </a>
+                            </h4>
+                            <img src="./images/wl-bk3.jpg" alt="">
+                            <img src="./images/wl-bk4.jpg" alt=""><br>
+                            <span class="img1">
+                                <img src="./images/wl-zhuanfa.png" alt="">
+                                <b>转发</b>
+                            </span>
+                            <span class="img2">
+                                <img src="./images/wl-pinglun.png" alt="">
+                                <b>评论</b>
+                            </span>
+                            <span class="img2" id="changeimg1" >
+                                <img src="./images/wl-dianzan.png" alt="" id="changeimg2">
+                                <b id="b1">点赞</b>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="third">
+                        <a
+                            href="https://ds.163.com/user/992cbe3b098f409bbee32155204bd4ca/feed/5dfa0243f7feba774a1860e0/"></a>
+                        <div class="top">
+                            <img src="./images/wl-touxiang3.png" alt="">
+                            <div>
+                                <h2>姜饼脆脆</h2>
+                                <h4>1小时前 来自网易大神</h4>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <h4>
+                                法式庄园《香草荚》的教程～需要实际模型的可以去顽皮兔里搜索我的id<a href="#">
+                                    <查看更多>
+                                </a>
+                            </h4>
+                            <img src="./images/wl-bk5.jpg" alt="">
+                            <img src="./images/wl-bk6.jpg" alt=""><br>
+                            <span class="img1">
+                                <img src="./images/wl-zhuanfa.png" alt="">
+                                <b>转发</b>
+                            </span>
+                            <span class="img2">
+                                <img src="./images/wl-pinglun.png" alt="">
+                                <b>评论</b>
+                            </span>
+                            <span class="img2">
+                                <img src="./images/wl-dianzan.png" alt="">
+                                <b>点赞</b>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="right">
+                    <li class="fourth">
+                        <div class="top">
+                            <img src="./images/wl-touxiang4.png" alt="">
+                            <div>
+                                <h2>胖子奶爸</h2>
+                                <h4>1小时前 来自网易大神</h4>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <h4>
+                                <a href="#">#今天你出货了吗</a>抢不到石头，给个金钥匙，开了兜兜，求安慰。<br>
+                                我们区玄黄550万感觉封顶了，紫禁看....
+                                <a
+                                    href="https://ds.163.com/user/1568ff90500345d9b69b20bc4a7790bd/feed/5df9b2554ebd8e24e32e7b82/">
+                                    <查看更多>
+                                </a>
+                            </h4>
+                            <img src="./images/wl-bk7.jpg" alt="">
+                            <img src="./images/wl-bk8.jpg" alt=""><br>
+                            <span class="img1">
+                                <img src="./images/wl-zhuanfa.png" alt="">
+                                <b>转发</b>
+                            </span>
+                            <span class="img2">
+                                <img src="./images/wl-pinglun.png" alt="">
+                                <b>评论</b>
+                            </span>
+                            <span class="img2" id="changeimg6">
+                                <img src="./images/wl-dianzan.png" alt="" id="changeimg5">
+                                <b id="b3">点赞</b>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="fifth">
+                        <div class="top">
+                            <img src="./images/wl-touxiang5.png" alt="">
+                            <div>
+                                <h2>超级赫总</h2>
+                                <h4>2小时前 来自网易大神</h4>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <h4>
+                                emmm...铁汁们，阿狗想知道，你们被复仇时会不会动手
+                                <a
+                                    href="https://ds.163.com/user/7a23e91f2e5243519d0fa1b3fed36e22/feed/5defc12373b05149140a4b23/">#明日之后八卦##明日之后#
+                                </a>
+                            </h4>
+                            <img src="./images/wl-bk9.jpg" alt="">
+                            <img src="./images/wl-bk10.jpg" alt=""><br>
+                            <span class="img1">
+                                <img src="./images/wl-zhuanfa.png" alt="">
+                                <b>转发</b>
+                            </span>
+                            <span class="img2">
+                                <img src="./images/wl-pinglun.png" alt="">
+
+                                <b>评论</b>
+                            </span>
+                            <span class="img2" id="changeimg8">
+                                <img src="./images/wl-dianzan.png" alt="" id="changeimg7">
+                                <b id="b4">点赞</b>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="sixth">
+                        <div class="top">
+                            <img src="./images/wl-touxiang.jpg" alt="">
+                            <div>
+                                <h2>艾泽拉斯情报局</h2>
+                                <h4>1小时前 来自网易大神</h4>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <h4>
+                                明天国服将开放付费角色转移服务。在角色选择画面点击商城按钮，即可找到转服。
+                                <a
+                                    href="https://ds.163.com/user/92c9b3852fb64d95a379a5fb927f8d17/feed/5df993928ec332056e8e05a0/">
+                                    <查看更多>
+                                </a>
+                            </h4>
+                            <img src="./images/wl-bk11.jpg" alt="">
+                            <img src="./images/wl-bk12.jpg" alt=""><br>
+                            <img src="./images/wl-bk13.jpg" alt=""><br>
+                            <span class="img1">
+                                <img src="./images/wl-zhuanfa.png" alt="">
+                                <b>转发</b>
+                            </span>
+                            <span class="img2">
+                                <img src="./images/wl-pinglun.png" alt="">
+
+                                <b>评论</b>
+                            </span>
+                            <span class="img2">
+                                <img src="./images/wl-dianzan.png" alt="">
+                                <b>点赞</b>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom"></div>
+        </div>
+        
+        <div class="zhuanxiang">
+            <canvas id="mouse"></canvas>
+            <div class="title"></div>
+            <p>海量福利、个性化游戏专区及工具，让游戏更好玩！</p>
+        </div>
+        <div class="game">
+            <div class="title"></div>
+            <p>现有多款游戏支持互通聊天功能，让游戏更有聊！</p>
+            <canvas id="triangle-lost-in-space" resize="true"></canvas>
+        </div>
+    </div>
+    <!-- foot部分 -->
+    <footer>
+        <div class="w">
+            <div class="mod_service">
+                <ul>
+                    <li><img src="./images/wl-logo.png" alt=""></li>
+                    <li>
+                        <h2>网易大神</h2>
+                        <p>游戏热爱者兴趣圈</p>
+                    </li>
+                    <li class="one" id="one"></li>
+                    <li class="two" id="two"></li>
+                    <li class="three" id="three">
+                        <div></div>
+                    </li>
+                </ul>
+                <div class="link">
+                    <div class="head">友情链接</div>
+                    <div class="body">
+                        <div class="fl">
+                            <li><a href="#">网易游戏</a></li>
+                            <li><a href="#">CC直播</a></li>
+                            <li> <a href="#">NeXT电竞</a></li>
+                        </div>
+                        <!-- <div class="center"></div> -->
+                        <div class="fr">
+                            <li><a href="#">网易藏宝图</a></li>
+                            <li><a href="#">手机将军令</a></li>
+                            <li><a href="#">网易爱玩</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mod_introduce">
+                <img src="./images/wl-网易游戏.png" alt="" class="one">
+                <img src="./images/wl-网易.png" alt="" class="two">
+                <img src="./images/wl-footer1.png" alt="" class="three">
+                <div>
+                    <a href="#">公司简介&nbsp;-</a>
+                    <a href="#">客户服务&nbsp;-</a>
+                    <a href="#">网易集团隐私政策及儿童个人信息保护规则&nbsp;-</a>
+                    <a href="#">网易游戏&nbsp;-</a>
+                    <a href="#">商务合作&nbsp;-</a>
+                    <a href="#">加入我们&nbsp;-</a>
+                    <a href="#">不良信息举报</a>
+                    <div class="banquan">
+                        <p>网易公司版权所有@1997-2019</p>
+                        <span><a href="#">点击查看家长关爱平台&nbsp;></a></span>
+                    </div>
+                </div>
+                <br>
+                <div class="jingying">《网络文化经营许可证》粤网文[2014]0636-236号</div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./js/wl-index.js"></script>
+<script src="./js/wl-snow.js"></script>
+<script type="text/javascript" src="./js/wl-danmu.js"></script>
+<!-- <script src="./js/wl-jquery-1.12.4.js"></script> -->
+<script src="./js/fly.js"></script>
+<script type="text/javascript">
+
+    // 滑入滑出效果开始
+    //     $(function () {
+    //     $('#small3').click(function(){
+    //       $('#con').slideDown(1000);
+    //     });
+    //     $('#small3').click(function(){
+    //       $('#con').slideUp(1000);
+    //     });
+    //   });
+    // 滑入滑出效果结束
+
+
+    // 弹幕效果开始
+    $(function () {
+        $('#canvas').barrager([{ "msg": "黑马张艺兴来也" }, { "msg": "我叫牛一飞" }, { "msg": "内网不是法外之地" },{ "msg": "第一名我就唱好心分手" }, { "msg": "小龟不是小归" }, { "msg": "墨镜一带,谁都不爱" }, { "msg": "富就一个字,我只说一次" }, { "msg": "来比比谁的屁股大" }, { "msg": "你们都是我的小朋友" }, { "msg": "新恒结衣,爱了爱了" }, { "msg": "听说wl才是真富婆" }, { "msg": "黑马张艺兴粉丝一号" }, { "msg": "心如止水" }, { "msg": "第一名我就唱好心分手" }, { "msg": "不错不错。。" }, { "msg": "我爱富婆" }, { "msg": "新垣结衣" }, { "msg": "你爱过大海" }, { "msg": "第一名我就唱好心分手" },{ "msg": "我爱过你" }, { "msg": "我还年轻" }]);
+        $('#btn2').click(function send() {
+            var word = $('#txt')[0].value;
+            var span = document.createElement('span');
+            span.innerHTML = word;
+            console.log(span)
+            $('#canvas').html(span);
+            $('#txt')[0].value = "";
+        });
+        // $('#btn2').click(function () {
+        //     $('#canvas').barrager([{ "msg": "看着不错。。。。" }, { "msg": "哈哈哈。。。。" }, { "msg": "不错不错。。" }, { "msg": "nihao" }, { "msg": "nihao" }, { "msg": "nihao" }, { "msg": "nihao" }, { "msg": "nihao" }, { "msg": "看着不错。。。。" }, { "msg": "哈哈哈。。。。" }, { "msg": "不错不错。。" }, { "msg": "nihao" }, { "msg": "nihao" }, { "msg": "nihao" }, { "msg": "nihao" }, { "msg": "nihao" }, { "msg": "看着不错。。。。" }, { "msg": "哈哈哈。。。。" }, { "msg": "不错不错。。" }, { "msg": "这是我发的。。。" }, { "msg": "大神粉丝群" }, { "msg": "nihao" }, { "msg": "nihao" }, { "msg": "nihao" }]);
+        // });
+        setInterval(function () {
+            $('#canvas').barrager([{ "msg": "黑马张艺兴来也" }, { "msg": "我叫牛一飞" }, { "msg": "内网不是法外之地" },{ "msg": "第一名我就唱好心分手" }, { "msg": "小龟不是小归" }, { "msg": "墨镜一带,谁都不爱" }, { "msg": "富就一个字,我只说一次" }, { "msg": "来比比谁的屁股大" }, { "msg": "你们都是我的小朋友" }, { "msg": "新恒结衣,爱了爱了" }, { "msg": "听说wl才是真富婆" }, { "msg": "黑马张艺兴粉丝一号" }, { "msg": "心如止水" }, { "msg": "第一名我就唱好心分手" }, { "msg": "不错不错。。" }, { "msg": "我爱富婆" }, { "msg": "新垣结衣" }, { "msg": "你爱过大海" }, { "msg": "第一名我就唱好心分手" },{ "msg": "我爱过你" }, { "msg": "我还年轻" }]);
+        }, 2000);
+    })
+    // 弹幕效果结束
+
+
+
+    // 小球效果开始
+    var mycanvas = document.querySelector('#mouse');
+    var ctx = mycanvas.getContext('2d')
+    mycanvas.width = document.documentElement.clientWidth;
+    mycanvas.height = document.documentElement.clientHeight;
+    function ColourfulBall(x, y) {
+        this.x = x,
+            this.y = y,
+            this.r = 30,
+            this.color = "rgb(" + parseInt(Math.random() * 256) + "," + parseInt(Math.random() * 256) + "," + parseInt(Math.random() * 256) + "," + parseInt(Math.random() * 256)//随机生成颜色
+        this.dx = Math.random() * 9 - 3;
+        this.dy = Math.random() * 9 - 3;
+        ballArr.push(this)
+    }
+
+    ColourfulBall.prototype.updata = function () {
+        this.x += this.dx
+        this.y += this.dy
+        this.r--;
+        if (this.r < 0) {
+            this.die();
+        }
+    }
+
+    ColourfulBall.prototype.die = function () {
+        for (var i = 0; i < ballArr.length; i++) {
+            if (ballArr[i] === this) {
+                ballArr.splice(i, 1)
+            }
+        }
+    }
+
+    ColourfulBall.prototype.render = function () {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2, true)
+        ctx.closePath();
+        ctx.fillStyle = this.color;
+        ctx.fill();
+    }
+    var ballArr = []
+
+    mycanvas.onmousemove = function (event) {
+        new ColourfulBall(event.clientX, event.clientY)
+    }
+
+    setInterval(() => {
+        ctx.clearRect(0, 0, mycanvas.width, mycanvas.height);
+        for (var i = 0; i < ballArr.length; i++) {
+            ballArr[i].updata();
+            ballArr[i] && ballArr[i].render();
+        }
+    }, 10)
+    // 小球效果结束
+
+    // 轮播图效果开始
+    //box : 切换主体盒子ID
+    //boxW : 切换主体盒子 的宽度
+    //liLen ： 每页几个li
+    //delay : 定时切换页面时间
+    function ListChange(box, boxW, liLen, delay) {
+        var $box = $('#' + box);
+        var $ul = $('#' + box + ' ul');
+        var $li = $('#' + box + ' li');
+
+        $('#' + box + ' li:nth-child(' + liLen + 'n)').css('margin-right', 0);
+
+        var page = parseInt($li.length / liLen);
+        page = $li.length % liLen > 0 ? page + 1 : page;
+        $ul.css('width', boxW * page);
+
+        if (page > 1) {
+            for (var i = 0; i < page; i++) {
+                if (i == 0) {
+                    $('#setPage').append('<a class="setPageIn" href="javascript:void(0)"></a>');
+                } else {
+                    $('#setPage').append('<a href="javascript:void(0)"></a>');
+                }
+            }
+            $('#showPage').on('click', '#setPage a', function () {
+                clearTimeout(curTimer);
+                var $this = $(this);
+                curpage = $this.index();
+                $ul.stop().animate({ 'margin-left': -curpage * boxW }, 'slow', function () {
+                    curTimer = setTimeout(changePage, delay);
+                });
+                $this.addClass('setPageIn').siblings().removeClass('setPageIn');
+            });
+            var curpage = 0;
+            var curTimer = setTimeout(changePage, delay);
+            function changePage() {
+                curpage++;
+                if (curpage >= page) {
+                    curpage = 0;
+                }
+                $('#setPage a').eq(curpage).trigger('click');
+                curTimer = setTimeout(changePage, delay);
+            }
+        }
+    }
+    //一屏放4个
+    ListChange('showPage', 1040, 4, 6000);
+    // 轮播图效果结束
+</script>
+
+</html>

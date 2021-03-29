@@ -1,0 +1,580 @@
+#fp-nav ul li a span {
+    background-color: #f40;
+}
+
+/* 第一屏 */
+.section1 {
+    background: url(../images/zx_pic_001.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.section1 .w {
+    width: 100%;
+    height: 62px;
+    background-color: #fff;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+}
+
+.section1 nav {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.section1 .day {
+    position: absolute;
+    top: 62px;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    background: url(../images/zx_pic_003.png);
+}
+
+.section1 nav .logo {
+    width: 142px;
+    height: 48px;
+    background-color: pink;
+    background: url(../images/zx_pic_002.png) 0 -38px;
+    margin: 5px 80px 0 0;
+}
+
+.section1 nav ul {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.section1 nav ul li {
+    height: 59px;
+}
+
+.section1 nav ul li a {
+    display: block;
+    color: #333;
+    height: 100%;
+    line-height: 58px;
+    padding: 0 25px;
+    border-bottom: 4px solid #fff;
+}
+
+.section1 nav ul li:nth-child(1) a {
+    color: #e60012;
+    border-bottom: 4px solid #e60012;
+}
+
+/* .section1 nav ul li a:hover {
+    color: #e60012;
+    border-bottom: 4px solid #e60012;
+}  */
+
+.section1 nav .btn a {
+    display: block;
+    width: 60px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.section1 nav .btn .login {
+    float: left;
+    margin-right: 10px;
+    background-color: #e60012;
+    border: 1px solid #e60012;
+    color: #fff;
+}
+
+.section1 nav .btn .register {
+    float: right;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+.section1 nav .btn .register:hover {
+    background-color: #eee;
+}
+
+.section1 .nte_ease img {
+    margin: 0 auto 20px;
+    margin-top: 14%;
+}
+
+.section1 .yi_game {
+    margin-bottom: 5%;
+}
+
+.section1 .yi_game img {
+    margin: 0 auto;
+}
+
+.section1 .input {
+    position: relative;
+    margin: 0 auto;
+    width: 800px;
+    height: 50px;
+    background-color: #fff;
+    border: 2px solid #9bc8e9;
+    display: flex;
+    align-items: center;
+}
+
+.section1 .input a {
+    color: #333;
+    display: block;
+}
+
+.section1 .input .city {
+    float: left;
+    padding: 0 10px 0 10px;
+}
+
+.section1 .input .job {
+    float: left;
+    padding: 0 10px 0 0px;
+}
+
+.section1 .input .city::after,
+.section1 .input .job::after {
+    content: '';
+    float: right;
+    display: block;
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 18px;
+    height: 12px;
+    background: url(../images/zx_pic_002.png) -48px -172px;
+}
+
+.section1 .input input {
+    flex: 1;
+    height: 48px;
+    outline: none;
+    border: none;
+    text-indent: 1em;
+}
+
+.section1 .input .search {
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #e60012;
+    color: #fff;
+}
+
+.section1 .input ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 3px;
+    background-color: #fff;
+}
+
+.section1 .input ul li {
+    text-align: center;
+}
+
+.section1 .input .select_city {
+    width: 67px;
+}
+
+.section1 .input .select_job {
+    left: 73px;
+    width: 89px;
+}
+
+.section1 .hot_search {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.section1 .hot_search a {
+    color: #333;
+    margin-right: 5px;
+}
+
+.section1 .hot_search a:hover {
+    text-decoration: underline;
+}
+
+ .circle {
+    position: absolute;
+    bottom: 38px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: url(../images/zx_pic_006.png) no-repeat 26px 16px;
+    background-color: #e60012;
+    opacity: 0;
+}
+/* .circle::after {
+
+} */
+
+
+
+
+
+
+
+/* 第二屏 */
+.section2 {
+    background: url(../images/zx_pic_007.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.section2 .job,
+.section3 .hot_pos,
+.section4 .about {
+    /* position: absolute; */
+    padding: 13% 30px 20px;
+
+}
+
+.section2 .job h3,
+.section3 .hot_pos h3,
+.section4 .about h3 {
+    background: url(../images/zx_pic_008.png) no-repeat center;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-indent: -9999px;
+}
+
+.section2 .job h2,
+.section3 .hot_pos h2,
+.section4 .about h2 {
+    font-size: 42px;
+    margin-top: -1px;
+}
+
+.section2 .job_ul {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.section2 .job_ul ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section2 .job_ul ul li {
+    display: none;
+    width: 112px;
+    height: 166px;
+}
+
+.section2 .job_ul ul li a {
+    width: 100%;
+    height: 100%;
+}
+
+.section2 .job_ul ul li a div {
+    width: 112px;
+    height: 122px;
+    border-radius: 50%;
+    background-color: #42b8ea;
+    overflow: hidden;
+}
+.section2 .job_ul ul li:nth-child(2) a div {
+    background-color: #01c1b2;
+}
+.section2 .job_ul ul li:nth-child(3) a div {
+    background-color: #505976;
+}
+.section2 .job_ul ul li:nth-child(4) a div {
+    background-color: #00b7ee;
+}
+.section2 .job_ul ul li:nth-child(5) a div {
+    background-color: #ff63bf;
+}
+.section2 .job_ul ul li:nth-child(6) a div {
+    background-color: #42b8ea;
+}
+.section2 .job_ul ul li:nth-child(7) a div {
+    background-color: #80c269;
+}
+.section2 .job_ul ul li a div:hover {
+    /* border: 1px solid #fff; */
+    background-color: #e60012;
+}
+
+.section2 .job_ul ul li a div i {
+    display: block;
+    width: 70px;
+    height: 70px;
+    background: url(../images/zx_pic_009.png) no-repeat -27px -268px;
+    margin: 18px auto;
+}
+.section2 .job_ul ul li:nth-child(2) a div i {
+    background: url(../images/zx_pic_009.png) no-repeat -27px -347px;
+}
+.section2 .job_ul ul li:nth-child(3) a div i {
+    background: url(../images/zx_pic_009.png) no-repeat -27px -420px;
+}
+.section2 .job_ul ul li:nth-child(4) a div i {
+    background: url(../images/zx_pic_009.png) no-repeat -27px -490px;
+}
+.section2 .job_ul ul li:nth-child(5) a div i {
+    background: url(../images/zx_pic_009.png) no-repeat -27px -569px;
+}
+.section2 .job_ul ul li:nth-child(6) a div i {
+    background: url(../images/zx_pic_009.png) no-repeat -27px -186px;
+}
+.section2 .job_ul ul li:nth-child(7) a div i {
+    background: url(../images/zx_pic_009.png) no-repeat -27px -656px;
+}
+
+.section2 .job_ul ul li a p {
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+
+
+
+/* 第三屏 */
+.section3 {
+    background: url(../images/zx_pic_010.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.section3 .hot_pos h3 {
+    background-image: url(../images/zx_pic_011.png)
+}
+
+.section3 .jobs {
+    margin: 0 auto;
+    width: 920px;
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section3 .jobs .new_job .new_hd,
+.section3 .jobs .hot_job .hot_hd {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    /* height: 206px; */
+}
+
+.section3 .jobs>div {
+    display: none;
+    width: 430px;
+}
+
+.section3 h4 {
+    border-left: 4px solid #e60012;
+    margin: 0;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 22px;
+    flex: 1;
+}
+
+.section3 .more {
+    display: block;
+    width: 44px;
+    height: 24px;
+    border: 1px solid #333;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+}
+
+.section3 a:hover {
+    text-decoration: underline;
+}
+
+.section3 a {
+    display: block;
+    float: left;
+    text-align: left;
+    width: 350px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+}
+
+.section3 span {
+    font-size: 12px;
+}
+.section3 .jobs #new,
+.section3 .jobs #hot {
+    position: relative;
+    height: 204px;
+    overflow: hidden;
+}
+.section3 .jobs #new .new_bd,
+.section3 .jobs #hot .hot_bd {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+/* 第四屏 */
+.section4 {
+    background: url(../images/zx_pic_012.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.section4 .about h3 {
+    background-image: url(../images/zx_pic_013.png)
+}
+
+.section4 .about_bd {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.section4 .about_bd .video {
+    display: none;
+    position: relative;
+    margin-right: 50px;
+    width: 700px;
+    height: 385px;
+    background-color: #fff;
+    border: 10px solid #000;
+    cursor: pointer;
+}
+
+.section4 .about_bd .video .invisible {
+    position: absolute;
+    z-index: 2;
+    top: -10px;
+    left: -10px;
+    display: none;
+}
+
+.section4 .about_bd .video .open {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    margin-left: -41px;
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    background-color: pink;
+    background: url(../images/zx_pic_015.png) no-repeat;
+}
+
+.section4 .about_bd .know_more {
+    display: none;
+    flex: 1;
+    height: 385px;
+    /* background-color: pink; */
+}
+
+.section4 .about_bd .know_more p {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 40px;
+    line-height: 24px;
+}
+
+.section4 .about_bd a {
+    display: block;
+    margin-top: 30px;
+    width: 88px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #e60012;
+
+    color: #fff;
+    font-size: 14px;
+}
+
+
+/* 底部的css */
+.fp-auto-height>a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    background-color: #e5e5e5;
+}
+.fp-auto-height>a:hover {
+    text-decoration: underline;
+    color: #aaa;
+}
+.fp-auto-height>a i {
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    background: url(../images/zx_pic_002.png) no-repeat 0 -432px;
+    margin-right: 5px;
+}
+.fp-auto-height footer {
+    width: 100%;
+    /* height: 120px; */
+    height: auto;
+    background-color: #3d3d39;
+    margin-top: 0;
+    padding: 45px 0;
+    display: flex;
+    justify-content: center;
+}
+.fp-auto-height footer .left {
+    width: 256px;
+    height: 39px;
+    margin-right: 10px;
+    background: url(../images/zx_pic_002.png) no-repeat 0 0;
+}
+.fp-auto-height footer .right {
+    width: 420px;
+}
+.fp-auto-height footer .right a {
+    font-size: 12px;
+    color: #fff;
+}
+.fp-auto-height footer .right div {
+    font-size: 12px;
+    color: #fff;
+}
+
+
+.block {
+    display: block!important;
+}
+
+
+
+/* 非fullpage代码 */
+.shadow {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* z-index: -1; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
