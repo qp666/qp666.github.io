@@ -2,15 +2,25 @@
 layout: home
 # 首页部分元素定制
 blog:
- name: '@sugarat/theme'
- motto: 简约风的 Vitepress 博客主题
+ name: '小卿的知识库'
+ motto: 学习永远不会吃亏
+ minScreenAvatar: true
+ # 轮播文案
  inspiring:
-  - 基于 Vitepress 定制的主题🎨
-  - 千万不要因为走得太久，而忘记了我们为什么出发
-  - 人生就像一场修行，你不可能一开始就修成正果
-  - 无论多么沉重的负担，也不要忘记微笑；无论多么漫长的路程，也不要忘记坚持
-  - 生活的真谛不在繁华，而在于淡泊
+  - To shine,not be illuminated
+  - 你追逐的不是别人，是你自己满怀期待的心
+  - 山不让尘，川不辞盈
+  - 追光的人，终会光芒万丈
+  - 慢慢来，好戏都在烟火里
+  - 所有的为时已晚，其实是恰逢其时
+  - 可以不光芒万丈，但是永远不要停止发光
  # 设置 inspiringTimeout 可以实现自动切换
- inspiringTimeout: 3000
+ inspiringTimeout: 4000
  pageSize: 6
+ author: 小卿
+ logo: /touxiang1MB.jpg
+ # 文章数据分析卡片标题定义
+ analysis: 
+  articles: 
+    title: ['博客文章', '月更新', '周更新']
 ---

@@ -7,7 +7,22 @@
   // 自定义首页背景图
   &::before {
     // 图片来源：https://zhuanlan.zhihu.com/p/54060187
-    background-image: url(./assets/bg.webp);
+    background-image: url(./assets/20231115860j8l.webp);
     background-size: cover;
   }
 }
+// 自定义标题样式
+.header-banner h1 > span.name {
+  font-size: 48px; /* 增大字体 */
+  background: linear-gradient(135deg, rgb(77, 194, 255), rgb(189, 52, 254)); /* 左上到右下渐变 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.header-banner h1 > span.motto {
+  // color: rgb(106, 5, 201); /* 浅蓝色 */
+  font-size: 16px; /* 增大字体 */
+}
+
