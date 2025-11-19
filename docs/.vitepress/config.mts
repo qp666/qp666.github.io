@@ -163,7 +163,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/SuZhelevel6'
+        link: 'https://github.com/qp666'
       }
     ],
     
