@@ -35,10 +35,10 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    # node v20 运行
+    # 使用稳定的 Node.js 22，避免 GitHub runner 对 Node 20 的强制迁移影响依赖安装
     strategy:
       matrix:
-        node-version: [20]
+        node-version: [22]
 
     steps:
       # 拉取代码
@@ -54,20 +54,16 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # 使用 最新的 PNPM
-      # 你也可以指定为具体的版本
+      # 固定 pnpm 版本，避免 latest 更新导致 lockfile/安装行为变化
       - uses: pnpm/action-setup@v4
         name: Install pnpm
         with:
-          version: latest
-          # version: 9
+          version: 10.33.0
           run_install: false
 
         # 安装依赖
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
-        # 锁定依赖版本
-        # run: pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
         # 构建项目
       - name: Build blog project
