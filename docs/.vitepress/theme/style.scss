@@ -7,7 +7,7 @@
   // 自定义首页背景图
   &::before {
     // 图片来源：https://zhuanlan.zhihu.com/p/54060187
-    background-image: url(./assets/20231115860j8l.webp);
+    background-image: url(./assets/wallhaven-3l6w73.jpg);
     background-size: cover;
   }
 }
@@ -25,4 +25,22 @@
   // color: rgb(106, 5, 201); /* 浅蓝色 */
   font-size: 16px; /* 增大字体 */
 }
+/* 精选文章编号：保留圆形排版，去掉默认彩色底色 */
+.recommend-container li:nth-child(1) .num,
+.recommend-container li:nth-child(2) .num,
+.recommend-container li:nth-child(3) .num {
+  background-color: transparent !important;
+  color: var(--description-font-color) !important;
+  border-radius: 50% !important;
+  font-size: 14px !important;
+  flex: 0 0 24px;
+  width: 24px !important;
+  margin-right: 10px !important;
+  font-style: normal;
+  box-sizing: border-box;
+}
 
+.recommend-container li .des {
+  flex: 1;
+  min-width: 0;
+}

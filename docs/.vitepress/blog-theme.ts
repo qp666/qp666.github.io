@@ -31,8 +31,10 @@ const blogTheme = getThemeConfig({
 
   // 页脚
   footer: {
+    // 隐藏主题版本标识
+    version: false,
     // message 字段支持配置为HTML内容，配置多条可以配置为数组
-    message: '山河远阔，人间烟火',
+    message: '行动力，是对平庸生活最好的回击',
     // copyright: 'MIT License | 小卿',
     // icpRecord: {
     //   name: '蜀ICP备19011724号',
@@ -50,7 +52,7 @@ const blogTheme = getThemeConfig({
     nextText: '下一页',
     pageSize: 9,
     style: 'card',
-    sort: 'filename' // 文件名排序
+    sort: 'date' // 按发布时间倒序排列，最新文章优先
     // empty: false // false时无推荐文章不展示此模块
   },
 
@@ -95,26 +97,14 @@ const blogTheme = getThemeConfig({
     // }
   },
 
-  // 友链
-  friend: [
-    {
-      nickname: '粥里有勺糖',
-      des: '你的指尖用于改变世界的力量',
-      avatar:
-        'https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTE2NzAzMA==674995167030',
-      url: 'https://sugarat.top',
-    },
-    {
-      nickname: 'Vitepress',
-      des: 'Vite & Vue Powered Static Site Generator',
-      avatar:
-        'https://vitepress.dev/vitepress-logo-large.webp',
-      url: 'https://vitepress.dev/',
-    },
-  ],
+  // 关闭友情链接模块
+  friend: false,
 
   homeTags: {
-    title: `${svgIconStr} 标签`
+    title: '🏷️ 标签',
+    limit: 12,
+    showCount: true,
+    sort: 'count'
   },
 
   // 公告
@@ -151,15 +141,8 @@ const blogTheme = getThemeConfig({
   //   ],
   //   duration: 0
   // },
-  oml2d: {
-    mobileDisplay: true,
-    models: [
-      {
-        path: 'https://model.oml2d.com/haruto/haruto.model.json',
-        position: [0, 60],
-      }
-    ]
-  },
+  // 关闭外部 Live2D 模型，避免网络资源加载失败时一直显示“正在加载”
+  oml2d: false,
 })
 
 export { blogTheme }

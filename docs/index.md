@@ -2,7 +2,7 @@
 layout: home
 # 首页部分元素定制
 blog:
- name: '小卿的知识库'
+ name: '小卿的博客'
  motto: 学习永远不会吃亏
  minScreenAvatar: true
  # 轮播文案
