@@ -1,0 +1,328 @@
+{
+  "profile": {
+    "name": "卿鹏",
+    "title": "前端开发工程师 · Vue 跨端与开源实践",
+    "tagline": "7 年 Web 前端 · 开源贡献 10w+ Star · UniApp 多端与 AI 应用落地",
+    "phone": "18960903219",
+    "email": "qp66797@163.com",
+    "location": "深圳",
+    "experienceYears": "7",
+    "salary": "面议",
+    "intents": ["Web 前端开发", "全职"],
+    "politicalStatus": "党员",
+    "summary": "7 年前端开发经验，覆盖 PC / H5 / 小程序 / App 多端交付。向 Element-Plus、axios、wot-ui 等累计 10w+ Star 开源项目提交 PR；UniApp 插件市场发布「车牌号输入」，下载 2000+、长居下载榜前 3。掘金优秀创作者（20+ 首页推荐，阅读 8w+），CSDN「创作能手」（阅读 6w+，文章收录 Vue 社区、华为开发者社区）。熟悉 Vue2/3、UniApp、工程化与实时通信，追求组件复用、性能与可维护性。"
+  },
+  "pdf": {
+    "url": "/卿鹏-前端开发工程师.pdf",
+    "filename": "卿鹏-前端开发工程师.pdf"
+  },
+  "stats": [
+    { "label": "从业年限", "value": "7", "unit": "年", "hint": "2017 至今" },
+    { "label": "核心项目", "value": "7", "unit": "个", "hint": "AI / 多端 / B 端" },
+    { "label": "开源影响", "value": "10w+", "unit": "Star", "hint": "Element-Plus / axios 等 PR" },
+    { "label": "内容阅读", "value": "14w+", "unit": "", "hint": "掘金 8w+ · CSDN 6w+" }
+  ],
+  "expertise": [
+    {
+      "id": "oss",
+      "title": "开源贡献",
+      "accent": "rose",
+      "description": "向高星国际开源与国内插件生态持续贡献，覆盖兼容性、文档与组件能力。",
+      "points": [
+        "Element-Plus、Element-Plus-X、axios、mp-html、wot-ui 等累计 10w+ Star 项目 PR",
+        "覆盖组件兼容性优化、API 文档完善，推动开源生态完善",
+        "UniApp 插件市场「车牌号输入」下载 2000+，长居下载榜前 3"
+      ]
+    },
+    {
+      "id": "frontend",
+      "title": "Vue 与跨端架构",
+      "accent": "amber",
+      "description": "精通 Vue2/3 与 UniApp，一套代码覆盖 PC、H5、小程序与 App。",
+      "points": [
+        "深入 MVVM、生命周期、组件通信；熟练 Vue-Router、Vuex、Pinia、Axios",
+        "UniApp + Vue3 + TS 多端编译，样式与交互按需注入，代码复用率 80%",
+        "微信 / 支付宝 H5、微信小程序、公众号实战，熟悉 HBuilderX 工具链"
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI 应用落地",
+      "accent": "sky",
+      "description": "将流式对话、Markdown 超集与支付登录接入真实税务业务。",
+      "points": [
+        "TaxMind：EventSource 打字机 Hook，支持中断、重问、续答与断线重连",
+        "Markdown 超集渲染：LaTeX、Mermaid、HTML 预览、代码高亮",
+        "CRM 接入文心一言，实现需求分类与智能化办公"
+      ]
+    },
+    {
+      "id": "eng",
+      "title": "工程化与性能",
+      "accent": "violet",
+      "description": "构建规范、体积治理与多端可视化交付，保障首屏与稳定性。",
+      "points": [
+        "小程序分包 + 动态引入，主包压至 1.4M，首屏 0.9s",
+        "熟悉 Webpack / Vite、Git 规范、Charles / Spy-Debugger 等调试抓包",
+        "Node18 + Puppeteer 无头渲染 PDF，税局报告平均 10s 出件"
+      ]
+    },
+    {
+      "id": "influence",
+      "title": "技术影响力",
+      "accent": "emerald",
+      "description": "持续输出前端实践，文章被社区收录，并参与一线开发者大会交流。",
+      "points": [
+        "掘金优秀创作者，20+ 首页推荐，单平台阅读 8w+",
+        "CSDN「创作能手」，阅读 6w+，收录 Vue 社区、华为开发者社区",
+        "参加 VueConf、掘金开发者大会、CSDN 开发者大会、Trae Team 深圳会议"
+      ]
+    }
+  ],
+  "skills": {
+    "radar": [
+      { "subject": "Vue 生态", "score": 5, "projects": ["TaxMind", "CRM", "商界大讲堂"] },
+      { "subject": "跨端 UniApp", "score": 5, "projects": ["TaxMind", "云鹏报告", "车牌插件"] },
+      { "subject": "工程化", "score": 4, "projects": ["Vite", "分包 1.4M", "Git 规范"] },
+      { "subject": "AI 应用", "score": 4, "projects": ["SSE 打字机", "文心一言", "Markdown 超集"] },
+      { "subject": "可视化", "score": 4, "projects": ["ECharts", "云鹏 PDF", "DataV"] },
+      { "subject": "软技能", "score": 4, "projects": ["开源 PR", "掘金 / CSDN", "团队协作"] }
+    ],
+    "categories": [
+      {
+        "name": "前端",
+        "items": ["TypeScript", "Vue2", "Vue3", "Vue-Router", "Vuex", "Pinia", "Vite", "Webpack", "Tailwind CSS", "UnoCSS"]
+      },
+      {
+        "name": "跨端 & UI",
+        "items": ["UniApp", "微信小程序", "微信公众号", "支付宝 H5", "Element Plus", "Vant", "Wot-UI", "Bootstrap"]
+      },
+      {
+        "name": "实时 & 可视化",
+        "items": ["Axios", "WebSocket", "SSE", "ECharts", "Chart.js", "DataV", "html2canvas", "Puppeteer"]
+      },
+      {
+        "name": "工程 & 服务",
+        "items": ["Git", "Mock.js", "Node.js", "Express", "Nuxt4", "Monorepo", "HBuilderX", "Charles"]
+      }
+    ],
+    "tags": [
+      "TypeScript", "Vue3", "UniApp", "Pinia", "Vite", "UnoCSS",
+      "Element Plus", "Wot-UI", "SSE", "WebSocket", "ECharts",
+      "Nuxt4", "微信小程序", "开源贡献"
+    ]
+  },
+  "experience": [
+    {
+      "id": "dashui",
+      "company": "深圳答税科技有限公司",
+      "role": "前端开发工程师",
+      "period": "2024.11 - 2025.11",
+      "tags": ["frontend", "ai"],
+      "highlights": [
+        "负责 TaxMind 智能税务咨询多端（H5 / 小程序 / App）与云鹏风险报告",
+        "基于 EventSource 封装打字机 Hook，支持中断、重问、续答与异常重连",
+        "PC / H5 / 小程序按需注入样式与交互，代码复用率 80%",
+        "小程序分包 + 动态引入，主包 1.4M，首屏渲染降至 0.9s"
+      ],
+      "achievements": [
+        "云鹏报告服务 1000+ 企业，平均 10s 出报告，查准率 100%",
+        "分享海报 H5 Canvas / 小程序 Skyline，分享率提升 3 倍",
+        "日峰值 100+ 报告，税局登录 WebSocket 零刷新推送"
+      ],
+      "stack": ["UniApp", "Vue3", "TypeScript", "Vite", "Wot-UI", "Element Plus", "UnoCSS", "Pinia", "Nuxt4"]
+    },
+    {
+      "id": "shangjie",
+      "company": "深圳商界联合有限公司",
+      "role": "前端开发工程师",
+      "period": "2023.04 - 2024.09",
+      "tags": ["frontend", "ai"],
+      "highlights": [
+        "负责智能 CRM 与商界大讲堂学习平台前端",
+        "搭建可配置动态表单与审批流，适配多类业务场景",
+        "集成 6 大平台订单自动同步，替代人工录入",
+        "微信 OAuth 打通用户，集成视频 / 直播与 Canvas 分享海报"
+      ],
+      "achievements": [
+        "审批效率提升 80%，订单错误率降至 0",
+        "接入文心一言实现需求分类与智能办公",
+        "课程完播率提升 40%，海报引流效果提升 60%"
+      ],
+      "stack": ["Vue3", "Vue2", "Vuex", "Element UI", "ECharts", "Video-play", "UEditor"]
+    },
+    {
+      "id": "zhixuan",
+      "company": "深圳智轩软件科技有限公司",
+      "role": "前端开发工程师",
+      "period": "2020.05 - 2023.03",
+      "tags": ["frontend"],
+      "highlights": [
+        "负责集团计划统计管理系统（PC）与企微 H5 审批闭环",
+        "表格懒加载 + 拖拽排序，支撑 10 万+ 财务数据整理",
+        "集成 SmartBI + ECharts，支持可视化与钻取分析",
+        "封装通用审批组件，PC / 企微跨端数据一致"
+      ],
+      "achievements": [
+        "服务超 500 名内部用户",
+        "审批组件复用率 80%，开发效率提升 60%",
+        "全端 Excel / Word / PDF 预览，附件覆盖 100%"
+      ],
+      "stack": ["Vue2", "Vue3", "Vite", "Pinia", "Vant4", "SmartBI", "PageOffice", "html2canvas"]
+    },
+    {
+      "id": "fuxun",
+      "company": "福州福讯软件有限公司",
+      "role": "前端开发工程师",
+      "period": "2017.04 - 2020.02",
+      "tags": ["frontend"],
+      "highlights": [
+        "负责智慧社区多端缴费（支付宝 / 微信公众号）与 EP 车场管理",
+        "Vuex 缓存 + 防抖，避免订单重复提交",
+        "接入腾讯电子签、二维码缴费与高德地图找场",
+        "小程序道闸 / 监控 + 公众号缴费，形成管理-使用闭环"
+      ],
+      "achievements": [
+        "订单重复率降至 0，数据交互稳定性 99%",
+        "道闸控制响应 < 1s，管理员运维效率提升 80%",
+        "车牌输入组件复用，后沉淀为 UniApp 市场插件"
+      ],
+      "stack": ["Vue", "Vuex", "Vant", "微信小程序", "高德地图", "腾讯电子签", "qrcode.js"]
+    }
+  ],
+  "projects": [
+    {
+      "id": "taxmind",
+      "name": "答税 TaxMind 智能 AI",
+      "role": "前端开发工程师",
+      "period": "2024.11 - 2025.11",
+      "description": "税务咨询 AI 问答产品。一套 UniApp + Vue3 代码覆盖 PC / H5 / 小程序 / App，把流式对话、登录和支付做成可复用闭环。",
+      "stack": ["UniApp", "Vue3", "TypeScript", "Vite", "Wot-UI", "Element Plus", "UnoCSS", "Pinia"],
+      "highlights": [
+        "按端编译注入样式与交互，PC / H5 / 小程序代码复用 80%",
+        "封装 EventSource 打字机 Hook：中断、重问、续答，断线自动重连",
+        "Markdown 超集渲染 LaTeX / Mermaid / HTML 预览 / 代码高亮",
+        "聚合扫码、静默授权与一键登录，并打通微信 / 支付宝支付",
+        "H5 Canvas 与小程序 Skyline 出分享图，分享率提升 3 倍；主包 1.4M，首屏 0.9s"
+      ],
+      "achievements": ["多端复用 80%", "主包 1.4M / 首屏 0.9s", "分享率 ×3"],
+      "metrics": ["复用 80%", "首屏 0.9s", "分享 ×3"],
+      "links": { "demo": "", "repo": "" }
+    },
+    {
+      "id": "yunpeng",
+      "name": "答税云鹏报告",
+      "role": "前端开发工程师",
+      "period": "2024.11 - 2025.11",
+      "description": "税局数据一键抓取，生成可溯源 PDF 风险报告。PC 用 Nuxt4 做 SEO 与首屏，H5 用 UniApp，Monorepo 共用 TS / Pinia / UnoCSS。",
+      "stack": ["Monorepo", "UniApp", "Nuxt4", "Vite", "Wot-UI", "Element Plus", "UnoCSS", "Pinia"],
+      "highlights": [
+        "双端一体：Nuxt4 负责 PC SEO，UniApp 输出 1.6M H5 包",
+        "Node18 + 静态 HTML + Puppeteer 无头渲染，平均 10s 出可溯源 PDF",
+        "WebSocket 登录网关对接 QR / 短信双通道，状态推送零刷新",
+        "共享 UnoCSS / TS / Pinia，两套应用一套状态与样式"
+      ],
+      "achievements": ["服务 1000+ 企业", "日峰值 100+ 份", "查准率 100%"],
+      "metrics": ["1000+ 企业", "10s 出件", "日峰 100+"],
+      "links": { "demo": "", "repo": "" }
+    },
+    {
+      "id": "crm",
+      "name": "智能 CRM 管理平台",
+      "role": "前端开发工程师",
+      "period": "2023.04 - 2024.09",
+      "description": "企业内部 CRM：客户、报销、订单与 AI 办公。用可配置表单和审批流吃下多类业务，并用权限裁剪差异功能。",
+      "stack": ["Vue", "Vue-Router", "Axios", "Vuex", "Element UI", "ECharts"],
+      "highlights": [
+        "动态表单 + 审批流引擎，多业务复用，审批效率提升 80%",
+        "对接 6 个平台订单自动入库，人工录入错误率降到 0",
+        "接入文心一言做需求分类，把重复办公动作收进智能入口",
+        "公共组件沉淀 + 大文件切片上传，传输速度提高 60%"
+      ],
+      "achievements": ["审批效率 +80%", "订单错误率 0", "大文件传输 +60%"],
+      "metrics": ["审批 +80%", "6 平台同步", "传输 +60%"],
+      "links": { "demo": "", "repo": "" }
+    },
+    {
+      "id": "dajiangtang",
+      "name": "商界大讲堂学习平台",
+      "role": "前端开发工程师",
+      "period": "2023.04 - 2024.09",
+      "description": "课程购买、点播、直播和线下报名一体的学习站。用微信身份打通观看数据，并用海报把完课用户变成裂变入口。",
+      "stack": ["Vue3", "Video-play", "Live-player", "UEditor"],
+      "highlights": [
+        "微信 OAuth 拿 OpenId，把购买、观看、报名收进同一用户",
+        "点播 / 直播组件统一封装，完播率提升 40%",
+        "观看埋点实时回传运营；Canvas 海报引流效果提升 60%",
+        "UEditor 承载课程详情与公告，后台运营可直接改内容"
+      ],
+      "achievements": ["完播率 +40%", "海报引流 +60%", "观看数据实时可看"],
+      "metrics": ["完播 +40%", "引流 +60%", "实时埋点"],
+      "links": { "demo": "", "repo": "" }
+    },
+    {
+      "id": "jihua",
+      "name": "计划统计管理系统 & 企微审批",
+      "role": "前端开发工程师",
+      "period": "2020.05 - 2023.03",
+      "description": "集团财务填报与人员审批。PC 撑住十万级表格和钻取分析，企微 H5 复用同一套审批，服务 500+ 内部用户。",
+      "stack": ["Vue2", "凤翎框架", "PageOffice", "SmartBI", "Sortable.js", "Vue3", "Vite", "Pinia", "Vant4"],
+      "highlights": [
+        "表格懒加载 + 拖拽排序，10 万+ 行填报不卡顿",
+        "SmartBI 与 ECharts 做可视化钻取，财务可从汇总点进明细",
+        "Excel / Word / PDF 全端预览，审批附件覆盖 100%",
+        "通用审批组件复用 80%，PC 与企微数据一致，开发效率提升 60%"
+      ],
+      "achievements": ["500+ 内部用户", "10 万+ 行无卡顿", "审批组件复用 80%"],
+      "metrics": ["10 万+ 行", "500+ 用户", "复用 80%"],
+      "links": { "demo": "", "repo": "" }
+    },
+    {
+      "id": "community",
+      "name": "智慧社区多端缴费系统",
+      "role": "前端开发工程师",
+      "period": "2017.04 - 2020.02",
+      "description": "住户缴物业费、查订单、找人代缴；管理员在支付宝 / 微信公众号两侧处理。用缓存和防抖保证订单只落一笔。",
+      "stack": ["Vue", "Vue-Router", "Vuex", "Axios", "Vant", "qrcode.js", "腾讯电子签"],
+      "highlights": [
+        "Vuex 缓存会话 + 提交防抖，重复订单降到 0，接口稳定性 99%",
+        "接入腾讯电子签，合同在手机上直接签完",
+        "扫码缴费覆盖 90% 住户，减少柜台排队",
+        "按端裁剪住户 / 管理员界面，代缴路径比柜台更短"
+      ],
+      "achievements": ["零重复下单", "扫码覆盖 90%", "电子签闭环"],
+      "metrics": ["零重复单", "扫码 90%", "稳定 99%"],
+      "links": { "demo": "", "repo": "" }
+    },
+    {
+      "id": "parking",
+      "name": "EP 车场管理一体化方案",
+      "role": "前端开发工程师",
+      "period": "2017.04 - 2020.02",
+      "description": "小程序管闸机、监控和报修，公众号缴临停 / 月卡并找附近车场。把管理端和使用端收成同一套数据。",
+      "stack": ["微信原生小程序", "live-player", "Vue", "Vuex", "Vant", "高德地图 API"],
+      "highlights": [
+        "道闸指令响应低于 1s，live-player 看实时监控，运维效率提升 80%",
+        "自研车牌输入组件并统一 Axios，后续沉淀为 UniApp 市场插件",
+        "路由重定向降低二维码密度，扫码进场更快",
+        "高德地图找附近车场，查找效率提升 60%；两端数据一致"
+      ],
+      "achievements": ["闸机 < 1s", "运维效率 +80%", "找场效率 +60%"],
+      "metrics": ["闸机 <1s", "运维 +80%", "找场 +60%"],
+      "links": { "demo": "", "repo": "" }
+    }
+  ],
+  "education": {
+    "school": "福州理工学院",
+    "degree": "本科",
+    "major": "软件工程",
+    "period": "2013 - 2017"
+  },
+  "social": {
+    "github": "https://github.com/qp666",
+    "blog": "",
+    "juejin": "https://juejin.cn/user/2277843825591400/",
+    "csdn": "https://blog.csdn.net/qp66797/",
+    "zhihu": ""
+  }
+}
