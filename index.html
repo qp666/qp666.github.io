@@ -9,10 +9,8 @@
     <script>
       (function () {
         try {
-          var t = localStorage.getItem("theme");
-          if (t !== "light" && t !== "dark") {
-            t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-          }
+          var t = localStorage.getItem("resume-theme");
+          if (t !== "light" && t !== "dark") t = "dark";
           document.documentElement.classList.add(t);
           document.documentElement.style.colorScheme = t;
           document.querySelector('meta[name="theme-color"]')?.setAttribute(

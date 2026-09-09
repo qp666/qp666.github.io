@@ -50,9 +50,10 @@ type ViewTransition = {
 const ThemeContext = createContext<ThemeContextValue | null>(null);
 
 function readTheme(): ThemeName {
+  const stored = localStorage.getItem("resume-theme");
+  if (stored === "light" || stored === "dark") return stored;
   if (document.documentElement.classList.contains("light")) return "light";
-  if (document.documentElement.classList.contains("dark")) return "dark";
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  return "dark";
 }
 
 function applyTheme(name: ThemeName) {
@@ -61,7 +62,7 @@ function applyTheme(name: ThemeName) {
   document.documentElement.style.colorScheme = name;
   const meta = document.querySelector('meta[name="theme-color"]');
   meta?.setAttribute("content", name === "dark" ? darkTokens.bg : lightTokens.bg);
-  localStorage.setItem("theme", name);
+  localStorage.setItem("resume-theme", name);
 }
 
 function startThemeTransition(update: () => void): ViewTransition | null {
