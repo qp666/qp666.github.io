@@ -7,14 +7,16 @@ interface Props {
   experience: Experience[];
 }
 
-const FILTERS = [
+type FilterKey = "all" | Experience["tags"][number];
+
+const FILTERS: { key: FilterKey; label: string }[] = [
   { key: "all", label: "全部" },
   { key: "frontend", label: "前端" },
   { key: "ai", label: "AI" },
 ];
 
 export function Timeline({ experience }: Props) {
-  const [filter, setFilter] = useState("all");
+  const [filter, setFilter] = useState<FilterKey>("all");
   const [expanded, setExpanded] = useState<string | null>(experience[0]?.id ?? null);
 
   const filtered =
