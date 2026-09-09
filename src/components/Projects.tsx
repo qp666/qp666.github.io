@@ -34,7 +34,7 @@ export function Projects({ projects }: Props) {
                 } ${isOpen ? "ring-1 ring-amber-400/20" : ""}`}
               >
                 <button
-                  className="flex flex-1 flex-col p-5 text-left md:p-6"
+                  className="flex flex-1 cursor-pointer flex-col p-5 text-left md:p-6"
                   onClick={() => setExpanded(isOpen ? null : project.id)}
                 >
                   <div className="flex items-start justify-between gap-3">

@@ -67,7 +67,7 @@ export function Timeline({ experience }: Props) {
                     }`}
                   >
                     <button
-                      className="flex w-full items-start justify-between gap-4 p-5 text-left md:p-6"
+                      className="flex w-full cursor-pointer items-start justify-between gap-4 p-5 text-left md:p-6"
                       onClick={() => setExpanded(isOpen ? null : exp.id)}
                     >
                       <div>

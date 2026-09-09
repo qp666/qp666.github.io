@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { fadeUp } from "../lib/motion";
 import type { Profile, ResumeData } from "../types";
 
@@ -10,14 +9,6 @@ interface Props {
 }
 
 export function Hero({ profile, social, pdf }: Props) {
-  const [copied, setCopied] = useState(false);
-
-  const copyEmail = async () => {
-    await navigator.clipboard.writeText(profile.email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
   return (
     <section className="relative overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24">
       <div className="section-wrap">
@@ -57,7 +48,12 @@ export function Hero({ profile, social, pdf }: Props) {
               <span className="chip">{profile.experienceYears} 年经验</span>
               {profile.politicalStatus && <span className="chip">{profile.politicalStatus}</span>}
               <span className="chip">薪资{profile.salary}</span>
-              <span className="chip">{profile.phone}</span>
+              <a href={`tel:${profile.phone}`} className="chip">
+                {profile.phone}
+              </a>
+              <a href={`mailto:${profile.email}`} className="chip">
+                {profile.email}
+              </a>
             </motion.div>
           </motion.div>
 
@@ -76,9 +72,6 @@ export function Hero({ profile, social, pdf }: Props) {
               <a href={pdf.url} download={pdf.filename} className="btn-primary rounded-xl px-6 py-3 text-sm">
                 下载简历 PDF
               </a>
-              <button onClick={copyEmail} className="btn-ghost rounded-xl px-5 py-3 text-sm">
-                {copied ? "已复制 ✓" : "复制邮箱"}
-              </button>
               {social.github && (
                 <a
                   href={social.github}
@@ -120,20 +113,6 @@ export function Hero({ profile, social, pdf }: Props) {
         animate={{ x: [0, 20, 0], y: [0, -15, 0] }}
         transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
       />
-
-      <AnimatePresence>
-        {copied && (
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 8 }}
-            className="fixed bottom-8 left-1/2 z-50 -translate-x-1/2 rounded-xl px-5 py-3 text-sm text-heading shadow-2xl ring-1 ring-rose-400/30 backdrop-blur-md"
-            style={{ background: "var(--toast-bg)" }}
-          >
-            邮箱已复制到剪贴板
-          </motion.div>
-        )}
-      </AnimatePresence>
     </section>
   );
 }

@@ -2,7 +2,7 @@
   "profile": {
     "name": "卿鹏",
     "title": "前端开发工程师 · Vue 跨端与开源实践",
-    "tagline": "8 年 Web 前端 · 开源贡献 10w+ Star · UniApp 多端与 AI 应用落地",
+    "tagline": "8 年 Web 前端 · 向 10w+ Star 仓库合入 PR · UniApp 多端与 AI 应用落地",
     "phone": "18960903219",
     "email": "qp66797@163.com",
     "location": "深圳",
@@ -10,7 +10,7 @@
     "salary": "面议",
     "intents": ["Web 前端开发", "全职"],
     "politicalStatus": "党员",
-    "summary": "8 年前端开发经验，覆盖 PC / H5 / 小程序 / App 多端交付。向 Element-Plus、axios、wot-ui 等累计 10w+ Star 开源项目提交 PR；UniApp 插件市场发布「车牌号输入」，下载 2000+、长居下载榜前 3。掘金优秀创作者（20+ 首页推荐，阅读 8w+），CSDN「创作能手」（阅读 6w+，文章收录 Vue 社区、华为开发者社区）。熟悉 Vue2/3、UniApp、工程化与实时通信，追求组件复用、性能与可维护性。"
+    "summary": "8 年前端开发经验，覆盖 PC / H5 / 小程序 / App 多端交付。向 Element Plus、axios 等合计 10w+ Star 的仓库提交并合入 PR；UniApp 插件市场发布「车牌号输入」，下载 2000+、长居下载榜前 3。掘金优秀创作者（20+ 首页推荐，阅读 8w+），CSDN「创作能手」（阅读 6w+，文章收录 Vue 社区、华为开发者社区）。熟悉 Vue2/3、UniApp、工程化与实时通信，追求组件复用、性能与可维护性。"
   },
   "pdf": {
     "url": "/卿鹏-前端开发工程师.pdf",
@@ -19,7 +19,7 @@
   "stats": [
     { "label": "从业年限", "value": "8", "unit": "年", "hint": "2017 至今" },
     { "label": "核心项目", "value": "7", "unit": "个", "hint": "AI / 多端 / B 端" },
-    { "label": "开源影响", "value": "10w+", "unit": "Star", "hint": "Element-Plus / axios 等 PR" },
+    { "label": "开源影响", "value": "10w+", "unit": "Star", "hint": "向 Element Plus、axios 等仓库合入 PR" },
     { "label": "内容阅读", "value": "14w+", "unit": "", "hint": "掘金 8w+ · CSDN 6w+" }
   ],
   "expertise": [
@@ -29,7 +29,7 @@
       "accent": "rose",
       "description": "向高星国际开源与国内插件生态持续贡献，覆盖兼容性、文档与组件能力。",
       "points": [
-        "Element-Plus、Element-Plus-X、axios、mp-html、wot-ui 等累计 10w+ Star 项目 PR",
+        "向 Element Plus、axios 等合计 10w+ Star 的仓库提交并合入 PR",
         "覆盖组件兼容性优化、API 文档完善，推动开源生态完善",
         "UniApp 插件市场「车牌号输入」下载 2000+，长居下载榜前 3"
       ]
@@ -86,7 +86,7 @@
       { "subject": "工程化", "score": 4, "projects": ["Vite", "分包 1.4M", "Git 规范"] },
       { "subject": "AI 应用", "score": 4, "projects": ["SSE 打字机", "文心一言", "Markdown 超集"] },
       { "subject": "可视化", "score": 4, "projects": ["ECharts", "云鹏 PDF", "DataV"] },
-      { "subject": "软技能", "score": 4, "projects": ["开源 PR", "掘金 / CSDN", "团队协作"] }
+      { "subject": "AI 工具", "score": 4, "projects": ["Cursor", "Claude Code", "Codex"] }
     ],
     "categories": [
       {
@@ -95,7 +95,7 @@
       },
       {
         "name": "跨端 & UI",
-        "items": ["UniApp", "微信小程序", "微信公众号", "支付宝 H5", "Element Plus", "Vant", "Wot-UI", "Bootstrap"]
+        "items": ["UniApp", "微信小程序", "微信公众号", "支付宝 H5", "Element Plus", "Vant", "Wot-UI"]
       },
       {
         "name": "实时 & 可视化",
@@ -104,23 +104,28 @@
       {
         "name": "工程 & 服务",
         "items": ["Git", "Mock.js", "Node.js", "Express", "Nuxt4", "Monorepo", "HBuilderX", "Charles"]
+      },
+      {
+        "name": "AI 工具",
+        "items": ["Cursor", "Trae", "WorkBuddy", "Codex", "Claude Code", "ChatGPT", "Gemini", "Grok"]
       }
     ],
     "tags": [
       "TypeScript", "Vue3", "UniApp", "Pinia", "Vite", "UnoCSS",
       "Element Plus", "Wot-UI", "SSE", "WebSocket", "ECharts",
-      "Nuxt4", "微信小程序", "开源贡献"
+      "Nuxt4", "微信小程序", "开源贡献",
+      "Cursor", "Trae", "Claude Code", "ChatGPT", "Gemini"
     ]
   },
   "experience": [
     {
       "id": "dashui",
       "company": "深圳答税科技有限公司",
-      "role": "前端开发工程师",
-      "period": "2024.11 - 2025.11",
+      "role": "前端开发工程师 · 独立负责 TaxMind / 云鹏多端",
+      "period": "2024.11 - 至今",
       "tags": ["frontend", "ai"],
       "highlights": [
-        "负责 TaxMind 智能税务咨询多端（H5 / 小程序 / App）与云鹏风险报告",
+        "独立负责 TaxMind 智能税务咨询多端（H5 / 小程序 / App）与云鹏风险报告",
         "基于 EventSource 封装打字机 Hook，支持中断、重问、续答与异常重连",
         "PC / H5 / 小程序按需注入样式与交互，代码复用率 80%",
         "小程序分包 + 动态引入，主包 1.4M，首屏渲染降至 0.9s"
@@ -194,8 +199,8 @@
     {
       "id": "taxmind",
       "name": "答税 TaxMind 智能 AI",
-      "role": "前端开发工程师",
-      "period": "2024.11 - 2025.11",
+      "role": "独立负责多端",
+      "period": "2024.11 - 至今",
       "description": "税务咨询 AI 问答产品。一套 UniApp + Vue3 代码覆盖 PC / H5 / 小程序 / App，把流式对话、登录和支付做成可复用闭环。",
       "stack": ["UniApp", "Vue3", "TypeScript", "Vite", "Wot-UI", "Element Plus", "UnoCSS", "Pinia"],
       "highlights": [
@@ -212,8 +217,8 @@
     {
       "id": "yunpeng",
       "name": "答税云鹏报告",
-      "role": "前端开发工程师",
-      "period": "2024.11 - 2025.11",
+      "role": "独立负责多端",
+      "period": "2024.11 - 至今",
       "description": "税局数据一键抓取，生成可溯源 PDF 风险报告。PC 用 Nuxt4 做 SEO 与首屏，H5 用 UniApp，Monorepo 共用 TS / Pinia / UnoCSS。",
       "stack": ["Monorepo", "UniApp", "Nuxt4", "Vite", "Wot-UI", "Element Plus", "UnoCSS", "Pinia"],
       "highlights": [

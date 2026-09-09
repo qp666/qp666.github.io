@@ -59,7 +59,7 @@ export function Nav({ pdf, name }: { pdf: ResumeData["pdf"]; name: string }) {
       <div className={`section-wrap flex items-center justify-between transition-all [&_a]:cursor-pointer [&_button]:cursor-pointer ${scrolled ? "glass rounded-2xl px-4 py-2.5 md:px-5" : ""}`}>
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="logo-text text-sm font-semibold"
+          className="logo-text rounded-md text-sm font-semibold"
         >
           {name}
         </button>

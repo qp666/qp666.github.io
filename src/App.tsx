@@ -1,12 +1,24 @@
+import { lazy, Suspense } from "react";
 import { Nav } from "./components/Nav";
 import { Hero } from "./components/Hero";
 import { StatsBar } from "./components/StatsBar";
 import { ExpertiseSection } from "./components/ExpertiseSection";
-import { SkillRadarChart } from "./components/SkillRadarChart";
-import { Timeline } from "./components/Timeline";
-import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { resume } from "./data/resume";
+
+const SkillRadarChart = lazy(() =>
+  import("./components/SkillRadarChart").then((m) => ({ default: m.SkillRadarChart })),
+);
+const Timeline = lazy(() =>
+  import("./components/Timeline").then((m) => ({ default: m.Timeline })),
+);
+const Projects = lazy(() =>
+  import("./components/Projects").then((m) => ({ default: m.Projects })),
+);
+
+function SectionFallback() {
+  return <div className="section-wrap h-72 animate-pulse rounded-3xl bg-hover" />;
+}
 
 export default function App() {
   return (
@@ -18,13 +30,19 @@ export default function App() {
           <Hero profile={resume.profile} social={resume.social} pdf={resume.pdf} />
           <StatsBar stats={resume.stats} />
           <ExpertiseSection items={resume.expertise} />
-          <SkillRadarChart
-            skills={resume.skills.radar}
-            categories={resume.skills.categories}
-            tags={resume.skills.tags}
-          />
-          <Timeline experience={resume.experience} />
-          <Projects projects={resume.projects} />
+          <Suspense fallback={<SectionFallback />}>
+            <SkillRadarChart
+              skills={resume.skills.radar}
+              categories={resume.skills.categories}
+              tags={resume.skills.tags}
+            />
+          </Suspense>
+          <Suspense fallback={<SectionFallback />}>
+            <Timeline experience={resume.experience} />
+          </Suspense>
+          <Suspense fallback={<SectionFallback />}>
+            <Projects projects={resume.projects} />
+          </Suspense>
           <Contact
             profile={resume.profile}
             education={resume.education}
