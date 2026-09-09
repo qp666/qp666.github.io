@@ -2,22 +2,22 @@
   "profile": {
     "name": "卿鹏",
     "title": "前端开发工程师 · Vue 跨端与开源实践",
-    "tagline": "7 年 Web 前端 · 开源贡献 10w+ Star · UniApp 多端与 AI 应用落地",
+    "tagline": "8 年 Web 前端 · 开源贡献 10w+ Star · UniApp 多端与 AI 应用落地",
     "phone": "18960903219",
     "email": "qp66797@163.com",
     "location": "深圳",
-    "experienceYears": "7",
+    "experienceYears": "8",
     "salary": "面议",
     "intents": ["Web 前端开发", "全职"],
     "politicalStatus": "党员",
-    "summary": "7 年前端开发经验，覆盖 PC / H5 / 小程序 / App 多端交付。向 Element-Plus、axios、wot-ui 等累计 10w+ Star 开源项目提交 PR；UniApp 插件市场发布「车牌号输入」，下载 2000+、长居下载榜前 3。掘金优秀创作者（20+ 首页推荐，阅读 8w+），CSDN「创作能手」（阅读 6w+，文章收录 Vue 社区、华为开发者社区）。熟悉 Vue2/3、UniApp、工程化与实时通信，追求组件复用、性能与可维护性。"
+    "summary": "8 年前端开发经验，覆盖 PC / H5 / 小程序 / App 多端交付。向 Element-Plus、axios、wot-ui 等累计 10w+ Star 开源项目提交 PR；UniApp 插件市场发布「车牌号输入」，下载 2000+、长居下载榜前 3。掘金优秀创作者（20+ 首页推荐，阅读 8w+），CSDN「创作能手」（阅读 6w+，文章收录 Vue 社区、华为开发者社区）。熟悉 Vue2/3、UniApp、工程化与实时通信，追求组件复用、性能与可维护性。"
   },
   "pdf": {
     "url": "/卿鹏-前端开发工程师.pdf",
     "filename": "卿鹏-前端开发工程师.pdf"
   },
   "stats": [
-    { "label": "从业年限", "value": "7", "unit": "年", "hint": "2017 至今" },
+    { "label": "从业年限", "value": "8", "unit": "年", "hint": "2017 至今" },
     { "label": "核心项目", "value": "7", "unit": "个", "hint": "AI / 多端 / B 端" },
     { "label": "开源影响", "value": "10w+", "unit": "Star", "hint": "Element-Plus / axios 等 PR" },
     { "label": "内容阅读", "value": "14w+", "unit": "", "hint": "掘金 8w+ · CSDN 6w+" }

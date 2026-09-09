@@ -34,35 +34,35 @@ export function Contact({ profile, education, social, pdf }: Props) {
           variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
         >
           <motion.div variants={fadeUp} className="glass glass-hover rounded-2xl p-6 md:p-7 lg:col-span-1">
-            <p className="mb-4 font-mono text-xs tracking-widest text-zinc-600 uppercase">Education</p>
-            <p className="text-xl font-semibold text-white">{education.school}</p>
-            {education.major && <p className="mt-2 text-sm text-zinc-400">{education.major}</p>}
-            <p className={education.major ? "text-sm text-zinc-500" : "mt-2 text-sm text-zinc-400"}>{education.degree}</p>
-            {education.period && <p className="mt-2 font-mono text-xs text-zinc-600">{education.period}</p>}
+            <p className="mb-4 font-mono text-xs tracking-widest text-faint uppercase">Education</p>
+            <p className="text-xl font-semibold text-heading">{education.school}</p>
+            {education.major && <p className="mt-2 text-sm text-body">{education.major}</p>}
+            <p className={education.major ? "text-sm text-muted" : "mt-2 text-sm text-body"}>{education.degree}</p>
+            {education.period && <p className="mt-2 font-mono text-xs text-faint">{education.period}</p>}
           </motion.div>
 
           <motion.div variants={fadeUp} className="glass glass-hover rounded-2xl p-6 md:p-7 lg:col-span-2">
-            <p className="mb-4 font-mono text-xs tracking-widest text-zinc-600 uppercase">Contact</p>
+            <p className="mb-4 font-mono text-xs tracking-widest text-faint uppercase">Contact</p>
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
-                <p className="mb-1 text-xs text-zinc-600">邮箱</p>
-                <a href={`mailto:${profile.email}`} className="text-base font-medium text-white hover:text-rose-300">
+                <p className="mb-1 text-xs text-faint">邮箱</p>
+                <a href={`mailto:${profile.email}`} className="text-base font-medium text-heading hover:text-rose-400">
                   {profile.email}
                 </a>
               </div>
               <div>
-                <p className="mb-1 text-xs text-zinc-600">电话</p>
-                <a href={`tel:${profile.phone}`} className="text-base font-medium text-white hover:text-rose-300">
+                <p className="mb-1 text-xs text-faint">电话</p>
+                <a href={`tel:${profile.phone}`} className="text-base font-medium text-heading hover:text-rose-400">
                   {profile.phone}
                 </a>
               </div>
               <div>
-                <p className="mb-1 text-xs text-zinc-600">城市</p>
-                <p className="text-base text-zinc-300">{profile.location}</p>
+                <p className="mb-1 text-xs text-faint">城市</p>
+                <p className="text-base text-secondary">{profile.location}</p>
               </div>
               <div>
-                <p className="mb-1 text-xs text-zinc-600">期望薪资</p>
-                <p className="text-base text-zinc-300">{profile.salary}</p>
+                <p className="mb-1 text-xs text-faint">期望薪资</p>
+                <p className="text-base text-secondary">{profile.salary}</p>
               </div>
             </div>
 
@@ -94,8 +94,8 @@ export function Contact({ profile, education, social, pdf }: Props) {
                     {...(isUrl ? { href: value, target: "_blank", rel: "noopener noreferrer" } : {})}
                     className="glass glass-hover no-print flex items-center gap-3 rounded-xl px-5 py-3"
                   >
-                    <span className="text-xs text-zinc-600">{s.label}</span>
-                    <span className="text-sm font-medium text-zinc-200">
+                    <span className="text-xs text-faint">{s.label}</span>
+                    <span className="text-sm font-medium text-secondary">
                       {isUrl ? new URL(value).hostname.replace("www.", "") : value}
                     </span>
                   </El>

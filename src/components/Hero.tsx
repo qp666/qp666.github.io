@@ -44,19 +44,19 @@ export function Hero({ profile, social, pdf }: Props) {
               <span className="gradient-text">{profile.name}</span>
             </motion.h1>
 
-            <motion.p variants={fadeUp} custom={2} className="mb-3 text-xl text-zinc-300 md:text-2xl">
+            <motion.p variants={fadeUp} custom={2} className="mb-3 text-xl text-secondary md:text-2xl">
               {profile.title}
             </motion.p>
 
-            <motion.p variants={fadeUp} custom={3} className="text-base leading-relaxed text-zinc-500 md:text-lg">
+            <motion.p variants={fadeUp} custom={3} className="text-base leading-relaxed text-muted md:text-lg">
               {profile.tagline}
             </motion.p>
 
             <motion.div variants={fadeUp} custom={4} className="mt-8 flex flex-wrap gap-2">
-              {profile.politicalStatus && <span className="chip">{profile.politicalStatus}</span>}
               <span className="chip">📍 {profile.location}</span>
               <span className="chip">{profile.experienceYears} 年经验</span>
-              <span className="chip">期望 {profile.salary}</span>
+              {profile.politicalStatus && <span className="chip">{profile.politicalStatus}</span>}
+              <span className="chip">薪资{profile.salary}</span>
               <span className="chip">{profile.phone}</span>
             </motion.div>
           </motion.div>
@@ -70,7 +70,7 @@ export function Hero({ profile, social, pdf }: Props) {
             <div className="pointer-events-none absolute -top-20 -right-20 h-40 w-40 rounded-full bg-rose-400/10 blur-3xl" />
             <div className="pointer-events-none absolute -bottom-16 -left-16 h-32 w-32 rounded-full bg-amber-400/10 blur-3xl" />
 
-            <p className="relative text-sm leading-[1.8] text-zinc-400 md:text-base">{profile.summary}</p>
+            <p className="relative text-sm leading-[1.8] text-body md:text-base">{profile.summary}</p>
 
             <div className="no-print relative mt-8 flex flex-wrap gap-3">
               <a href={pdf.url} download={pdf.filename} className="btn-primary rounded-xl px-6 py-3 text-sm">
@@ -127,7 +127,8 @@ export function Hero({ profile, social, pdf }: Props) {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 8 }}
-            className="fixed bottom-8 left-1/2 z-50 -translate-x-1/2 rounded-xl bg-zinc-900/95 px-5 py-3 text-sm text-white shadow-2xl ring-1 ring-rose-400/30 backdrop-blur-md"
+            className="fixed bottom-8 left-1/2 z-50 -translate-x-1/2 rounded-xl px-5 py-3 text-sm text-heading shadow-2xl ring-1 ring-rose-400/30 backdrop-blur-md"
+            style={{ background: "var(--toast-bg)" }}
           >
             邮箱已复制到剪贴板
           </motion.div>

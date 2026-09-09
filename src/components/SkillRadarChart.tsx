@@ -6,6 +6,7 @@ import {
 import type { TooltipProps } from "recharts";
 import { SectionHeader } from "./SectionHeader";
 import { fadeUp } from "../lib/motion";
+import { useTheme } from "../lib/theme";
 import type { SkillRadar, SkillCategory } from "../types";
 
 interface Props {
@@ -26,9 +27,9 @@ function RadarTooltip({ active, payload }: TooltipProps<number, string>) {
   const data = payload[0].payload as RadarDataPoint;
   return (
     <div className="glass rounded-xl px-4 py-3 shadow-2xl">
-      <p className="font-medium text-white">{data.subject}</p>
-      <p className="text-sm text-rose-300">{data.score} / 5</p>
-      <p className="mt-1.5 text-xs text-zinc-500">{data.projects}</p>
+      <p className="font-medium text-heading">{data.subject}</p>
+      <p className="text-sm text-accent-fg">{data.score} / 5</p>
+      <p className="mt-1.5 text-xs text-muted">{data.projects}</p>
     </div>
   );
 }
@@ -36,6 +37,7 @@ function RadarTooltip({ active, payload }: TooltipProps<number, string>) {
 const CAT_COLORS = ["#fb7185", "#fbbf24", "#38bdf8", "#a78bfa"];
 
 export function SkillRadarChart({ skills, categories, tags }: Props) {
+  const { dark } = useTheme();
   const data: RadarDataPoint[] = skills.map((s) => ({
     subject: s.subject,
     score: s.score,
@@ -57,10 +59,10 @@ export function SkillRadarChart({ skills, categories, tags }: Props) {
             transition={{ duration: 0.6 }}
           >
             <ResponsiveContainer width="100%" height="100%">
-              <RadarChart data={data}>
-                <PolarGrid stroke="rgba(255,255,255,0.06)" />
-                <PolarAngleAxis dataKey="subject" tick={{ fill: "#a1a1aa", fontSize: 11 }} />
-                <PolarRadiusAxis angle={30} domain={[0, 5]} tick={{ fill: "#52525b", fontSize: 9 }} axisLine={false} />
+              <RadarChart key={dark ? "dark" : "light"} data={data}>
+                <PolarGrid stroke={dark ? "rgba(255,255,255,0.06)" : "rgba(24,24,27,0.1)"} />
+                <PolarAngleAxis dataKey="subject" tick={{ fill: dark ? "#a1a1aa" : "#52525b", fontSize: 11 }} />
+                <PolarRadiusAxis angle={30} domain={[0, 5]} tick={{ fill: dark ? "#52525b" : "#a1a1aa", fontSize: 9 }} axisLine={false} />
                 <Radar dataKey="score" stroke="#fb7185" fill="url(#radarGrad)" fillOpacity={0.45} strokeWidth={2} />
                 <defs>
                   <linearGradient id="radarGrad" x1="0" y1="0" x2="1" y2="1">
@@ -84,10 +86,10 @@ export function SkillRadarChart({ skills, categories, tags }: Props) {
             {skills.map((s, i) => (
               <motion.div key={s.subject} variants={fadeUp} custom={i}>
                 <div className="mb-2 flex justify-between text-sm">
-                  <span className="font-medium text-zinc-200">{s.subject}</span>
-                  <span className="font-mono text-xs text-rose-300">{s.score}/5</span>
+                  <span className="font-medium text-secondary">{s.subject}</span>
+                  <span className="font-mono text-xs text-accent-fg">{s.score}/5</span>
                 </div>
-                <div className="h-1.5 overflow-hidden rounded-full bg-white/5">
+                <div className="h-1.5 overflow-hidden rounded-full bg-hover">
                   <motion.div
                     className="h-full rounded-full bg-gradient-to-r from-rose-400 via-amber-300 to-violet-400"
                     initial={{ width: 0 }}
@@ -96,7 +98,7 @@ export function SkillRadarChart({ skills, categories, tags }: Props) {
                     transition={{ duration: 0.9, delay: i * 0.05, ease: [0.22, 1, 0.36, 1] }}
                   />
                 </div>
-                <p className="mt-1.5 text-xs text-zinc-600">{s.projects.join(" · ")}</p>
+                <p className="mt-1.5 text-xs text-faint">{s.projects.join(" · ")}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -113,7 +115,7 @@ export function SkillRadarChart({ skills, categories, tags }: Props) {
               custom={ci}
               className="glass rounded-2xl p-5"
             >
-              <h4 className="mb-3 flex items-center gap-2 text-sm font-medium text-white">
+              <h4 className="mb-3 flex items-center gap-2 text-sm font-medium text-heading">
                 <span
                   className="h-2 w-2 rounded-full"
                   style={{ background: CAT_COLORS[ci % CAT_COLORS.length] }}
@@ -137,7 +139,7 @@ export function SkillRadarChart({ skills, categories, tags }: Props) {
           variants={{ visible: { transition: { staggerChildren: 0.02 } } }}
         >
           {tags.map((tag) => (
-            <motion.span key={tag} variants={fadeUp} className="tag text-zinc-500">
+            <motion.span key={tag} variants={fadeUp} className="tag text-faint">
               {tag}
             </motion.span>
           ))}

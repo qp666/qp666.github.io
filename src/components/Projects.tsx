@@ -40,14 +40,14 @@ export function Projects({ projects }: Props) {
                   <div className="flex items-start justify-between gap-3">
                     <div>
                       {featured && (
-                        <span className="mb-2 inline-block rounded-full bg-rose-400/10 px-2 py-0.5 text-[10px] tracking-wider text-rose-300 uppercase">
+                        <span className="mb-2 inline-block rounded-full bg-rose-400/10 px-2 py-0.5 text-[10px] tracking-wider text-accent-fg uppercase">
                           Featured
                         </span>
                       )}
-                      <h3 className="text-base font-semibold leading-snug text-white md:text-lg">
+                      <h3 className="text-base font-semibold leading-snug text-heading md:text-lg">
                         {project.name}
                       </h3>
-                      <p className="mt-1.5 text-xs text-zinc-600">
+                      <p className="mt-1.5 text-xs text-faint">
                         {project.role}
                         <span className="mx-1.5">·</span>
                         {project.period}
@@ -59,19 +59,19 @@ export function Projects({ projects }: Props) {
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
-                        className="no-print shrink-0 rounded-lg bg-sky-400/10 px-2.5 py-1 text-xs text-sky-300 hover:bg-sky-400/20"
+                        className="no-print shrink-0 rounded-lg bg-sky-400/10 px-2.5 py-1 text-xs text-sky-500 hover:bg-sky-400/20"
                       >
                         Demo →
                       </a>
                     )}
                   </div>
-                  <p className="mt-3 text-sm leading-relaxed text-zinc-500">{project.description}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-muted">{project.description}</p>
 
                   <div className="mt-3 flex flex-wrap gap-1.5">
                     {project.metrics.slice(0, 3).map((m) => (
                       <span
                         key={m}
-                        className="rounded-full bg-violet-400/10 px-2 py-0.5 text-[10px] text-violet-300"
+                        className="rounded-full bg-violet-400/10 px-2 py-0.5 text-[10px] text-violet-500"
                       >
                         {m}
                       </span>
@@ -86,14 +86,14 @@ export function Projects({ projects }: Props) {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="border-t border-white/5 px-5 pb-5 md:px-6 md:pb-6"
+                        className="border-t border-line px-5 pb-5 md:px-6 md:pb-6"
                       >
-                        <p className="mb-2 mt-4 text-xs font-medium tracking-wider text-zinc-600 uppercase">
+                        <p className="mb-2 mt-4 text-xs font-medium tracking-wider text-faint uppercase">
                           核心贡献
                         </p>
                         <ul className="mb-4 space-y-2">
                           {project.highlights.map((h) => (
-                            <li key={h} className="flex gap-3 text-sm text-zinc-400">
+                            <li key={h} className="flex gap-3 text-sm text-body">
                               <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-amber-400" />
                               {h}
                             </li>
@@ -102,14 +102,14 @@ export function Projects({ projects }: Props) {
 
                         {project.achievements && project.achievements.length > 0 && (
                           <>
-                            <p className="mb-2 text-xs font-medium tracking-wider text-rose-300/70 uppercase">
+                            <p className="mb-2 text-xs font-medium tracking-wider text-accent-fg/80 uppercase">
                               项目成果
                             </p>
                             <div className="mb-4 flex flex-wrap gap-2">
                               {project.achievements.map((a) => (
                                 <span
                                   key={a}
-                                  className="rounded-lg bg-rose-400/8 px-2.5 py-1 text-xs text-rose-200/70 ring-1 ring-rose-400/15"
+                                  className="rounded-lg bg-rose-400/10 px-2.5 py-1 text-xs text-accent-fg ring-1 ring-rose-400/15"
                                 >
                                   {a}
                                 </span>

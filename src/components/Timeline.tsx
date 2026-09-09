@@ -34,8 +34,8 @@ export function Timeline({ experience }: Props) {
               onClick={() => setFilter(f.key)}
               className={`rounded-full px-4 py-2 text-sm transition ${
                 filter === f.key
-                  ? "bg-gradient-to-r from-rose-500/20 to-amber-500/20 text-white ring-1 ring-rose-400/30"
-                  : "text-zinc-500 hover:bg-white/5 hover:text-zinc-300"
+                  ? "bg-gradient-to-r from-rose-500/20 to-amber-500/20 text-heading ring-1 ring-rose-400/30"
+                  : "text-faint hover:bg-hover hover:text-secondary"
               }`}
             >
               {f.label}
@@ -44,7 +44,7 @@ export function Timeline({ experience }: Props) {
         </div>
 
         <div className="relative space-y-3">
-          <div className="absolute top-4 bottom-4 left-[1.125rem] w-px bg-gradient-to-b from-rose-400/40 via-amber-400/20 to-transparent md:left-6" />
+          <div className="absolute top-4 bottom-4 left-4 w-px -translate-x-1/2 bg-gradient-to-b from-rose-400/40 via-amber-400/20 to-transparent md:left-6" />
 
           <AnimatePresence mode="popLayout">
             {filtered.map((exp, i) => {
@@ -57,9 +57,9 @@ export function Timeline({ experience }: Props) {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.35, delay: i * 0.04 }}
-                  className="relative ml-0 md:ml-2"
+                  className="relative"
                 >
-                  <div className="absolute left-3 top-7 z-10 h-3 w-3 rounded-full border-2 border-rose-400/60 bg-[#08080d] md:left-4" />
+                  <div className="absolute left-4 top-7 z-10 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-rose-400/60 bg-[var(--page-bg)] md:left-6" />
 
                   <div
                     className={`glass ml-10 overflow-hidden rounded-2xl transition-all md:ml-14 ${
@@ -72,14 +72,14 @@ export function Timeline({ experience }: Props) {
                     >
                       <div>
                         <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                          <h3 className="text-base font-semibold text-white md:text-lg">{exp.company}</h3>
-                          <span className="font-mono text-xs text-zinc-600">{exp.period}</span>
+                          <h3 className="text-base font-semibold text-heading md:text-lg">{exp.company}</h3>
+                          <span className="font-mono text-xs text-faint">{exp.period}</span>
                         </div>
-                        <p className="mt-1 text-sm text-rose-200/70">{exp.role}</p>
+                        <p className="mt-1 text-sm text-accent-fg/80">{exp.role}</p>
                       </div>
                       <motion.span
                         animate={{ rotate: isOpen ? 180 : 0 }}
-                        className="mt-1 shrink-0 text-zinc-600"
+                        className="mt-1 shrink-0 text-faint"
                       >
                         ↓
                       </motion.span>
@@ -95,14 +95,14 @@ export function Timeline({ experience }: Props) {
                             transition={{ duration: 0.3 }}
                             className="overflow-hidden print-show"
                           >
-                            <div className="space-y-5 border-t border-white/5 px-5 pb-5 md:px-6 md:pb-6">
+                            <div className="space-y-5 border-t border-line px-5 pb-5 md:px-6 md:pb-6">
                               <div>
-                                <p className="mb-3 text-xs font-medium tracking-wider text-zinc-600 uppercase">
+                                <p className="mb-3 text-xs font-medium tracking-wider text-faint uppercase">
                                   工作内容
                                 </p>
                                 <ul className="space-y-2.5">
                                   {exp.highlights.map((h) => (
-                                    <li key={h} className="flex gap-3 text-sm leading-relaxed text-zinc-400">
+                                    <li key={h} className="flex gap-3 text-sm leading-relaxed text-body">
                                       <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-rose-400/80" />
                                       {h}
                                     </li>
@@ -119,7 +119,7 @@ export function Timeline({ experience }: Props) {
                                     {exp.achievements.map((a) => (
                                       <li
                                         key={a}
-                                        className="flex gap-3 rounded-lg bg-amber-400/5 px-3 py-2 text-sm text-amber-100/70"
+                                        className="flex gap-3 rounded-lg bg-amber-400/10 px-3 py-2 text-sm text-secondary"
                                       >
                                         <span className="text-amber-400">★</span>
                                         {a}

@@ -26,11 +26,11 @@ export function StatsBar({ stats }: Props) {
             >
               <div className="flex items-baseline gap-1">
                 <span className="gradient-num text-3xl font-bold md:text-4xl">{stat.value}</span>
-                <span className="text-sm text-zinc-600">{stat.unit}</span>
+                <span className="text-sm text-faint">{stat.unit}</span>
               </div>
-              <p className="mt-2 text-sm text-zinc-400">{stat.label}</p>
+              <p className="mt-2 text-sm text-body">{stat.label}</p>
               {stat.hint && (
-                <p className="mt-0.5 text-xs text-zinc-600 opacity-0 transition group-hover:opacity-100">
+                <p className="mt-0.5 text-xs text-faint opacity-0 transition group-hover:opacity-100">
                   {stat.hint}
                 </p>
               )}

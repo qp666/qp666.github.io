@@ -39,11 +39,11 @@ export function ExpertiseSection({ items }: Props) {
               custom={i}
               className={`expertise-card glass glass-hover relative overflow-hidden rounded-2xl p-6 ${ACCENT_CLASS[item.accent] ?? "accent-violet"}`}
             >
-              <h3 className="mb-2 text-base font-semibold text-white">{item.title}</h3>
-              <p className="mb-4 text-sm leading-relaxed text-zinc-500">{item.description}</p>
+              <h3 className="mb-2 text-base font-semibold text-heading">{item.title}</h3>
+              <p className="mb-4 text-sm leading-relaxed text-muted">{item.description}</p>
               <ul className="space-y-2">
                 {item.points.map((p) => (
-                  <li key={p} className="flex gap-2.5 text-xs leading-relaxed text-zinc-400 md:text-sm">
+                  <li key={p} className="flex gap-2.5 text-xs leading-relaxed text-body md:text-sm">
                     <span
                       className="mt-1.5 h-1 w-1 shrink-0 rounded-full"
                       style={{ background: "var(--card-accent)" }}

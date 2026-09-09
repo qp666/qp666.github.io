@@ -32,10 +32,10 @@ export default function App() {
             pdf={resume.pdf}
           />
         </main>
-        <footer className="border-t border-white/5 py-12 text-center">
-          <p className="font-mono text-xs tracking-wider text-zinc-700">
+        <footer className="border-t border-line py-12 text-center">
+          <p className="font-mono text-xs tracking-wider text-faint">
             © {new Date().getFullYear()} {resume.profile.name}
-            <span className="mx-2 text-zinc-800">·</span>
+            <span className="mx-2 opacity-40">·</span>
             Updated 2026.09
           </p>
         </footer>
